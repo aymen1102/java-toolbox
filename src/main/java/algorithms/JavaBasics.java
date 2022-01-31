@@ -1,5 +1,6 @@
 package algorithms;
 
+import java.nio.charset.Charset;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -31,11 +32,32 @@ public class JavaBasics {
         question15(5, 9);
         question16();
         question17(10, 11);
+        question18();
+        question19();
+        question20();
+        question21();
+        question22();
+        question23();
+        question24();
+        question25();
+        question26();
+        question27();
+        question28();
+        question29();
+        question30();
+        question31();
+        question32();
         question33(25);
         question37();
         question38();
         question39();
+        question40();
+        question41();
+        question42();
+        question43();
         question44(5);
+        question45();
+        question46();
         question47();
         question48();
         question49(20);
@@ -230,10 +252,26 @@ public class JavaBasics {
 
     static void question31() {
         System.out.println("-------------------------------------------------- Question 31 --------------------------------------------------");
+        System.out.println("\nJava Version: "+System.getProperty("java.version"));
+        System.out.println("Java Runtime Version: "+System.getProperty("java.runtime.version"));
+        System.out.println("Java Home: "+System.getProperty("java.home"));
+        System.out.println("Java Vendor: "+System.getProperty("java.vendor"));
+        System.out.println("Java Vendor URL: "+System.getProperty("java.vendor.url"));
+        System.out.println("Java Class Path: "+System.getProperty("java.class.path")+"\n");
     }
 
     static void question32() {
         System.out.println("-------------------------------------------------- Question 32 --------------------------------------------------");
+        int a = 25;
+        int b = 39;
+        if(a<b)
+            System.out.println(a+"<"+b);
+        if(a>b)
+            System.out.println(a+">"+b);
+        if(a==b)
+            System.out.println(a+"="+b);
+        if(a!=b)
+            System.out.println(a+"!="+b);
     }
 
     static void question33(int digit) {
@@ -281,12 +319,12 @@ public class JavaBasics {
         int spaces = 0;
         int numbers = 0;
         int others = 0;
-        for (int i = 0; i < chars.length; i++) {
-            if(Character.isAlphabetic(chars[i]))
+        for (char aChar : chars) {
+            if (Character.isAlphabetic(aChar))
                 letters++;
-            else if (Character.isSpaceChar(chars[i]))
+            else if (Character.isSpaceChar(aChar))
                 spaces++;
-            else if (Character.isDigit(chars[i]))
+            else if (Character.isDigit(aChar))
                 numbers++;
             else
                 others++;
@@ -317,15 +355,33 @@ public class JavaBasics {
 
     static void question40() {
         System.out.println("-------------------------------------------------- Question 40 --------------------------------------------------");
+        System.out.println("List of available character sets :");
+        for (String s:Charset.availableCharsets().keySet()) {
+            System.out.print(s+" ");
+        }
+        System.out.println("\n");
+    }
+
+    static void question41() {
+        System.out.println("-------------------------------------------------- Question 41 --------------------------------------------------");
+        char letter = 'Z';
+        int ascii = letter;
+        System.out.println("The ASCII value of "+letter+" is "+ascii);
     }
 
     static void question42() {
-        System.out.println("-------------------------------------------------- Question 41 --------------------------------------------------");
+        System.out.println("-------------------------------------------------- Question 42 --------------------------------------------------");
     }
 
     static void question43() {
         System.out.println("-------------------------------------------------- Question 43 --------------------------------------------------");
-
+        System.out.println("""
+                Twinkle, twinkle, little star,
+                        How I wonder what you are!
+                            Up above the world so high,
+                            Like a diamond in the sky.
+                Twinkle, twinkle, little star,
+                        How I wonder what you are""");
     }
 
     static void question44(int number) {
