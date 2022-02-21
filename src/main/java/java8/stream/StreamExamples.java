@@ -186,22 +186,22 @@ public class StreamExamples {
                 .peek(System.out::println) //MOHAN JOHN VAIBHAV AMIT
                 .filter(x -> x.startsWith("J"))
                 .count();
-        System.out.println("Count of names start with J : "+count);
+        System.out.println("Count of names start with J : " + count);
 
 
         System.out.println("-------------------------------------------------- Stream 25 --------------------------------------------------");
-        List<Integer> list1 = Arrays.asList(1,2,3,4,5);
-        List<Integer> list2 = Arrays.asList(6,7,8,9,10);
-        List<List<Integer>> listofLists = Arrays.asList(list1,list2);
-        System.out.println("Avant : "+listofLists);
-        List<Integer> listOfAllIntegers  = listofLists.stream()
+        List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5);
+        List<Integer> list2 = Arrays.asList(6, 7, 8, 9, 10);
+        List<List<Integer>> listofLists = Arrays.asList(list1, list2);
+        System.out.println("Avant : " + listofLists);
+        List<Integer> listOfAllIntegers = listofLists.stream()
                 .flatMap(x -> x.stream())
                 .toList();
-        System.out.println("Après : "+listOfAllIntegers);
+        System.out.println("Après : " + listOfAllIntegers); //Après : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
         System.out.println("-------------------------------------------------- Stream 26 --------------------------------------------------");
-        List<Integer> ages = Arrays.asList(17,23,10);
+        List<Integer> ages = Arrays.asList(17, 23, 10);
         Integer total = ages.stream()
                 .reduce(0, (age1, age2) -> age1 + age2);
         System.out.println(total); //50
@@ -211,12 +211,34 @@ public class StreamExamples {
         List<String> letters = Arrays.asList("a", "b", "c", "d");
         String lettersReduced = letters.stream()
                 .reduce("letters reduced : ", (char1, char2) -> char1 + char2);
-        System.out.println(lettersReduced);
+        System.out.println(lettersReduced); //abcd
+
 
         System.out.println("-------------------------------------------------- Stream 28 --------------------------------------------------");
+        List<Integer> numbers = Arrays.asList(5, 10, 15);
+        boolean b = numbers.stream()
+                .allMatch(x -> x % 5 == 0);
+        System.out.println(b); //true
+
+
         System.out.println("-------------------------------------------------- Stream 29 --------------------------------------------------");
+        boolean b1 = productList.stream()
+                .anyMatch(x -> x.getPrice() < 300);
+        System.out.println(b1); //false
+
+
         System.out.println("-------------------------------------------------- Stream 30 --------------------------------------------------");
+        productList.stream()
+                .min(Comparator.comparing(Product::getPrice))
+                .ifPresent(System.out::println); // Product [id=2, name=Smartphone, price=400.0]
+
+
         System.out.println("-------------------------------------------------- Stream 31 --------------------------------------------------");
+        productList.stream()
+                .max(Comparator.comparing(Product::getPrice))
+                .ifPresent(System.out::println); // Product [id=1, name=Computer, price=1200.0]
+
+
         System.out.println("-------------------------------------------------- Stream 32 --------------------------------------------------");
         System.out.println("-------------------------------------------------- Stream 33 --------------------------------------------------");
         System.out.println("-------------------------------------------------- Stream 34 --------------------------------------------------");
