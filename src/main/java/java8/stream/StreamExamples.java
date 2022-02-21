@@ -1,7 +1,6 @@
 package java8.stream;
 
 import java8.stream.model.Product;
-
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.*;
@@ -65,7 +64,7 @@ public class StreamExamples {
 
 
         System.out.println("-------------------------------------------------- Stream 9 --------------------------------------------------");
-        Stream.of("d2", "a2", "b1", "l3", "c4")
+        boolean b2 = Stream.of("d2", "a2", "b1", "l3", "c4")
                 .map(x -> {
                     System.out.println("map:" + x);
                     return x.toUpperCase();
@@ -73,8 +72,8 @@ public class StreamExamples {
                 .anyMatch(x -> {
                     System.out.println("anyMatch:" + x);
                     return x.startsWith("A");
-                }); //map:d2 anyMatch:D2 map:a2 anyMatch:A2
-
+                });//map:d2 anyMatch:D2 map:a2 anyMatch:A2
+        System.out.println(b2);  // true
 
         System.out.println("-------------------------------------------------- Stream 10 --------------------------------------------------");
         Stream.of("a1", "a2", "a3", "a4")
@@ -144,8 +143,10 @@ public class StreamExamples {
 
 
         System.out.println("-------------------------------------------------- Stream 19 --------------------------------------------------");
-        double somme0 = productList.stream()
-                .collect(Collectors.summingDouble(Product::getPrice));
+        double somme0 = productList.
+                stream().
+                mapToDouble(Product::getPrice).
+                sum();
         System.out.println(somme0); //2400.0
 
 
@@ -159,8 +160,8 @@ public class StreamExamples {
 
         System.out.println("-------------------------------------------------- Stream 21 --------------------------------------------------");
         Set<Float> floatSet = productList.stream()
-                .filter(product -> product.getPrice() < 900)
                 .map(Product::getPrice)
+                .filter(price -> price < 900)
                 .collect(Collectors.toSet());
         System.out.println(floatSet);
 
@@ -195,7 +196,7 @@ public class StreamExamples {
         List<List<Integer>> listofLists = Arrays.asList(list1, list2);
         System.out.println("Avant : " + listofLists);
         List<Integer> listOfAllIntegers = listofLists.stream()
-                .flatMap(x -> x.stream())
+                .flatMap(Collection::stream)
                 .toList();
         System.out.println("Après : " + listOfAllIntegers); //Après : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -203,7 +204,7 @@ public class StreamExamples {
         System.out.println("-------------------------------------------------- Stream 26 --------------------------------------------------");
         List<Integer> ages = Arrays.asList(17, 23, 10);
         Integer total = ages.stream()
-                .reduce(0, (age1, age2) -> age1 + age2);
+                .reduce(0, Integer::sum);
         System.out.println(total); //50
 
 
@@ -240,9 +241,35 @@ public class StreamExamples {
 
 
         System.out.println("-------------------------------------------------- Stream 32 --------------------------------------------------");
+        Stream
+                .generate(new Random()::nextInt)
+                .limit(3)
+                .forEach(System.out::println);
+
+
         System.out.println("-------------------------------------------------- Stream 33 --------------------------------------------------");
+        List<Integer> nombres = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
+        List<Integer> troisPremierNombrePairAuCarre =
+                nombres.stream()
+                        .filter(n -> {
+                            System.out.println("filter " + n);
+                            return n % 2 == 0;
+                        })
+                        .map(n -> {
+                            System.out.println("map " + n);
+                            return n * n;
+                        })
+                        .limit(3)
+                        .toList();
+        System.out.println(troisPremierNombrePairAuCarre); // [4, 16, 36]
+
+
         System.out.println("-------------------------------------------------- Stream 34 --------------------------------------------------");
-        System.out.println("-------------------------------------------------- Stream 35 --------------------------------------------------");
+        List<String> list = Arrays.asList("A","B","C","D","A","B","C");
+        List<String> distinctElements = list.stream()
+                .distinct()
+                .toList();
+        System.out.println(distinctElements); // [A, B, C, D]
 
     }
 }

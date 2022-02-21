@@ -5,27 +5,38 @@ import java.util.Optional;
 public class OptionalExamples {
     public static void main(String[] args) {
 
-        String[] str = new String[10];
+        System.out.println("Exemple 1");
+        Optional<String> gender = Optional.of("MALE");
+        System.out.println(gender); // Optional[MALE]
+        System.out.println(gender.get());  //MALE
+        System.out.println(Optional.empty());  //Optional.empty
 
-        //Exemple 1   
-        System.out.println("Exemple 1 :");
-        //String lowercaseString0 = str[5].toLowerCase();
-        //System.out.println(lowercaseString0); //NullPointerException
+        System.out.println("Exemple 2");
+        String answer1 = "YES";
+        String answer2 = null;
+        System.out.println(Optional.ofNullable(answer1)); // Optional[YES]
+        System.out.println(Optional.ofNullable(answer2)); //Optional.empty
+        /*
+        System.out.println(Optional.of(answer2)); // NullPointerException
+        */
 
-        Optional<String> checkIfNull1 = Optional.ofNullable(str[5]);
-        if (checkIfNull1.isPresent()){
-            String lowercaseString1 = str[5].toLowerCase();
+        System.out.println("Exemple 3 :");
+        String[] cars = new String[4];
+        cars[0] = "Mercedes";
+        cars[1] = "Renault";
+        cars[3] = "Citroen";
+
+        Optional<String> checkIfNull = Optional.ofNullable(cars[2]);
+        if (checkIfNull.isPresent()){
+            String lowercaseString1 = cars[2].toLowerCase();
             System.out.println(lowercaseString1);
         } else {
             System.out.println("String value is not Present");
         }
 
-        //Exemple 2
-        System.out.println("Exemple 2 :");
-        str[5] = "5éme élement string dans le tableau";
-        Optional<String> checkIfNull2 = Optional.ofNullable(str[5]);
-        checkIfNull2.ifPresent(System.out::println);
-        System.out.println(checkIfNull2.get());
-
+        cars[2] = "Bugatti";
+        Optional<String> checkIfNull0 = Optional.ofNullable(cars[2]);
+        checkIfNull0.ifPresent(System.out::println);
+        System.out.println(checkIfNull0.get());
     }
 }
