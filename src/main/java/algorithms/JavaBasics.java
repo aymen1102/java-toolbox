@@ -1,13 +1,8 @@
 package algorithms;
 
 import java.nio.charset.Charset;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Formatter;
-import java.util.List;
-import java.util.TimeZone;
-import java.util.stream.IntStream;
+
 
 /*
 https://www.w3resource.com/java-exercises/basic/index.php
@@ -15,12 +10,13 @@ https://www.w3resource.com/java-exercises/basic/index.php
 public class JavaBasics {
 
     public static void main(String[] args) {
+
         question1();
         question2();
         question3();
         question4();
-        question5(25, 5);
-        question6(125, 24);
+        question5();
+        question6();
         question7(8);
         question8();
         question9();
@@ -60,8 +56,9 @@ public class JavaBasics {
         question46();
         question47();
         question48();
-        question49(20);
+        question49();
         question50();
+        question51();
     }
 
     static void question1() {
@@ -87,13 +84,17 @@ public class JavaBasics {
         System.out.println(5 + (15 / 3) * 2 - 8 % 3); //13
     }
 
-    static void question5(int a, int b) {
+    static void question5() {
         System.out.println("-------------------------------------------------- Question 5 --------------------------------------------------");
+        int a = 25;
+        int b = 5;
         System.out.println(a * b);
     }
 
-    static void question6(int a, int b) {
+    static void question6() {
         System.out.println("-------------------------------------------------- Question 6 --------------------------------------------------");
+        int a=125;
+        int b =24;
         System.out.println(a + b);
         System.out.println(a - b);
         System.out.println(a * b);
@@ -416,8 +417,9 @@ public class JavaBasics {
         System.out.println("\n");
     }
 
-    static void question49(int number) {
+    static void question49() {
         System.out.println("-------------------------------------------------- Question 49 --------------------------------------------------");
+        int number = 20;
         System.out.println("Input number " + number);
         if (number % 2 == 0)
             System.out.println(1);
@@ -442,6 +444,13 @@ public class JavaBasics {
             if (i % 3 == 0 && i % 5 == 0)
                 System.out.print(i + ",");
         }
+    }
+
+    static void question51(){
+        System.out.println("-------------------------------------------------- Question 51 --------------------------------------------------");
+        String number = "34";
+        Integer numberConverted = Integer.valueOf(number);
+        System.out.println(numberConverted);
     }
 
 }
