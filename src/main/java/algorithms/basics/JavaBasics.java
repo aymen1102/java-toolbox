@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.basics;
 
 import java.nio.charset.Charset;
 import java.time.LocalDateTime;

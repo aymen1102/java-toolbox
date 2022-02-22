@@ -1,31 +1,25 @@
-package codingame;
+package algorithms.codingame;
+
+import algorithms.codingame.model.Actor;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
-import java.lang.reflect.Array;
 import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.EmptyStackException;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.Set;
 import java.util.Stack;
-import java.util.TreeMap;
 import java.util.TreeSet;
-import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.chrono.IsoChronology;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -39,19 +33,6 @@ public class App {
 		// WaterTankMonitor monitor = new WaterTankMonitor(tank);
 		// checkMonitor
 
-		// exists
-		int[] ints = { -9, 14, 37, 102 };
-		System.out.println(App.exists(ints, 102));
-		System.out.println(App.exists(ints, 36));
-
-		// recopieElements
-		List elements = Arrays.asList("Tomate", "Oignon", "Cornichon", "Poivron");
-		List elements2 = App.recopieElementsApresJava8(elements);
-		System.out.println(elements2);
-
-		// isPalindromic
-		boolean palindromicOrNot = App.isPalindromic("acca");
-		System.out.println(palindromicOrNot);
 
 		// scanChar
 		/*
@@ -60,10 +41,7 @@ public class App {
 		char c = App.scanChar(art);
 		System.out.println("corresponds to: " + c);*/
 
-		// getActorsOlderThan
-		List<Actor> cast = Actor.createcast();
-		List<Actor> castOlderThan = Cast.getActorsOlderThan(cast, 30);
-		Cast.printActors(castOlderThan);
+
 
 		// Print
 		Reader exemple = new StringReader("Hello");
@@ -108,10 +86,6 @@ public class App {
 		// 26:00
 		// findNetworkEndpoint
 
-		// count
-		System.out.println("************************************COUNT********************************");
-		System.out.println(App.count(4));
-		System.out.println(App.count(10000));
 
 		// stack
 		// Stack stack = new Stack(100);
@@ -231,31 +205,7 @@ public class App {
 		}
 		return sum;
 	}
-	
-	static boolean exists(int[] ints, int k) {
-		for (int i = 0; i < ints.length; i++) {
-			if (ints[i] == k) {
-				return true;
-			}
-		}
-		return false;
-	}
 
-	static List recopieElementsApresJava8(List<String> elements) {
-		List elementsToReturn = elements.stream().filter(element -> !element.contains("a"))
-				.collect(Collectors.toList());
-		return elementsToReturn;
-	}
-
-	static boolean isPalindromic(String text) {
-		int n = text.length();
-		for (int i = 0; i < (n / 2); i++) {
-			if (text.charAt(i) != text.charAt(n - i - 1)) {
-				return false;
-			}
-		}
-		return true;
-	}
 /*
 	static char scanChar(String s) {
 		for(int i=65;i<91 ;i++){
@@ -298,9 +248,7 @@ public class App {
 		return String.valueOf(total);
 	}
 
-	static int count(int n) {
-		return (n * (n - 1)) / 2;
-	}
+
 
 	static boolean a(int i, int j) {
 		return i==1 || j==1 || i+j==1 ? true : false;
@@ -636,47 +584,8 @@ interface Connection {
 	void close();
 }
 
-// getActorsOlderThan
-class Actor {
-	String name;
-	LocalDate birthday;
-	public Actor(String name, LocalDate birthday) {
-		super();
-		this.name = name;
-		this.birthday = birthday;
-	}
-	public int getAge() {
-		return birthday.until(IsoChronology.INSTANCE.dateNow()).getYears();
-	}
-	public String getName() {
-		return name;
-	}
-	public static List<Actor> createcast() {
-		List<Actor> cast = new ArrayList<>();
-		cast.add(new Actor("Fred", IsoChronology.INSTANCE.date(1980, 6, 20)));
-		cast.add(new Actor("Omar", IsoChronology.INSTANCE.date(1990, 12, 10)));
-		return cast;
-	}
-	public void printActor() {
-		System.out.println(name + ", " + this.getAge());
-	}
-}
 
-class Cast {
-	interface CheckPerson {
-		boolean test(Actor p);
-	}
-	public static void printActors(List<Actor> cast) {
-		for (Actor p : cast) {
-			p.printActor();
-		}
-	}
 
-	public static List<Actor> getActorsOlderThan(List<Actor> cast, int ageLimit) {
-		List<Actor> result = cast.stream().filter(p -> p.getAge() > ageLimit).collect(Collectors.toList());
-		return result;
-	}
-}
 
 class Fruits {
 	public static void main(String[] args) {
