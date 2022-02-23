@@ -72,9 +72,7 @@ public class App {
 		};
 		new A().a(service, connection);
 
-		// isFoo
-		System.out.println(App.isFoo("foo"));
-		System.out.println(App.isFoo("toto"));
+
 
 		// getAnimalName
 		Dog sammy = new Dog("Sammy");
@@ -96,67 +94,23 @@ public class App {
 		// System.out.println(a);
 		// System.out.println(b);
 
-		// a
-		System.out.println(App.a(1, 5));
-		System.out.println(App.a(2, 3));
-		System.out.println(App.a(-3, 4));
 
-		// check
-		System.out.println("CHECK");
-		System.out.println(App.check("[()]"));
-		System.out.println(App.check("(()[])"));
-		System.out.println(App.check("(()[]]"));
-
-		// closestToZero
-		int[] numbers0 = { -9, 8, 2, -5, 7 };
-		int resut0 = App.closestToZero(numbers0);
-		System.out.println(resut0);
-
-		// findLargest
-		int[] numbers = { 1, -28, 88, 200, 7 };
-		int resut = App.findLargest(numbers);
-		System.out.println(resut);
-
-		// concat
-		String[] concat = { "f", "o", "o", "bar" };
-		System.out.println(App.concat(concat));
-
-		// isPrime
-		System.out.println(App.isPrime(1)); // false
-		System.out.println(App.isPrime(5)); // true
-		System.out.println(App.isPrime(15)); // false
-		System.out.println(App.isPrime(32)); // false
-		System.out.println(App.isPrime(67)); // true
 
 		// getposition
 		System.out.println(App.getPositionAt(3)); // -4
 		System.out.println(App.getPositionAt(100000)); // -5
 		System.out.println(App.getPositionAt(2147483647)); // 1
 
-		// sumRange
-		int[] intsSumRange = { 1, 20, 3, 10, -2, 100 };
-		int result = App.sumRange(intsSumRange);
-		System.out.println("result:" + result);
 
 		// sum
 		System.out.println(App.sum("99.35", "1.10"));
-		
-		//calc
-		int[] array = new int[] {0,1,2,3,4,5,3};
-		System.out.println(App.calc(array, 0, 1));
-		System.out.println(App.calc(array, 0, 5));
-		System.out.println(App.calc(array, 0, 0));
+
 
 		//encode
 		System.out.println("encode exercice : ");
 		System.out.println(App.encode("aabaa"));
 		System.out.println(App.encode("aabaaccccccaaaa"));
 		System.out.println(App.encode("zzzzzzzzzzz"));
-
-		//reshape
-		System.out.println("reshape exercice : ");
-		System.out.println(App.reshape(3,"abc de fghij"));
-		System.out.println(App.reshape(6, "1 23 456"));
 
 		//pi approx
 		System.out.println("pi approx exercice : ");
@@ -198,14 +152,6 @@ public class App {
 		return encodedString.toString();
 	}
 
-	public static int calc(int[] array, int n1, int n2){
-		int sum = 0;
-		for (int i = 0; i <= n2; i++) {
-			sum = sum + array[i];
-		}
-		return sum;
-	}
-
 /*
 	static char scanChar(String s) {
 		for(int i=65;i<91 ;i++){
@@ -228,9 +174,7 @@ public class App {
 	}
 */
 
-	static boolean isFoo(String param) {
-		return "foo".equals(param);
-	}
+
 
 	public static boolean isTwin(String a, String b) {
 		char[] achar = a.toLowerCase().toCharArray();
@@ -248,45 +192,6 @@ public class App {
 		return String.valueOf(total);
 	}
 
-
-
-	static boolean a(int i, int j) {
-		return i==1 || j==1 || i+j==1 ? true : false;
-	}
-
-	// faux à revoir
-	static boolean check(String str) {
-		if (str.charAt(0) == '{')
-			return false;
-
-		Stack<Character> stack = new Stack();
-
-		char c;
-		for (int i = 0; i < str.length(); i++) {
-			c = str.charAt(i);
-
-			if (c == '(')
-				stack.push(c);
-			else if (c == '{')
-				stack.push(c);
-			else if (c == ')')
-				if (stack.empty())
-					return false;
-				else if (stack.peek() == '(')
-					stack.pop();
-				else
-					return false;
-			else if (c == '}')
-				if (stack.empty())
-					return false;
-				else if (stack.peek() == '{')
-					stack.pop();
-				else
-					return false;
-		}
-		return stack.empty();
-
-	}
 
 	public static String reshape(int n, String str) {
 		// replace each space with empty string
@@ -312,46 +217,6 @@ public class App {
 				.min().getAsInt();
 	}
 
-	static int closestToZero(int[] ts) {
-		if (ts.length == 0)
-			return 0;
-		int closest = ts[0];
-		for (int i : ts) {
-			int abs = Math.abs(i);
-			int absClosest = Math.abs(closest);
-			if (abs < absClosest) {
-				closest = i;
-			} else if (abs == absClosest && closest < 0) {
-				closest = i;
-			}
-		}
-		return closest;
-	}
-
-	static int findLargest(int[] numbers) {
-		return Arrays.stream(numbers).max().getAsInt();
-	}
-
-	static String concat(String[] strings) {
-		String joined = String.join("", strings);
-		return joined;
-	}
-
-	public static boolean isPrime(int n) {
-		boolean isPrime = true;
-		if (n < 0 || n == 1) {
-			isPrime = false;
-		} else if (n != 0 && n != 1) {
-			for (int i = 2; i <= n / 2; i++) {
-				if (n != i && n % i == 0) {
-					isPrime = false;
-					break;
-				}
-			}
-		}
-		return isPrime;
-	}
-
 	public static int getPositionAt(int n) {
 		switch (n % 6) {
 		case 0:
@@ -370,15 +235,7 @@ public class App {
 		return 0;
 	}
 
-	static int sumRange(int[] ints) {
-		int sum = 0;
-		for (int i = 0; i < ints.length; i++) {
-			int n = ints[i];
-			if (n >= 10 && n <= 100)
-				sum += n;
-		}
-		return sum;
-	}
+
 
 //	class A {
 //		A() {
@@ -546,7 +403,6 @@ class UsersService { // HashMap
 		}
 		return null;
 	}
-
 }
 
 class StramPrinter {
@@ -562,7 +418,6 @@ class StramPrinter {
 
 class A {
 	void a(Service s, Connection c) {
-
 		try {
 			s.setConnection(c);
 			s.execute();
