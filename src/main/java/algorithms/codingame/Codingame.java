@@ -256,21 +256,21 @@ public class Codingame {
             else if (c == '[')
                 stack.push(c);
             else if (c == ')')
-                if (stack.empty())
+                if (stack.isEmpty())
                     return false;
-                else if (stack.peek() == '(')
+                else if(stack.peek() == '(')
                     stack.pop();
                 else
                     return false;
-            else if (c == ']')
-                if (stack.empty())
+            else if(c == ']')
+                if(stack.isEmpty())
                     return false;
-                else if (stack.peek() == '[')
+                else if(stack.peek() == '[')
                     stack.pop();
                 else
                     return false;
         }
-        return stack.empty();
+        return true;
     }
 
 

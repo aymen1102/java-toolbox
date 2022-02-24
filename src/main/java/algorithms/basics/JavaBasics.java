@@ -2,6 +2,7 @@ package algorithms.basics;
 
 import java.nio.charset.Charset;
 import java.time.LocalDateTime;
+import java.util.stream.IntStream;
 
 
 /*
@@ -10,71 +11,34 @@ https://www.w3resource.com/java-exercises/basic/index.php
 public class JavaBasics {
 
     public static void main(String[] args) {
-
-        question1();
-        question2();
-        question3();
-        question4();
-        question5();
-        question6();
-        question7(8);
-        question8();
-        question9();
-        question10();
-        question11(7.5);
-        question12(12, 100, 500);
-        question13(5.6, 8.5);
-        question14();
-        question15(5, 9);
-        question16();
-        question17(10, 11);
-        question18();
-        question19();
-        question20();
-        question21();
-        question22();
-        question23();
-        question24();
-        question25();
-        question26();
-        question27();
-        question28();
-        question29();
-        question30();
-        question31();
-        question32();
-        question33(25);
-        question37();
-        question38();
-        question39();
-        question40();
-        question41();
-        question42();
-        question43();
-        question44(5);
-        question45();
-        question46();
-        question47();
-        question48();
-        question49();
-        question50();
-        question51();
+        question1();question2();question3();question4();question5();question6();question7();question8();question9();question10();
+        question11();question12();question13();question14();question15();question16();question17();question18();question19();question20();
+        question21();question22();question23();question24();question25();question26();question27();question28();question29();question30();
+        question31();question32();question33();question37();question38();question39();question40();
+        question41();question42();question43();question44();question45();question46();question47();question48();question49();question50();
+        question51();question52();question53();question54();question55();question56();
     }
+
+
+
 
     static void question1() {
         System.out.println("-------------------------------------------------- Question 1 --------------------------------------------------");
         System.out.println("Hello !");
     }
 
+
     static void question2() {
         System.out.println("-------------------------------------------------- Question 2 --------------------------------------------------");
         System.out.println(74 + 36); //110
     }
 
+
     static void question3() {
         System.out.println("-------------------------------------------------- Question 3 --------------------------------------------------");
         System.out.println(50 / 3); //16
     }
+
 
     static void question4() {
         System.out.println("-------------------------------------------------- Question 4 --------------------------------------------------");
@@ -84,12 +48,14 @@ public class JavaBasics {
         System.out.println(5 + (15 / 3) * 2 - 8 % 3); //13
     }
 
+
     static void question5() {
         System.out.println("-------------------------------------------------- Question 5 --------------------------------------------------");
         int a = 25;
         int b = 5;
         System.out.println(a * b);
     }
+
 
     static void question6() {
         System.out.println("-------------------------------------------------- Question 6 --------------------------------------------------");
@@ -102,12 +68,15 @@ public class JavaBasics {
         System.out.println(a % b);
     }
 
-    static void question7(int a) {
+
+    static void question7() {
         System.out.println("-------------------------------------------------- Question 7 --------------------------------------------------");
+        int a = 8;
         for (int i = 0; i <= 10; i++) {
             System.out.println(a + " x " + i + " = " + a * i);
         }
     }
+
 
     static void question8() {
         System.out.println("-------------------------------------------------- Question 8 --------------------------------------------------");
@@ -117,32 +86,44 @@ public class JavaBasics {
         System.out.println(" JJ  a     a   V  a     a");
     }
 
+
     static void question9() {
         System.out.println("-------------------------------------------------- Question 9 --------------------------------------------------");
         System.out.println(((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5)));
     }
+
 
     static void question10() {
         System.out.println("-------------------------------------------------- Question 10 --------------------------------------------------");
         System.out.println(4.0 * (1 - (1.0 / 3) + (1.0 / 5) - (1.0 / 7) + (1.0 / 9) - (1.0 / 11)));
     }
 
-    static void question11(double r) {
+
+    static void question11() {
         System.out.println("-------------------------------------------------- Question 11 --------------------------------------------------");
+        double r =7.5;
         System.out.println("Perimeter is = " + 2 * Math.PI * r);  //2*pi*r
         System.out.println("Area is = " + Math.PI * r * r); //pi*r²
     }
 
-    static void question12(int x, int y, int z) {
+
+    static void question12() {
         System.out.println("-------------------------------------------------- Question 12 --------------------------------------------------");
+        int x = 12;
+        int y = 100;
+        int z = 500;
         System.out.println("The average of numbers is = " + (x + y + z) / 3);
     }
 
-    static void question13(double width, double height) {
+
+    static void question13() {
         System.out.println("-------------------------------------------------- Question 13 --------------------------------------------------");
+        double width = 5.6;
+        double height = 8.5;
         System.out.println("Area is = " + width * height);
         System.out.println("Perimeter is = " + 2 * (height + width));
     }
+
 
     static void question14() {
         System.out.println("-------------------------------------------------- Question 14 --------------------------------------------------");
@@ -155,8 +136,11 @@ public class JavaBasics {
         }
     }
 
-    static void question15(int x, int y) {
+
+    static void question15() {
         System.out.println("-------------------------------------------------- Question 15 --------------------------------------------------");
+        int x = 5;
+        int y = 9;
         System.out.println("X value before swap = " + x);
         System.out.println("Y value before swap = " + y);
         int temp = x;
@@ -165,6 +149,7 @@ public class JavaBasics {
         System.out.println("X value after swap = " + x);
         System.out.println("Y value after swap = " + y);
     }
+
 
     static void question16() {
         System.out.println("-------------------------------------------------- Question 16 --------------------------------------------------");
@@ -175,8 +160,11 @@ public class JavaBasics {
         System.out.println(" +---------------------------------------------------+ ");
     }
 
-    static void question17(long binary1, long binary2) {
+
+    static void question17() {
         System.out.println("-------------------------------------------------- Question 17 --------------------------------------------------");
+        long binary1 = 10;
+        long binary2 = 11;
         System.out.println("The first binary number: " + binary1);
         System.out.println("The second  binary number: " + binary2);
         int remainder = 0;
@@ -199,57 +187,71 @@ public class JavaBasics {
         System.out.println("\n");
     }
 
+
     static void question18() {
         System.out.println("-------------------------------------------------- Question 18 --------------------------------------------------");
     }
+
 
     static void question19() {
         System.out.println("-------------------------------------------------- Question 19 --------------------------------------------------");
     }
 
+
     static void question20() {
         System.out.println("-------------------------------------------------- Question 20 --------------------------------------------------");
     }
+
 
     static void question21() {
         System.out.println("-------------------------------------------------- Question 21 --------------------------------------------------");
     }
 
+
     static void question22() {
         System.out.println("-------------------------------------------------- Question 22 --------------------------------------------------");
     }
+
 
     static void question23() {
         System.out.println("-------------------------------------------------- Question 23 --------------------------------------------------");
     }
 
+
     static void question24() {
         System.out.println("-------------------------------------------------- Question 24 --------------------------------------------------");
     }
+
 
     static void question25() {
         System.out.println("-------------------------------------------------- Question 25 --------------------------------------------------");
     }
 
+
     static void question26() {
         System.out.println("-------------------------------------------------- Question 26 --------------------------------------------------");
     }
+
 
     static void question27() {
         System.out.println("-------------------------------------------------- Question 27 --------------------------------------------------");
     }
 
+
     static void question28() {
         System.out.println("-------------------------------------------------- Question 28 --------------------------------------------------");
     }
+
 
     static void question29() {
         System.out.println("-------------------------------------------------- Question 29 --------------------------------------------------");
     }
 
+
     static void question30() {
         System.out.println("-------------------------------------------------- Question 30 --------------------------------------------------");
     }
+
 
     static void question31() {
         System.out.println("-------------------------------------------------- Question 31 --------------------------------------------------");
@@ -260,6 +262,7 @@ public class JavaBasics {
         System.out.println("Java Vendor URL: "+System.getProperty("java.vendor.url"));
         System.out.println("Java Class Path: "+System.getProperty("java.class.path")+"\n");
     }
+
 
     static void question32() {
         System.out.println("-------------------------------------------------- Question 32 --------------------------------------------------");
@@ -275,8 +278,10 @@ public class JavaBasics {
             System.out.println(a+"!="+b);
     }
 
-    static void question33(int digit) {
+
+    static void question33() {
         System.out.println("-------------------------------------------------- Question 33 --------------------------------------------------");
+        int digit = 25;
         int sum = 0;
         while (digit != 0) {
             int n = digit % 10;
@@ -286,17 +291,21 @@ public class JavaBasics {
         System.out.println("The sum of the digits is : " + sum);
     }
 
+
     static void question34() {
         System.out.println("-------------------------------------------------- Question 34 --------------------------------------------------");
     }
+
 
     static void question35() {
         System.out.println("-------------------------------------------------- Question 35 --------------------------------------------------");
     }
 
+
     static void question36() {
         System.out.println("-------------------------------------------------- Question 36 --------------------------------------------------");
     }
+
 
     static void question37() {
         System.out.println("-------------------------------------------------- Question 37 --------------------------------------------------");
@@ -310,6 +319,7 @@ public class JavaBasics {
         }
         System.out.println(reverseChar);
     }
+
 
     static void question38() {
         System.out.println("-------------------------------------------------- Question 38 --------------------------------------------------");
@@ -336,6 +346,7 @@ public class JavaBasics {
         System.out.println("other : "+others);
     }
 
+
     static void question39() {
         System.out.println("-------------------------------------------------- Question 39 --------------------------------------------------");
         int n = 0;
@@ -354,6 +365,7 @@ public class JavaBasics {
 
     }
 
+
     static void question40() {
         System.out.println("-------------------------------------------------- Question 40 --------------------------------------------------");
         System.out.println("List of available character sets :");
@@ -363,6 +375,7 @@ public class JavaBasics {
         System.out.println("\n");
     }
 
+
     static void question41() {
         System.out.println("-------------------------------------------------- Question 41 --------------------------------------------------");
         char letter = 'Z';
@@ -370,9 +383,11 @@ public class JavaBasics {
         System.out.println("The ASCII value of "+letter+" is "+ascii);
     }
 
+
     static void question42() {
         System.out.println("-------------------------------------------------- Question 42 --------------------------------------------------");
     }
+
 
     static void question43() {
         System.out.println("-------------------------------------------------- Question 43 --------------------------------------------------");
@@ -385,26 +400,33 @@ public class JavaBasics {
                         How I wonder what you are""");
     }
 
-    static void question44(int number) {
+
+    static void question44() {
         System.out.println("-------------------------------------------------- Question 44 --------------------------------------------------");
+        int number = 5;
         System.out.println("Input number : " + number);
 
         System.out.printf("%d + %d%d + %d%d%d", number, number, number, number, number, number);
         System.out.println("\n");
     }
 
+
     static void question45() {
         System.out.println("-------------------------------------------------- Question 45 --------------------------------------------------");
     }
 
+
     static void question46() {
         System.out.println("-------------------------------------------------- Question 46 --------------------------------------------------");
+        System.out.println("Current Date time:"+ System.currentTimeMillis());
     }
+
 
     static void question47() {
         System.out.println("-------------------------------------------------- Question 47 --------------------------------------------------");
         System.out.println(LocalDateTime.now());
     }
+
 
     static void question48() {
         System.out.println("-------------------------------------------------- Question 48 --------------------------------------------------");
@@ -417,6 +439,7 @@ public class JavaBasics {
         System.out.println("\n");
     }
 
+
     static void question49() {
         System.out.println("-------------------------------------------------- Question 49 --------------------------------------------------");
         int number = 20;
@@ -426,6 +449,7 @@ public class JavaBasics {
         else
             System.out.println(0);
     }
+
 
     static void question50() {
         System.out.println("-------------------------------------------------- Question 50 --------------------------------------------------");
@@ -444,13 +468,82 @@ public class JavaBasics {
             if (i % 3 == 0 && i % 5 == 0)
                 System.out.print(i + ",");
         }
+        System.out.println();
     }
+
 
     static void question51(){
         System.out.println("-------------------------------------------------- Question 51 --------------------------------------------------");
         String number = "34";
         Integer numberConverted = Integer.valueOf(number);
         System.out.println(numberConverted);
+    }
+
+
+    static boolean question52(){
+        System.out.println("-------------------------------------------------- Question 52 --------------------------------------------------");
+        int a = 5;
+        int b = 10;
+        int c = 15;
+        boolean result;
+        System.out.println("the first number : "+a);
+        System.out.println("the seconf number : "+b);
+        System.out.println("the third number : "+c);
+        if (a + b == c || a + c == b || b + c == a)
+            result = true;
+        else
+            result = false;
+        System.out.println("the result is : "+ result);
+        return result;
+    }
+
+
+    static boolean question53(){
+        System.out.println("-------------------------------------------------- Question 53 --------------------------------------------------");
+        int a = 5;
+        int b = 10;
+        int c = 15;
+        boolean oneVerification = true;
+        boolean result;
+        if(oneVerification)
+            result =  c > b;
+        else
+            result =  c > b && b > a;
+        System.out.println("the result is : "+ result);
+        return result;
+    }
+
+
+    static void question54(){
+        System.out.println("-------------------------------------------------- Question 54  --------------------------------------------------");
+        int a = 5;
+        int b = 10;
+        int c = 15;
+        System.out.println((a % 10 == b % 10) || (a % 10 == c % 10) || (c % 10 == b % 10));
+    }
+
+
+    static void question55(){
+        System.out.println("-------------------------------------------------- Question 55  --------------------------------------------------");
+        int total = 86399;
+        System.out.println("Input seconds : "+total);
+        int seconds = total % 60;
+        int hours = total / 60; // en secondes
+        int minutes = hours % 60;
+        hours = hours / 60; // en heures
+        System.out.println(hours +":"+minutes+":"+seconds);
+    }
+
+
+    static void question56(){
+        System.out.println("-------------------------------------------------- Question 56  --------------------------------------------------");
+        int x = 5;
+        int y = 20;
+        int divisiblePar = 3;
+        long count = IntStream.range(x, y)
+                .filter(number -> number % divisiblePar == 0)
+                .count();
+        System.out.println(count);
     }
 
 }
