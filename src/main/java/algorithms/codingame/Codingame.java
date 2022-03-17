@@ -18,8 +18,8 @@ public class Codingame {
 
         System.out.println("-------------------------------------------------- recopieElements --------------------------------------------------");
         List<String> elements = Arrays.asList("Tomate", "Oignon", "Cornichon", "Poivron");
-        List<String> filtredElements = recopieElementsApresJava8(elements);
-        System.out.println(filtredElements); //[Oignon, Cornichon, Poivron]
+        List<String> filteredElements = recopieElementsApresJava8(elements);
+        System.out.println(filteredElements); //[Oignon, Cornichon, Poivron]
 
 
         System.out.println("-------------------------------------------------- isPalindromic --------------------------------------------------");
@@ -94,7 +94,7 @@ public class Codingame {
 
 
         System.out.println("-------------------------------------------------- reshape --------------------------------------------------");
-        System.out.println(reshape(3, "abc de fghij"));  // abc\ndef\nghi\nj
+        System.out.println(reshape(3, "abc de fghijb"));  // abc\ndef\nghi\njb
         System.out.println(reshape(6, "1 23 456 7"));  // 123456\n7
 
 
@@ -166,7 +166,7 @@ public class Codingame {
 
 
     /*-------------------------------------------------- calc --------------------------------------------------*/
-    public static int calc(int[] array, int n1, int n2) {
+    public static int  calc(int[] array, int n1, int n2) {
         int sum = 0;
         for (int i = n1; i <= n2; i++) {
             sum = sum + array[i];
@@ -231,15 +231,14 @@ public class Codingame {
 
 
     /*-------------------------------------------------- reshape --------------------------------------------------*/
-    static String reshape(int n, String str) {
-        String strWithoutSpaces = str.replace(" ", "");
+    static String reshape(int n, String text) {
+        String textWithoutSpaces = text.replace(" ","");
         String result = "";
-        for (int i = 0; i < strWithoutSpaces.length(); i++) {
-            if (i % n == 0 && i != 0) {
-                result = result + "\n" + strWithoutSpaces.charAt(i);
-            } else {
-                result = result + strWithoutSpaces.charAt(i);
-            }
+        for (int i = 0; i < textWithoutSpaces.length(); i++) {
+            if(i % n == 0 && i !=0)
+                result=result+"\n"+textWithoutSpaces.charAt(i);
+            else
+                result=result+textWithoutSpaces.charAt(i);
         }
         return result;
     }

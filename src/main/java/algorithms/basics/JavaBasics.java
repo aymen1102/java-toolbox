@@ -2,6 +2,8 @@ package algorithms.basics;
 
 import java.nio.charset.Charset;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.IntStream;
 
 
@@ -59,8 +61,8 @@ public class JavaBasics {
 
     static void question6() {
         System.out.println("-------------------------------------------------- Question 6 --------------------------------------------------");
-        int a=125;
-        int b =24;
+        int a=12;
+        int b =5;
         System.out.println(a + b);
         System.out.println(a - b);
         System.out.println(a * b);
@@ -157,7 +159,6 @@ public class JavaBasics {
         System.out.println("[| o o |]");
         System.out.println(" |  ^  | ");
         System.out.println(" | '-' | ");
-        System.out.println(" +---------------------------------------------------+ ");
     }
 
 
@@ -356,16 +357,16 @@ public class JavaBasics {
                     if (i != j && j != k && i != k) {
                         System.out.printf("%d%d%d,", i, j, k);
                         n++;
-
                     }
                 }
             }
         }
         System.out.println("\nTotal number of the three-digit-number is " + n);
-
     }
 
 
+    /*A character set refers to the composite number of different characters that are being used and supported by a computer software and hardware.
+    It consists of codes, bit pattern or natural numbers used in defining some particular character.*/
     static void question40() {
         System.out.println("-------------------------------------------------- Question 40 --------------------------------------------------");
         System.out.println("List of available character sets :");
@@ -418,7 +419,7 @@ public class JavaBasics {
 
     static void question46() {
         System.out.println("-------------------------------------------------- Question 46 --------------------------------------------------");
-        System.out.println("Current Date time:"+ System.currentTimeMillis());
+        System.out.format("\nCurrent Date time: %tc%n\n", System.currentTimeMillis());
     }
 
 
@@ -487,7 +488,7 @@ public class JavaBasics {
         int c = 15;
         boolean result;
         System.out.println("the first number : "+a);
-        System.out.println("the seconf number : "+b);
+        System.out.println("the second number : "+b);
         System.out.println("the third number : "+c);
         if (a + b == c || a + c == b || b + c == a)
             result = true;
@@ -539,9 +540,9 @@ public class JavaBasics {
         System.out.println("-------------------------------------------------- Question 56  --------------------------------------------------");
         int x = 5;
         int y = 20;
-        int divisiblePar = 3;
+        int divisibleBy= 3;
         long count = IntStream.range(x, y)
-                .filter(number -> number % divisiblePar == 0)
+                .filter(number -> number % divisibleBy == 0)
                 .count();
         System.out.println(count);
     }
@@ -552,37 +553,36 @@ public class JavaBasics {
         int number = 25;
         int factors = 0;
         for (int i = 1; i <= number; i++) {
-            if(number%i==0)
+            if(number%i==0){
                 factors++;
+                System.out.println(number+" is divisible by "+i);
+            }
         }
-        System.out.println(factors);
+        System.out.println("The number of factors is : "+factors);
     }
 
 
     static void question58() {
         System.out.println("-------------------------------------------------- Question 58  --------------------------------------------------");
-        String str = "the quick brown fox jumps over the lazy dog.";
-        System.out.println("Input a sentence : "+str);
-
-        str.substring(0,1).toUpperCase();
-        while (str.contains(" ")){
-            int index = str.indexOf(" ");
-            str.substring(index,index+1).toUpperCase();
-            str.replaceFirst(" ", "_");
-        }
-        System.out.println(str.replaceAll("_"," "));
     }
 
 
     static void question59() {
         System.out.println("-------------------------------------------------- Question 59  --------------------------------------------------");
-
+        String input = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. ";
+        System.out.println(input.toLowerCase());
     }
 
 
     static void question60() {
         System.out.println("-------------------------------------------------- Question 60  --------------------------------------------------");
-
+        String input = "The quick brown fox jumps over the lazy dog.";
+        List<String> wordsList = new ArrayList<>();
+        while (input.contains(" ")){
+            wordsList.add(input.substring(0,input.indexOf(" ")));
+            input = input.substring(input.indexOf(" ")+1);
+        }
+        System.out.println(wordsList.get(wordsList.size()-1));
     }
 
 }
