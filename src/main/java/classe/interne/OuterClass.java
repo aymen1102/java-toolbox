@@ -1,11 +1,12 @@
 package classe.interne;
 
 public class OuterClass {
-    public String name = "Aymen";
 
-    public static void main(String[] args) {
-        InnerClass ie = new OuterClass().new InnerClass();
-        ie.show(); // Aymen
+    public String name = "Emir";
+
+    void showFromInnerClass(){
+        InnerClass innerClass = new InnerClass();
+        innerClass.show();
     }
 
     class InnerClass{

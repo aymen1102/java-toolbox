@@ -9,11 +9,19 @@ public class PredicateNot {
         List<Integer> nombres = List.of(2,5,6,9,1);
         Predicate<Integer> nombrePairesPredicate = nombre -> nombre%2 == 0;
 
-        nombres.stream().filter(nombrePairesPredicate).forEach(System.out::println); // 2 6
-        nombres.stream().filter(nombrePairesPredicate.negate()).forEach(System.out::println); // 5 9 1
+        nombres.stream()
+                .filter(nombrePairesPredicate)
+                .forEach(System.out::println); // 2 6
+        nombres.stream()
+                .filter(nombrePairesPredicate.negate())
+                .forEach(System.out::println); // 5 9 1
 
-        nombres.stream().filter(PredicateNot::isPaire).forEach(System.out::println); // 2 6
-        nombres.stream().filter(Predicate.not(PredicateNot::isPaire)).forEach(System.out::println); // 5 9 1
+        nombres.stream()
+                .filter(PredicateNot::isPaire)
+                .forEach(System.out::println); // 2 6
+        nombres.stream()
+                .filter(Predicate.not(PredicateNot::isPaire))
+                .forEach(System.out::println); // 5 9 1
 
     }
 

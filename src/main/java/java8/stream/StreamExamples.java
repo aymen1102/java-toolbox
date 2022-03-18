@@ -72,8 +72,9 @@ public class StreamExamples {
                 .anyMatch(x -> {
                     System.out.println("anyMatch:" + x);
                     return x.startsWith("A");
-                });//map:d2 anyMatch:D2 map:a2 anyMatch:A2
+                });   //   map:d2 anyMatch:D2 map:a2 anyMatch:A2
         System.out.println(b2);  // true
+
 
         System.out.println("-------------------------------------------------- Stream 10 --------------------------------------------------");
         Stream.of("a1", "a2", "a3", "a4")
@@ -108,7 +109,12 @@ public class StreamExamples {
             System.out.println("filter:" + x);
             return true;
         }).forEach(x -> System.out.println("foreach:" + x));
-
+                                                               /* filter:a1
+                                                                foreach:a1
+                                                                filter:a4
+                                                                foreach:a4
+                                                                filter:b2
+                                                                foreach:b2*/
 
         System.out.println("-------------------------------------------------- Stream 15 --------------------------------------------------");
         List<Product> productList = new ArrayList<>();
@@ -125,6 +131,9 @@ public class StreamExamples {
                 .sorted(Comparator.comparing(Product::getName))
                 .toList();
         System.out.println(productListSorted);
+                                                /*[ Product [id=3, name=ATV, price=800.0],
+                                                Product [id=1, name=Computer, price=1200.0],
+                                                Product [id=2, name=Smartphone, price=400.0]]*/
 
 
         System.out.println("-------------------------------------------------- Stream 17 --------------------------------------------------");
@@ -143,9 +152,8 @@ public class StreamExamples {
 
 
         System.out.println("-------------------------------------------------- Stream 19 --------------------------------------------------");
-        double somme0 = productList.
-                stream().
-                mapToDouble(Product::getPrice).
+        double somme0 = productList.stream()
+                .mapToDouble(Product::getPrice).
                 sum();
         System.out.println(somme0); //2400.0
 
@@ -163,7 +171,7 @@ public class StreamExamples {
                 .map(Product::getPrice)
                 .filter(price -> price < 900)
                 .collect(Collectors.toSet());
-        System.out.println(floatSet);
+        System.out.println(floatSet);   // [400.0, 800.0]
 
 
         System.out.println("-------------------------------------------------- Stream 22 --------------------------------------------------");
@@ -187,7 +195,7 @@ public class StreamExamples {
                 .peek(System.out::println) //MOHAN JOHN VAIBHAV AMIT
                 .filter(x -> x.startsWith("J"))
                 .count();
-        System.out.println("Count of names start with J : " + count);
+        System.out.println("Count of names start with J : " + count); //1
 
 
         System.out.println("-------------------------------------------------- Stream 25 --------------------------------------------------");
@@ -212,7 +220,7 @@ public class StreamExamples {
         List<String> letters = Arrays.asList("a", "b", "c", "d");
         String lettersReduced = letters.stream()
                 .reduce("letters reduced : ", (char1, char2) -> char1 + char2);
-        System.out.println(lettersReduced); //abcd
+        System.out.println(lettersReduced); //letters reduced : abcd
 
 
         System.out.println("-------------------------------------------------- Stream 28 --------------------------------------------------");
@@ -239,13 +247,14 @@ public class StreamExamples {
                 .max(Comparator.comparing(Product::getPrice))
                 .ifPresent(System.out::println); // Product [id=1, name=Computer, price=1200.0]
 
-
         System.out.println("-------------------------------------------------- Stream 32 --------------------------------------------------");
         Stream
                 .generate(new Random()::nextInt)
                 .limit(3)
                 .forEach(System.out::println);
-
+                                                    //973443298
+                                                    //364407531
+                                                    //683047583
 
         System.out.println("-------------------------------------------------- Stream 33 --------------------------------------------------");
         List<Integer> nombres = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);

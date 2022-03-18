@@ -16,6 +16,5 @@ public class GenericsExample {
         System.out.println(integerObject2.square()); //9.0
         System.out.println(integerObject2.absEqual(doubleObject2)); //true
 
-
     }
 }

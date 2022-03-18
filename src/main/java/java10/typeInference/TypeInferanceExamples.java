@@ -10,14 +10,13 @@ public class TypeInferanceExamples {
         System.out.println(numbers);
 
 
-
         List<String> cars = List.of("Mercedes","BMW","Renault");
-        List<String> countires = List.of("Allemagne","France");
+        List<String> countries = List.of("Allemagne","France");
 
-        List<List<String>> CarsCountries = List.of(cars,countires);
+        List<List<String>> CarsCountries = List.of(cars,countries);
         System.out.println(CarsCountries); //[[Mercedes, BMW, Renault], [Allemagne, France]]
 
-        var CarsCountriesVar = List.of(cars,countires);
+        var CarsCountriesVar = List.of(cars,countries);
         System.out.println(CarsCountriesVar); //[[Mercedes, BMW, Renault], [Allemagne, France]]
     }
 }

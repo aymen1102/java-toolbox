@@ -1,4 +1,4 @@
-package mot.synchronized_;
+package thread.synchronized_;
 
 public class SynchronizedExample extends Thread{
 

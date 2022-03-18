@@ -2,10 +2,11 @@ package collections.set.hashSet;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 
 public class SetExamples {
     public static void main(String[] args) {
-        HashSet<String> numbers = new HashSet();
+        Set<String> numbers = new HashSet();
         numbers.add("One");
         numbers.add("Two");
         numbers.add("Three");

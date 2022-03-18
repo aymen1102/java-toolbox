@@ -1,8 +1,6 @@
-package general.hashtable;
+package map.hashtable;
 
 import java.util.Hashtable;
-import java.util.Map;
-import java.util.Set;
 
 public class HashTableExample {
     Integer a = 0;
@@ -19,7 +17,7 @@ public class HashTableExample {
         System.out.println(ht.entrySet()); // [1=Papa, 2=Maman, 3=Oncle, 4=Tante]
         System.out.println(ht.containsValue("Frere")); // false
 
-        for (Object h:ht.entrySet()){
+        for (Object h : ht.entrySet()){
             System.out.println(h);
         }
     }

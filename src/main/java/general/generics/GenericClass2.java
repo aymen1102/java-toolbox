@@ -12,8 +12,9 @@ public class GenericClass2<M extends Number> {
         return genericVariable.intValue() * genericVariable.doubleValue();
     }
 
-    boolean absEqual(GenericClass2<?> ob){
-        if(Math.abs(genericVariable.doubleValue()) == Math.abs(ob.genericVariable.doubleValue()))
+    boolean absEqual(GenericClass2<?> genericClass2){
+        if(Math.abs(genericVariable.doubleValue()) ==
+                Math.abs(genericClass2.genericVariable.doubleValue()))
             return true;
         else return false;
     }

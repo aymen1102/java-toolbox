@@ -20,19 +20,19 @@ public class SingletonExample {
 
 
     public static void main(String[] args) {
-        SingletonExample se0 = SingletonExample.getInstance();
-        SingletonExample se1 = SingletonExample.getInstance();
+        SingletonExample singleton0 = SingletonExample.getInstance();
+        SingletonExample singleton1 = SingletonExample.getInstance();
 
         /*
         * c'est le même hashcode cad que ça pointe vers le même espace mémoire
         * */
-        System.out.println("Hashcode de l'objet se est : "+se0.hashCode());
-        System.out.println("Hashcode de l'objet se est : "+se1.hashCode());
+        System.out.println("Hashcode de l'objet se est : "+singleton0.hashCode());
+        System.out.println("Hashcode de l'objet se est : "+singleton1.hashCode());
 
         /*
         * ça montre donc que c'est le même objet
         * */
-        if (se0==se1) {
+        if (singleton0.hashCode()==singleton1.hashCode()) {
             System.out.println(
                     "two objects point to the same memory location and  to the same object");
         }

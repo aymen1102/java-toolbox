@@ -1,12 +1,17 @@
 package java8.methodreference;
 
 public class MethodReferenceExamples {
+
     public static void saySomething(){
+
         System.out.println("Hello, this is static method ! ");
+
     }
 
-    public static void ThreadStatus(){
+    public static void threadStatus(){
+
         System.out.println("Thread is running...");
+
     }
 
     public static void main(String[] args) {
@@ -15,7 +20,8 @@ public class MethodReferenceExamples {
         sayable.say();
 
         //Exemple 2
-        Thread th = new Thread(MethodReferenceExamples::ThreadStatus);
-        th.start();
+        Thread thread = new Thread(MethodReferenceExamples::threadStatus);
+        thread.start();
     }
+
 }
