@@ -2,7 +2,7 @@ package java8.optional;
 
 import java.util.Optional;
 
-public class OptionalExamples {
+public class     OptionalExamples {
     public static void main(String[] args) {
 
         System.out.println("Exemple 1");
