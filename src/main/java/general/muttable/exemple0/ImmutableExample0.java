@@ -1,4 +1,4 @@
-package muttable.exemple0;
+package general.muttable.exemple0;
 
 public final class ImmutableExample0 { //final
     private final String name;

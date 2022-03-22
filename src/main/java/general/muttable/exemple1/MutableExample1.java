@@ -1,4 +1,4 @@
-package muttable.exemple1;
+package general.muttable.exemple1;
 
 import java.util.ArrayList;
 import java.util.List;
