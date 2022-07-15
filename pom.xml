@@ -6,7 +6,6 @@
     <groupId>com.aybaroud</groupId>
     <artifactId>java-toolbox</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>

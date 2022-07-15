@@ -1,0 +1,16 @@
+
+V
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(ÚŸØÐ
+g
+java:S4276"QRefactor this code to use the more specialised Functional Interface 'IntConsumer'(·ÑÆÒ
+V
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(·ÑÆÒ
+T
+java:S1611"9Remove the parentheses around the "integerList" parameter(—‘•åûÿÿÿÿ
+G
+java:S1602",Remove useless curly braces around statement(—‘•åûÿÿÿÿ
+G
+java:S1602",Remove useless curly braces around statement(ð¬Æ˜ýÿÿÿÿ
+Q
+java:S1612 ";Replace this lambda with method reference 'String::length'.(†óÁÍ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(²±Ê£

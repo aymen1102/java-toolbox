@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../crud-rest-api/pom.xml" />
+        <option value="$PROJECT_DIR$/../junit-testing/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-spring-cloud-eureka-gateway/pom.xml.xml" />
+        <option value="$PROJECT_DIR$/../microservices-spring-boot-cloud/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-data-jpa-docker/pom.xml" />
+        <option value="$PROJECT_DIR$/../rest-api-mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/../hibernate-entity-manager-spring-data-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot-docker/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-spring-cloud-eureka-gateway/billing-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservices-spring-cloud-eureka-restemplate-webclient-openfeign/pom.xml" />
+        <option value="$PROJECT_DIR$/../microservice-spring-cloud-eureka-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-mvc-thymleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-security-mvc-jwt-keycloak/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-security-jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-security-mvc-thymleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/../junit-mockito-testing/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK" />
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>

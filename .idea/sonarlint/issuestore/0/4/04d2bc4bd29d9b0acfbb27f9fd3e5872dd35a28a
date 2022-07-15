@@ -1,0 +1,8 @@
+
+o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¹À±
+u
+java:S1450"_Remove the "modifiableString" field and declare it as a local variable in the relevant methods.(™°­ú
+E
+java:S1068"/Remove this unused "finalString" private field.(¹À±
+Ã
+java:S1598"§This file "FinalExamples.java" should be located in "mot" directory, not in "C:\Users\33625\OneDrive\Desktop\projects\workspace\java-toolbox\src\main\java\mot\final_".(îùÁûÿÿÿÿ
