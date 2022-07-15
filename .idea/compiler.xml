@@ -23,6 +23,7 @@
         <module name="gateway-service" />
         <module name="fraud" />
         <module name="spring-security-mvc-thymleaf" />
+        <module name="devops-git-jenkins-docker-dockerhub-kubernetees" />
         <module name="rest-api-mongodb" />
         <module name="junit-mockito-testing" />
         <module name="springboot-docker" />
@@ -33,6 +34,7 @@
       <module name="billing-service" target="16" />
       <module name="customer" target="16" />
       <module name="customer-service" target="16" />
+      <module name="devops-git-jenkins-docker-dockerhub-kubernetees" target="16" />
       <module name="eureka-server" target="16" />
       <module name="eureka-server (1)" target="16" />
       <module name="fraud" target="16" />
@@ -62,6 +64,7 @@
       <module name="billing-service" options="" />
       <module name="customer" options="" />
       <module name="customer-service" options="" />
+      <module name="devops-git-jenkins-docker-dockerhub-kubernetees" options="-parameters" />
       <module name="eureka-server" options="" />
       <module name="eureka-server (1)" options="" />
       <module name="fraud" options="" />

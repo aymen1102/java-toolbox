@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/../spring-security-jwt/pom.xml" />
         <option value="$PROJECT_DIR$/../spring-security-mvc-thymleaf/pom.xml" />
         <option value="$PROJECT_DIR$/../junit-mockito-testing/pom.xml" />
+        <option value="$PROJECT_DIR$/../devops-git-jenkins-docker-dockerhub-kubernetees/pom.xml" />
       </list>
     </option>
   </component>

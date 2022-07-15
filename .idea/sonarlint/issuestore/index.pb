@@ -134,3 +134,5 @@ _
 /src/main/java/algorithms/basics/JavaBasics.java,b\5\b5e180753eb71a62b5ce9c0782fec16483c8ab42
 _
 /src/main/java/java12/switch_/SwitchExample.java,9\a\9addb47b166f3a68783ee9ad580b62f9af9afbea
+a
+1src/main/java/algorithms/codingame/Codingame.java,1\a\1a19ec5e418dad5a5ce1f098ec27365a8163ea67
