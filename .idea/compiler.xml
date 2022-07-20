@@ -43,15 +43,14 @@
       <module name="inventory-service" target="16" />
       <module name="java-toolbox" target="16" />
       <module name="junit-mockito-testing" target="16" />
-      <module name="junit-testing" target="16" />
       <module name="microservice-spring-cloud-eureka-gateway" target="1.5" />
-      <module name="microservices-spring-boot-cloud" target="11" />
+      <module name="microservices-spring-boot-cloud" target="16" />
       <module name="microservices-spring-cloud-eureka-restemplate-webclient-openfeign" target="1.5" />
       <module name="products-app-mvc" target="16" />
       <module name="rest-api-mongodb" target="16" />
       <module name="restservicedemodemo" target="16" />
       <module name="spring-data-jpa-docker" target="16" />
-      <module name="spring-mvc-thymleaf" target="11" />
+      <module name="spring-mvc-thymleaf" target="16" />
       <module name="spring-security-jwt" target="16" />
       <module name="spring-security-mvc-jwt-keycloak" target="1.5" />
       <module name="spring-security-mvc-thymleaf" target="16" />
@@ -72,7 +71,6 @@
       <module name="hibernate-entity-manager-spring-data-jpa" options="-parameters" />
       <module name="inventory-service" options="" />
       <module name="junit-mockito-testing" options="-parameters" />
-      <module name="junit-testing" options="-parameters" />
       <module name="rest-api-mongodb" options="-parameters" />
       <module name="restservicedemodemo" options="-parameters" />
       <module name="spring-data-jpa-docker" options="-parameters" />
