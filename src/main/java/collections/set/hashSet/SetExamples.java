@@ -1,8 +1,6 @@
 package collections.set.hashSet;
 
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 public class SetExamples {
     public static void main(String[] args) {
@@ -28,5 +26,20 @@ public class SetExamples {
 
         numbers.clear();
         System.out.println(numbers.isEmpty()); // true
+
+        Set<Integer> numbersSet = new HashSet();
+        numbersSet.add(1);
+        numbersSet.add(4);
+        numbersSet.add(3);
+        numbersSet.add(2);
+
+        int n = numbersSet.size();
+        List<Integer> aList = new ArrayList<Integer>();
+        for (int x : numbersSet)
+            aList.add(x);
+
+        Collections.sort(aList);
+        System.out.println(aList);
+        
     }
 }

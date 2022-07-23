@@ -279,6 +279,5 @@ public class StreamExamples {
                 .distinct()
                 .toList();
         System.out.println(distinctElements); // [A, B, C, D]
-
     }
 }

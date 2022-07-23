@@ -43,12 +43,12 @@ public class     OptionalExamples {
             String lowercaseString1 = cars[2].toLowerCase();
             System.out.println(lowercaseString1);
         } else {
-            System.out.println("String value is not Present");
+            System.out.println("String value is not Present"); //String value is not Present
         }
 
         cars[2] = "Bugatti";
         Optional<String> checkIfNull0 = Optional.ofNullable(cars[2]);
-        checkIfNull0.ifPresent(System.out::println);
-        System.out.println(checkIfNull0.get());
+        checkIfNull0.ifPresent(System.out::println); //Bugatti
+        System.out.println(checkIfNull0.get());        //Bugatti
     }
 }

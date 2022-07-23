@@ -3,14 +3,16 @@ package java8.defautmethods;
 public class Bar implements Foo{
 
     public static void main(String[] args) {
+        // call from interface instance
+        Foo foo = new Bar();
+        foo.maMethodeParDefaut();
+        foo.display();
 
-        Foo.maMethodeParDefaut();
-
+        // call from the interface
+        Foo.maMethodeStatic();
     }
 
-    @Override
     public void display() {
-
+        System.out.println("Ici j'ai implémenté une méthode");
     }
-
 }
