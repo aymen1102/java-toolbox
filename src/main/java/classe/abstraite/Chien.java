@@ -10,4 +10,5 @@ public class Chien extends  AnimalCompagnie{
     public void parler() {
         System.out.println("HAAAAB HAAAAAB");
     }
+
 }

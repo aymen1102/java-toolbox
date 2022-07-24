@@ -1,6 +1,7 @@
 package classe.abstraite;
 
 
+/**Une classe ne peut avoir qu'un seul parent abstrait*/
 public class Chat extends AnimalCompagnie{
 
     public Chat(String nom) {
@@ -11,4 +12,6 @@ public class Chat extends AnimalCompagnie{
     public void parler() {
         System.out.println("Miiiiiaouuuu");
     }
+
+
 }
