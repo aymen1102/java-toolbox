@@ -1,25 +1,0 @@
-
-Z
-java:S1854"8Remove this useless assignment to local variable "name".(ÊãÅÐøÿÿÿÿ8±šçñö/
-]
-java:S1854
-";Remove this useless assignment to local variable "symblol".(¨õ¡Šýÿÿÿÿ8²šçñö/
-W
-java:S1854"5Remove this useless assignment to local variable "f".(Ÿý¥÷ûÿÿÿÿ8³šçñö/
-R
-java:S1854"5Remove this useless assignment to local variable "y".(²×âË8³šçñö/
-W
-java:S1854"5Remove this useless assignment to local variable "x".(û„‰²üÿÿÿÿ8´šçñö/
-H
-java:S1481"&Remove this unused "x" local variable.(û„‰²üÿÿÿÿ8·šçñö/
-C
-java:S1481"&Remove this unused "y" local variable.(²×âË8¸šçñö/
-H
-java:S1481"&Remove this unused "f" local variable.(Ÿý¥÷ûÿÿÿÿ8¸šçñö/
-C
-java:S1481	"&Remove this unused "z" local variable.(§·ÅÙ8¹šçñö/
-N
-java:S1481
-",Remove this unused "symblol" local variable.(¨õ¡Šýÿÿÿÿ8ºšçñö/
-K
-java:S1481")Remove this unused "name" local variable.(ÊãÅÐøÿÿÿÿ8ºšçñö/

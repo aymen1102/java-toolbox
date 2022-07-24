@@ -18,6 +18,9 @@ public class SetExamples {
             System.out.println(iterator.next()); // One Two Three
         }
 
+        for (String myNumber : numbers)
+            System.out.println(myNumber);  // One Two Three
+
         System.out.println("numbers contains the number three : " + numbers.contains("Three")); // true
         System.out.println("numbers size is : " + numbers.size()); // 3
 
@@ -33,13 +36,12 @@ public class SetExamples {
         numbersSet.add(3);
         numbersSet.add(2);
 
-        int n = numbersSet.size();
         List<Integer> aList = new ArrayList<Integer>();
         for (int x : numbersSet)
             aList.add(x);
 
         Collections.sort(aList);
-        System.out.println(aList);
+        System.out.println(aList);  // [1, 2, 3, 4]
         
     }
 }

@@ -2,8 +2,8 @@ package designpattern.factory;
 
 public interface Car {
 
-    public abstract void run();
+      void run();
 
-    public abstract void stop();
+      void stop();
 
 }

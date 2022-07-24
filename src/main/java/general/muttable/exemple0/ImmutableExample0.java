@@ -1,6 +1,7 @@
 package general.muttable.exemple0;
 
 public final class ImmutableExample0 { //final
+
     private final String name;
 
     public ImmutableExample0(String name) {
@@ -15,4 +16,5 @@ public final class ImmutableExample0 { //final
         ImmutableExample0 ie = new ImmutableExample0("Amine");
         System.out.println(ie.getName()); //Amine
     }
+
 }

@@ -18,7 +18,7 @@ public class ExceptionExample {
             System.out.println(yearOfBirth);
         } catch (InputMismatchException e){
             System.out.println("Your birth year is wrong !");
-            //e.getStackTrace();
+            e.printStackTrace();
         }  finally {
             System.out.println("ok");
         }
