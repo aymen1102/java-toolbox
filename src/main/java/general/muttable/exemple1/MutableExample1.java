@@ -12,11 +12,11 @@ public class MutableExample1 {
         names.add("Hatem");
         names.add("Fakhri");
 
-        doChange(names);
+        addName(names);
         System.out.println(names); // [Aymen, Hatem, Fakhri, J'ajoute un nom !]
     }
 
-    private static void doChange(List<String> names) {
+    private static void addName(List<String> names) {
         names.add("J'ajoute un nom !");
     }
 

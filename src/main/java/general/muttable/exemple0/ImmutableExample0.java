@@ -14,7 +14,9 @@ public final class ImmutableExample0 { //final
 
     public static void main(String[] args) {
         ImmutableExample0 ie = new ImmutableExample0("Amine");
-        System.out.println(ie.getName()); //Amine
+
+        // System.out.println(ie.name = "Aymen");  //you can't change final attribute
+        System.out.println(ie.getName());  // Amine
     }
 
 }

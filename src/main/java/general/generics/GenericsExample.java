@@ -14,7 +14,7 @@ public class GenericsExample {
         GenericClass2<Integer> integerObject2 = new GenericClass2<>(3);
         GenericClass2<Double> doubleObject2 = new GenericClass2<>(3.0);
 
-        System.out.println(integerObject2.square()); //  9.0
+        System.out.println(doubleObject2.square()); //  9.0
         System.out.println(integerObject2.absEqual(doubleObject2)); //  true
 
     }

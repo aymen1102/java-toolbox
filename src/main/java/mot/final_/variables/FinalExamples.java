@@ -1,4 +1,4 @@
-package mot;
+package mot.final_.variables;
 
 class FinalExamples {
 

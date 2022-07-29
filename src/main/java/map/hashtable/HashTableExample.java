@@ -2,6 +2,12 @@ package map.hashtable;
 
 import java.util.Hashtable;
 
+/**
+ * HashTable est une table de hachage appartient au package util.list et implémente l'interface Map.
+ * Elle est représentée par un tableau de liste.
+ * Chaque liste est identifiée par sa clé donc elle permet de créer une collection d'objets associés à des noms.
+ * Elle est similaire à HashMap mais elle est synchronisée.
+ */
 public class HashTableExample {
     Integer a = 0;
     public static void main(String[] args) {
