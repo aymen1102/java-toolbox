@@ -1,5 +1,0 @@
-
-t
-java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(Å¨Âøÿÿÿÿ8ŠÇ¿ˆò/
-€
-java:S1488"^Immediately return this expression instead of assigning it to the temporary variable "result".(Å¨Âøÿÿÿÿ8Êè¿ˆò/
