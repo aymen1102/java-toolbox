@@ -1,4 +1,4 @@
-package java11.writeString;
+package java11.filesAPI.writeString;
 
 import java.io.IOException;
 import java.nio.file.Files;

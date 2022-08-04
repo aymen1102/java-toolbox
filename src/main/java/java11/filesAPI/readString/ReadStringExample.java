@@ -1,4 +1,4 @@
-package java11.readString;
+package java11.filesAPI.readString;
 
 import java.io.IOException;
 import java.nio.file.Files;
