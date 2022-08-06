@@ -1,6 +1,5 @@
-package java8.consumer;
+package java8.interfacefonctionelle.consumer;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;

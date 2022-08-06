@@ -1,12 +1,11 @@
 package classe.abstraite;
 
 
-import classe.Interface.Animal;
 
 /**
 Une classe abstraite peut étendre une autre classe Java et implémenter plusieurs interfaces Java.
  */
-public abstract class AnimalCompagnie implements Animal {
+public abstract class AnimalCompagnie implements Animal{
 
     /**Une classe Java abstraite peut avoir des membres de classe private et protected*/
     private String nom;

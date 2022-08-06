@@ -1,6 +1,5 @@
 package java8.stream;
 
-import java8.stream.model.Product;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.*;

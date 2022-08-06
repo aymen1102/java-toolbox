@@ -1,4 +1,4 @@
-package java8.interfacefonctionelle.exemple0;
+package java8.interfacefonctionelle.examples.exemple0;
 
 @FunctionalInterface
 public interface MyFunctionalInterface {

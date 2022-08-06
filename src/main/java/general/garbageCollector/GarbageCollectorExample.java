@@ -1,4 +1,4 @@
-package general.garbagecollector;
+package general.garbageCollector;
 
 public class GarbageCollectorExample {
 

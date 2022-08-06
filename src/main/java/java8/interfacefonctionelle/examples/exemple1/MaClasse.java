@@ -1,4 +1,4 @@
-package java8.interfacefonctionelle.exemple1;
+package java8.interfacefonctionelle.examples.exemple1;
 
 public class MaClasse {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package general.user_input;
+package general.userInput;
 
 import java.util.Scanner;
 
