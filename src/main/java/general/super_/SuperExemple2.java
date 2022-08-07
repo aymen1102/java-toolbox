@@ -1,4 +1,4 @@
-package mot.super_;
+package general.super_;
 
 class E {
     E(){

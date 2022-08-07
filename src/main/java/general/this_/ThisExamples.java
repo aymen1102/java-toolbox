@@ -1,4 +1,4 @@
-package mot.this_;
+package general.this_;
 
 public class ThisExamples {
 

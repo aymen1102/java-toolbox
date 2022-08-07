@@ -1,5 +1,6 @@
-public class BasesJava {
+package general.equal;
 
+public class EqualExample {
     public static void main(String[] args) {
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //   Différence entre == et equal()                                                                                                      //
@@ -15,5 +16,4 @@ public class BasesJava {
         //char type
         System.out.println('a'=='a'); //true
     }
-
 }

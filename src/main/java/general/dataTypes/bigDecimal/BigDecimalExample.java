@@ -1,7 +1,9 @@
-package general.bigDecimal;
+package general.dataTypes.bigDecimal;
 
 import java.math.BigDecimal;
-/** The BigDecimal class provides operations on double numbers for arithmetic, scale handling, rounding, comparison,
+/**.NET and Java also have Decimal/BigDecimal class that has higher precision than double.
+ * For more accurate calculations like in financial and banking applications, Decimal is used because it further reduces rounding errors.
+ * The BigDecimal class provides operations on double numbers for arithmetic, scale handling, rounding, comparison,
  * format conversion and hashing. It can handle very large and very small floating point numbers with great precision
  * but compensating with the time complexity a bit.
  A BigDecimal consists of a random precision integer unscaled value and a 32-bit integer scale. If greater than or equal to zero,
