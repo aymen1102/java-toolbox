@@ -1,5 +1,11 @@
 package general.loops.switch_;
 
+/**
+ * This is how it works
+ * The switch expression is evaluated once.
+ * The value of the expression is compared with the values of each case.
+ * If there is a match, the associated block of code is executed.
+ */
 public class SwitchExamples {
     public static void main(String[] args) {
         int day = 4;
@@ -22,9 +28,8 @@ public class SwitchExamples {
             case 6:
                 System.out.println("Saturday");
                 break;
-            case 7:
+            default:
                 System.out.println("Sunday");
-                break;
         }
     }
 }

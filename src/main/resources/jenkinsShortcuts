@@ -1,15 +1,19 @@
-- Auto correction: alt+enter
-- Create variable from selected code: ctrl+alt+V
-- Open/Close projects window: alt+1
-- Find attribute declaration: ctrl+B
-- Rename/Refactor code in the whole class: ctrl+alt+shift+T
+- run anywhere : ctrl+ctrl
 
 - Most recent opened files: ctrl+E
-- Search classes: shift + shift
+- Find attribute declaration: ctrl+B
+- Close tab: ctrl+F4
+
+- Create variable from selected code: ctrl+alt+V
+- Format code: ctrl + alt +L
+- Rename/Refactor code in the whole class: ctrl+alt+shift+T
 - Search in the code: ctrl+shift+F
 
-- Show all places of variable: alt + F7
-- Format code: ctrl + alt +L
-- Jump into errors when multiple errors: F2
-- run anywhere: ctrl+ctrl
+- Search classes: shift + shift
 
+- Jump into errors when multiple errors: F2
+
+- Auto correction: alt+enter
+- generate: alt+insert
+- Open/Close projects window: alt+1
+- Show all places of variable: alt + F7

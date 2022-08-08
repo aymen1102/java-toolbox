@@ -7,7 +7,7 @@ public class Elephant implements Animal{
         elephant.marcher();
         elephant.manger();
 
-        dormir();  // dormir() is a static method
+        // dormir();  // dormir() is a static method
     }
 
     @Override
