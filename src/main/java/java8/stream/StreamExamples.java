@@ -264,7 +264,7 @@ public class StreamExamples {
                             return n % 2 == 0;
                         })
                         .map(n -> {
-                            System.out.println("map " + n);
+                            System.out.println("general/map " + n);
                             return n * n;
                         })
                         .limit(3)
