@@ -1,4 +1,4 @@
-package general.variables.nonPrimitive.bigDecimal;
+package general.variables.reference.bigDecimal;
 
 import java.math.BigDecimal;
 /**.NET and Java also have Decimal/BigDecimal class that has higher precision than double.

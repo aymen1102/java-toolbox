@@ -1,4 +1,4 @@
-package general.ternaryOperator;
+package general.operators.ternaryOperator;
 
 public class TernaryOperator {
     public static void main(String[] args) {

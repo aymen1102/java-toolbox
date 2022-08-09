@@ -1,4 +1,4 @@
-package general.math;
+package general.operators.math;
 
 public class MathExample {
     public static void main(String[] args) {

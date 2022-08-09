@@ -1,4 +1,4 @@
-package general.variables.nonPrimitive.String;
+package general.variables.reference.String;
 
 /**
  * Java Strings are Immutable
@@ -24,6 +24,8 @@ public class StringExample {
         System.out.println(first.substring(3));  //lo
         // contains
         System.out.println(first+" contains : "+first.contains("Hel"));  // Hello  contains : true
+        // charAt
+        System.out.println("charAt[3]"+ first.charAt(3));
         // use the escape character
         String example = "This is the \"String\" class.";  // This is the "String" class.
         System.out.println(example);

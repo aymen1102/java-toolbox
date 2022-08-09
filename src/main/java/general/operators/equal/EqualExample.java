@@ -1,4 +1,4 @@
-package general.equal;
+package general.operators.equal;
 
 public class EqualExample {
     public static void main(String[] args) {

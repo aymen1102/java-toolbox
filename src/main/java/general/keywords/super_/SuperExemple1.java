@@ -1,4 +1,4 @@
-package general.super_;
+package general.keywords.super_;
 
 class C{
     void show(){
