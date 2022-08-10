@@ -1,5 +1,4 @@
-package general.classe.inner;
-
+package general.classe.nested;
 public class OuterClass {
 
     public String name = "Emir";

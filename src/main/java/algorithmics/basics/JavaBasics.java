@@ -706,4 +706,12 @@ public class JavaBasics {
 
         // print sun numbers in english
     }
+
+    static void question134(){
+        int n = 5;
+        int[] steps = new int[0];
+
+        System.out.println("Distinct ways can you climb to the top: "+steps);
+    }
+
 }
