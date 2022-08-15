@@ -73,18 +73,59 @@ public class JavaBasics {
         question58();
         question59();
         question60();
-//        question61();question62();question63();question64();question65();question66();question67();question68();question69();question70();
-//        question71();question72();question73();question74();question75();question76();question77();question78();question79();question80();
-//        question81();question82();
+        question61();
+        question62();
+        question63();
+        question64();
+        question65();
+        question66();
+        question67();
+        question68();
+        question69();
+        question70();
+        question71();
+        question72();
+        question73();
+        question74();
+        question75();
+        question76();
+        question77();
+        question78();
+        question79();
+        question80();
+        question81();
+        question82();
         question83();
         question84();
         question85();
         question86();
         question87();
-        //question88();question89();question90();
-//        question91();question92();question93();question94();question95();question96();question97();question98();question99();question100();
-//        question101();question102();question103();question104();question105();question106();question107();question108();question109();question110();
+        question88();
+        question89();
+        question90();
+        question91();
+        question92();
+        question93();
+        question94();
+        question95();
+        question96();
+        question97();
+        question98();
+        question99();
+        question100();
+        question101();
+        question102();
+        question103();
+        question104();
+        question105();
+        question106();
+        question107();
+        question108();
+        question109();
+        question110();
     }
+
+
 
 
     static void question1() {
@@ -243,7 +284,7 @@ public class JavaBasics {
         if (remainder != 0) {
             sum[i++] = remainder;
         }
-        i = i - 1;
+        i--;
         System.out.print("Sum of two binary numbers is = ");
         while (i >= 0) {
             System.out.print(sum[i--]);
@@ -254,16 +295,59 @@ public class JavaBasics {
 
     static void question18() {
         System.out.println("-------------------------------------------------- Question 18 --------------------------------------------------");
+        /**int binary1 = 110;
+        int binary2 = 101;
+        int result = 0;
+        System.out.println("The first binary number :"+binary1);
+        System.out.println("The second binary number :"+binary2);
+        int[] sum = new int[20];
+        int i = 0;
+        int remainder = 0;
+        while (binary1 !=0 || binary2 !=0){
+            sum[i++]= (binary1 % 10 + binary2 % 10 + remainder) % 2;
+            remainder =  (binary1 % 10 + binary2 % 10 + remainder) / 2;
+            binary1 = binary1 / 10;
+            binary2 = binary2 / 10;
+        }
+        if(remainder != 0)
+            sum[i++] = remainder;
+        i--;
+        while (i>=0){
+            result = result * 10 + sum[i--];
+        }
+        System.out.println("Product of two binary numbers : "+result);*/
     }
 
 
     static void question19() {
         System.out.println("-------------------------------------------------- Question 19 --------------------------------------------------");
+        int decimalNumber = 21;
+        int i = 0;
+        int[] binaryNumber = new int[20];
+        System.out.println("Convert decimal number "+decimalNumber+" to binary : ");
+        while (decimalNumber != 0){
+            binaryNumber[i++] = decimalNumber % 2;
+            decimalNumber = decimalNumber / 2;
+        }
+        i--;
+        while (i>=0)
+            System.out.print(binaryNumber[i--]);         // 10101
+        System.out.println("\n");
     }
 
 
     static void question20() {
         System.out.println("-------------------------------------------------- Question 20 --------------------------------------------------");
+        int decimalNumber = 1256;
+        int remainder;
+        String hexadecimalNumber="";
+        char[] hexadecimal ={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
+        while (decimalNumber!=0){
+            remainder = decimalNumber % 16;
+            hexadecimalNumber = hexadecimal[remainder] + hexadecimalNumber;
+            decimalNumber = decimalNumber / 16;
+        }
+        System.out.println(hexadecimalNumber);
     }
 
 
@@ -274,6 +358,17 @@ public class JavaBasics {
 
     static void question22() {
         System.out.println("-------------------------------------------------- Question 22 --------------------------------------------------");
+        int binaryNumber = 10101;
+        int decimalNumber = 0;
+        int remainder;
+        int i = 1;
+        while (binaryNumber!=0){
+            remainder = decimalNumber % 10;
+            decimalNumber = decimalNumber + remainder * i;
+            binaryNumber = binaryNumber / 10;
+            i = i * 2;
+        }
+        System.out.println("Convert binary number to decimal : "+ decimalNumber);
     }
 
 
@@ -648,6 +743,135 @@ public class JavaBasics {
         System.out.println(wordsList.get(wordsList.size() - 1));
     }
 
+    private static void question61() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+        String input = "Aymen";
+        char[] inputChars = input.toCharArray();
+        String output ="";
+        int i = inputChars.length - 1;
+        while (i >= 0){
+            output += inputChars[i];
+            i--;
+        }
+        System.out.println("Reverse word : "+output);
+    }
+    private static void question62() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+    private static void question63() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question64() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question65() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question66() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question67() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question68() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question69() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question70() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question71() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question72() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question73() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question74() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question75() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question76() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question77() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question78() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question79() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question80() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question81() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question82() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+
     static void question83() {
         System.out.println("-------------------------------------------------- Question 83  --------------------------------------------------");
         int[] array1 = {1, 3, -5, 4};
@@ -707,11 +931,122 @@ public class JavaBasics {
         // print sun numbers in english
     }
 
-    static void question134(){
-        int n = 5;
-        int[] steps = new int[0];
+    private static void question88() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
 
-        System.out.println("Distinct ways can you climb to the top: "+steps);
+    }
+
+    private static void question89() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question90() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question91() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question92() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question93() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question94() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question95() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question96() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question97() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question98() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+
+    }
+
+    private static void question99() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question100() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question101() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question102() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question103() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question104() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question105() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question106() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question107() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question108() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question109() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
+    }
+
+    private static void question110() {
+        System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
+
     }
 
 }

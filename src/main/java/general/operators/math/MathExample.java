@@ -9,5 +9,6 @@ public class MathExample {
         System.out.println(Math.PI);       // 3.141592653589793
         System.out.println(Math.log(5));   // 1.6094379124341003
         System.out.println(Math.random());
+        System.out.println(Math.pow(2,3)); // 8.0
     }
 }

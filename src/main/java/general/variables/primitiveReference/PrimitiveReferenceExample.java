@@ -10,6 +10,10 @@ package general.variables.primitiveReference;
  */
 public class PrimitiveReferenceExample {
     public static void main(String[] args) {
+        int primitive = 10; // Single value container
+        Integer reference = new Integer(54); // Boxed (Constructing the object)
+        int primitiveFromReference = reference.intValue(); // Unboxing
+        System.out.println(primitiveFromReference);
         /**
          * Variables in Java are classified into primitive and reference variables.
          * From the programmer's perspective, a primitive variable's information is
