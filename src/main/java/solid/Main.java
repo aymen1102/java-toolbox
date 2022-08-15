@@ -8,19 +8,31 @@ import java.util.List;
  * and not be filled with excessive functionality
  *
  * Open Closed : Classes should be open for extension,
- * closed for modification
+ * closed for modification, you should not have to rewrite
+ * an existing class for implementing new feature
  *
- * Liskov Substitution
+ * Liskov Substitution : This means that every subclass or
+ * derived class should be substituble for their
+ * base or parent class
+ *
+ * Interface segregation : Interface should not force classes to
+ * implement what they can't do. Large interfaces should be divided
+ * into small ones.
+ *
+ * Dependency Inversion : Components should depend on abstraction
+ * not on concrete
  */
 public class Main {
     public static void main(String[] args) {
-        AreaCalculator areaCalculator = new AreaCalculator();
+        IAreaCalculator areaCalculator = new AreaCalculator();
         Circle circle = new Circle(10);
         Square square = new Square(10);
-        ShapesPrinter printer = new ShapesPrinter();
-        List<Object> shapes = List.of(circle,square);
+        Cube cube = new Cube();
+        Shape noShape = new NoShape();
+        ShapesPrinter printer = new ShapesPrinter(areaCalculator);
+        List<Shape> shapes = List.of(circle,square,cube);
         int sum = areaCalculator.sum(shapes);
-        System.out.println(printer.json(sum));
-        System.out.println(printer.csv(sum));
+        System.out.println(printer.json(shapes));
+        System.out.println(printer.csv(shapes));
     }
 }
