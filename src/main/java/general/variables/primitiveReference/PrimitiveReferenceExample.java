@@ -27,16 +27,18 @@ public class PrimitiveReferenceExample {
         int b = a;
         a = 100;
         System.out.println("a = "+a+" | b = "+b);       //a = 100 | b = 10
-
-        // the object Person("Aymen") stored at a specific address in the memory
-        // the reference aymen is stored in another address in the memory
+        /**
+        The object Person("Aymen") stored at a specific address in the memory
+        The reference aymen is stored in another address in the memory */
         Person aymen = new Person("Aymen");
-        // the reference amine is stored in another address in the memory
-        // both references amine and aymen point to the same object
+
+        /**
+         The reference amine is stored in another address in the memory
+         both references amine and aymen point to the same object */
         Person amine = aymen;
-        System.out.println("Before changing alex");
+        System.out.println("Before changing Ahmed");
         System.out.println(aymen.name+" - "+amine.name);  // Aymen - Aymen
-        System.out.println("After changing alex");
+        System.out.println("After changing Ahmed");
         aymen.name = "Ahmed";
         System.out.println(aymen.name+" - "+amine.name);  // Ahmed - Ahmed
     }

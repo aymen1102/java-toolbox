@@ -11,6 +11,7 @@ public class ThisExamples {
     public static void main(String[] args) {
         ThisExamples thisExamples = new ThisExamples();
         System.out.println(thisExamples.setNom("BAROUDI")); //AYMEN
+        System.out.println();
     }
 
 }
