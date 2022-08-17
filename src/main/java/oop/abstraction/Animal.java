@@ -14,10 +14,9 @@ package oop.abstraction;
 abstract class Animal {
     public abstract void eat();
     public void sleep(){
-        System.out.println("Sleeping...");
+        System.out.println("Sleeping from abstract class");
     }
-
-    public static void main(String[] args) {
-        //Animal animal = new Animal();  // it is not possible to create an object of the Animal class
+    static void walk(){
+        System.out.println("Static walking from abstract class");
     }
 }

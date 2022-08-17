@@ -1,12 +1,9 @@
 package general.thread;
 
 public class MultiThreadingExample extends Thread{
+    @Override
     public void run(){
-        try {
-            System.out.println("Thread "+ currentThread().getId()+" is running !");
-        } catch (Exception exception){
-            System.out.println(exception);
-        }
+        System.out.println("Thread "+ currentThread().getId()+" is running !");
     }
 
     public static void main(String[] args) {

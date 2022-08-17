@@ -1,5 +1,8 @@
 package general.garbageCollector;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GarbageCollectorExample {
 
     public static void main(String[] args) {
@@ -21,7 +24,8 @@ public class GarbageCollectorExample {
     }
 
     /**
-     * he finalize() method is invoked each time before the object is garbage collected. This method can be used to perform cleanup processing.
+     * he finalize() method is invoked each time before the object is garbage collected.
+     * This method can be used to perform cleanup processing.
      * This method is defined in Object class
      */
     public void finalize(){

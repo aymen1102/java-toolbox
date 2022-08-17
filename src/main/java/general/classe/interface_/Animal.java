@@ -1,4 +1,4 @@
-package general.classe.interface_.single;
+package general.classe.interface_;
 
 /**
  Une interface ne peut pas avoir de variables d'instance.

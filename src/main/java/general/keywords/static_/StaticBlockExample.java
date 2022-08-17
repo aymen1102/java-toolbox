@@ -1,4 +1,4 @@
-package general.modifiers.static_;
+package general.keywords.static_;
 
 /**
  * The static keyword in Java is mainly used for memory management.
@@ -22,13 +22,14 @@ public class StaticBlockExample {
     static int b;
 
     public static void main(String[] args) {
-        System.out.println("Value of a : "+a);
-        System.out.println("Value of b : "+b);
+        System.out.println("Value of a : "+a);  // 10
+        System.out.println("Value of b : "+b);  // 20
     }
 
-    /*static block*/
-    /*If you need to do the computation in order to initialize your static variables,
-    you can declare a static block that gets executed exactly once, when the class is first loaded. */
+
+    /**Static block : If you need to do the computation in order
+     * to initialize your static variables, you can declare a static
+     * block that gets executed exactly once, when the class is first loaded.*/
     static {
         System.out.println("inside a static block !");
         b = a * 2;

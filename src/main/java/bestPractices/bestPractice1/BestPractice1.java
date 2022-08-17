@@ -3,7 +3,10 @@ package bestPractices.bestPractice1;
 /** Use StringBuilder or StringBuffer for String Concatenation  :
  * The java best practice, in that case, would be using “StringBuilder” or “StringBuffer”.
  * These built-in functions modify a String without creating intermediate
- * String objects saving processing time and unnecessary memory usage.*/
+ * String objects saving processing time and unnecessary memory usage.
+ * StringBuilder : asynchronous
+ * StringBuffer  : synchronous
+ * */
 public class BestPractice1 {
 
     public static void main(String[] args) {
@@ -21,10 +24,10 @@ public class BestPractice1 {
         /** best practice */
         StringBuilder requestStringBuilder = new StringBuilder("INSERT INTO USERS (name,age)");
         requestStringBuilder.append(" values ('")
-                    .append(user.getName())
-                    .append("','")
-                    .append(user.getAge())
-                    .append("')");
+                .append(user.getName())
+                .append("','")
+                .append(user.getAge())
+                .append("')");
         System.out.println(requestStringBuilder);
     }
 }

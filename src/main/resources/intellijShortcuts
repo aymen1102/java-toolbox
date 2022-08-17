@@ -2,17 +2,19 @@
 
 - Most recent opened files: ctrl+E
 - Find attribute declaration: ctrl+B
+- Duplicate a line of code = ctrl+D
 - Close tab: ctrl+F4
 
 - Create variable from selected code: ctrl+alt+V
 - Format code: ctrl + alt +L
-- Rename/Refactor code in the whole class: ctrl+alt+shift+T
+- Rename/Refactor code in the whole class: shift+F6
 - Search in the code: ctrl+shift+F
 
 - Search classes: shift + shift
 
 - Jump into errors when multiple errors: F2
 
+- Change Tab : alt +  =>
 - Auto correction: alt+enter
 - generate: alt+insert
 - Open/Close projects window: alt+1

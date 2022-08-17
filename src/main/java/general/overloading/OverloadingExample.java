@@ -1,7 +1,8 @@
 package general.overloading;
 
 /**
- * In Java, two or more methods may have the same name if they differ in parameters (different number of parameters, different types of parameters, or both).
+ * In Java, two or more methods may have the same name if they differ in parameters
+ * (different number of parameters, different types of parameters, or both).
  * These methods are called overloaded methods and this feature is called method overloading.
  */
 public class OverloadingExample {
