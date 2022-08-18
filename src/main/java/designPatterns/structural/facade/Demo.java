@@ -10,10 +10,9 @@ package designPatterns.structural.facade;
  */
 public class Demo {
     public static void main(String[] args) {
-        ShapeMaker shapeMaker = new ShapeMaker();
-
-        shapeMaker.drawCircle();    // Circle::draw()
-        shapeMaker.drawRectangle(); //Rectangle::draw()
-        shapeMaker.drawSquare();    //Square::draw()
+        ShapeFacade shapeFacade = new ShapeFacade();
+        shapeFacade.drawCircle();    // Circle::draw()
+        shapeFacade.drawRectangle(); //Rectangle::draw()
+        shapeFacade.drawSquare();    //Square::draw()
     }
 }

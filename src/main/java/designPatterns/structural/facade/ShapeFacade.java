@@ -8,12 +8,12 @@ package designPatterns.structural.facade;
  * delegates calls to methods of existing system classes.
  */
 /** This is a facade class */
-public class ShapeMaker {
+public class ShapeFacade {
     private Shape circle;
     private Shape rectangle;
     private Shape square;
 
-    public ShapeMaker(){
+    public ShapeFacade (){
         circle=new Circle();
         rectangle=new Rectangle();
         square=new Square();
