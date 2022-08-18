@@ -15,11 +15,11 @@ interface Animal {
      */
      void marcher();   // méthode abstraite à implémenter
 
-     default void manger(){
-         System.out.println("manger");
-     };
-
      static void dormir(){
          System.out.println("dormir");
-     };
+     }
+
+    default void manger(){
+        System.out.println("manger");
+    }
 }

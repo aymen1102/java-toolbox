@@ -5,11 +5,11 @@ public class Bar implements Foo{
     public static void main(String[] args) {
         // call from interface instance
         Foo foo = new Bar();
-        foo.maMethodeParDefaut();
+        foo.defaultMethod();
         foo.display();
 
         // call from the interface
-        Foo.maMethodeStatic();
+        Foo.staticMethod();
     }
 
     public void display() {

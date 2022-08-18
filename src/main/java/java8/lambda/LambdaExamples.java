@@ -10,7 +10,8 @@ import java.util.function.Supplier;
 public class LambdaExamples {
     public static void main(String[] args) {
         //Exemple 1
-        Consumer<String> consumer = (String s) -> System.out.println(s);
+        Consumer<String> consumer =
+                (String s) -> System.out.println(s);
         consumer.accept("Toto"); // Toto
 
         //Exemple 2
@@ -28,7 +29,7 @@ public class LambdaExamples {
                 .forEach(System.out::println); // Salim Salma
 
         //Exemple 4
-        Supplier supplier = () -> "ceci est un fournisseur";
-        System.out.println(supplier.get());
+        Supplier supplier = () -> "Ceci est un fournisseur";
+        System.out.println(supplier.get());  //Ceci est un fournisseur
     }
 }

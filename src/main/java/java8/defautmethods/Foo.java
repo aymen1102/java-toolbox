@@ -2,12 +2,11 @@ package java8.defautmethods;
 
 public interface Foo {
 
-    public static void maMethodeStatic(){
+    public static void staticMethod(){
         System.out.println("Ici j'ai implémenté une méthode statique");
     }
 
-
-    default void maMethodeParDefaut (){
+    default void defaultMethod (){
         System.out.println("Ici j'ai implémenté une méthode par défaut");
     }
 
