@@ -1,4 +1,4 @@
-package general.map.sortedmap;
+package general.collections.map.sortedmap;
 
 import java.util.*;
 

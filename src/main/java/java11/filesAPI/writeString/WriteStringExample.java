@@ -15,5 +15,4 @@ public class WriteStringExample {
 
         Files.writeString(newFilePath,newFileContent);
     }
-
 }

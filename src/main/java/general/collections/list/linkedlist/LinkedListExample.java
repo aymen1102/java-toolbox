@@ -7,11 +7,14 @@ import java.util.LinkedList;
  * Both ArrayList and LinkedList are implementation of List interface in Java.
  * Both classes are non-synchronized.
  * But there are certain differences as well.
- * In LinkedList, insertion, addition, and removal operations are faster as compared to the ArrayLists because there is no need to resize the LinkedList.
- * LinkedList is based on doubly LinkedList implementation on the other hand the ArrayLists are based on the dynamically resizable arrays.
+ * In LinkedList, insertion, addition, and removal operations are faster as compared
+ * to the ArrayLists because there is no need to resize the LinkedList.
+ * LinkedList is based on doubly LinkedList implementation on the other hand the
+ * ArrayLists are based on the dynamically resizable arrays.
  * LinkedList consumes more memory than ArrayList.
  * ArrayList provides random access to any item while LinkedList provides sequential access to the items.
- * In ArrayList, the manipulation process is a bit slow as compared to LinkedList because in ArrayList when an item is removed, numerous changes (shifting of items) take place.
+ * In ArrayList, the manipulation process is a bit slow as compared to LinkedList because in ArrayList
+ * when an item is removed, numerous changes (shifting of items) take place.
  */
 public class LinkedListExample {
     public static void main(String[] args) {

@@ -5,12 +5,16 @@ import java.util.Comparator;
 import java.util.Vector;
 
 /**
- * ArrayList and Vectors both implement the List interface, and both use (dynamically resizable) arrays for their internal data structure, much like using an ordinary array.
+ * ArrayList and Vectors both implement the List interface,
+ * and both use (dynamically resizable) arrays for their internal data structure,
+ * much like using an ordinary array.
  * ArrayList is not synchronized. Vector is synchronized.
  * ArrayList increments 50% of the current array size if the number of elements exceeds ts capacity.
  * Vector increments 100% means doubles the array size if the total number of elements exceeds its capacity.
  * ArrayList is fast because it is non-synchronized.
- * Vector is slow because it is synchronized, i.e., in a multithreading environment, it holds the other threads in a runnable or non-runnable state until the current thread releases the lock of the object.
+ * Vector is slow because it is synchronized, i.e., in a multithreading environment,
+ * it holds the other threads in a runnable or non-runnable state until the current thread releases
+ * the lock of the object.
  * ArrayList uses the Iterator interface to traverse the elements.
  * A Vector can use the Iterator interface or Enumeration interface to traverse the elements.
  */

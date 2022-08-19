@@ -17,8 +17,6 @@ public class StringAPIExamples {
         System.out.println(statement.trim());       //I love Java
 
         /** lines() */
-
-
         "Line1\nLine2\nLine3".lines().forEach(System.out::println); //Line1 Line2 Line3
 
         /** transform() */

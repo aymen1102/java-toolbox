@@ -4,28 +4,25 @@ import java.util.List;
 import java.util.function.Predicate;
 
 public class PredicateNot {
-
     public static void main(String[] args) {
-        List<Integer> nombres = List.of(2,5,6,9,1);
-        Predicate<Integer> nombrePairesPredicate = nombre -> nombre%2 == 0;
-
-        nombres.stream()
-                .filter(nombrePairesPredicate)
+        List<Integer> numbers = List.of(2,5,6,9,1);
+        Predicate<Integer> isEven =
+                number -> number % 2 == 0;
+        numbers.stream()
+                .filter(isEven)
                 .forEach(System.out::println); // 2 6
-        nombres.stream()
-                .filter(nombrePairesPredicate.negate())
+        numbers.stream()
+                .filter(isEven.negate())
                 .forEach(System.out::println); // 5 9 1
 
-        nombres.stream()
-                .filter(PredicateNot::isPaire)
+        numbers.stream()
+                .filter(PredicateNot::isEven)
                 .forEach(System.out::println); // 2 6
-        nombres.stream()
-                .filter(Predicate.not(PredicateNot::isPaire))
+        numbers.stream()
+                .filter(Predicate.not(PredicateNot::isEven))
                 .forEach(System.out::println); // 5 9 1
-
     }
-
-    public static boolean isPaire(Integer nombre){
-        return nombre % 2 == 0;
+    public static boolean isEven(Integer number){
+        return number % 2 == 0;
     }
 }

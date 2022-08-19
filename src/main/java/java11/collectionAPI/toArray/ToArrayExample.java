@@ -5,7 +5,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ToArrayExample {
-
     public static void main(String[] args) {
         List<String> names = new ArrayList<>();
         names.add("Antoine");

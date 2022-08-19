@@ -1,4 +1,4 @@
-package general.map.hashtable;
+package general.collections.map.hashtable;
 
 import java.util.Hashtable;
 
@@ -9,7 +9,7 @@ import java.util.Hashtable;
  * Elle est similaire à HashMap mais elle est synchronisée.
  */
 public class HashTableExample {
-    Integer a = 0;
+    int a = 0;
     public static void main(String[] args) {
         Hashtable ht = new Hashtable();
         ht.put(1,"Papa");
