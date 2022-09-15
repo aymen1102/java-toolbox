@@ -10,7 +10,7 @@ import java.util.List;
  * PreparedStatement has an advantage over Statement for parameterized query execution since
  * the preparedstatement object is compiled once and executed multiple times.
  * Statement object on other hand is compiled and executed every time it is called. Also,
- * the prepared statement object is safe to avoid SQL injection attacks for Web Application security.
+ * the prepared statement object is safe to avoid SQL injection attacks for Web designPatterns.behavior.strategy.Application security.
  */
 public class BestPractice16 {
     private static final String DATABASE_URL = "jdbc:postgresql://localhost:5432/restservices";
