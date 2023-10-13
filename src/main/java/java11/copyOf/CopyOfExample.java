@@ -1,4 +1,4 @@
-package java10.copyOf;
+package java11.copyOf;
 
 import java.util.Arrays;
 /**La méthode copyOf sur les collections (List, Map) :

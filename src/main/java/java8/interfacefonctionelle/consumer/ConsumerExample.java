@@ -7,11 +7,11 @@ import java.util.function.Consumer;
 public class ConsumerExample {
     public static void main(String[] args) {
         //Exemple 1
-        Consumer<String> consumer1 = (String s) -> System.out.println(s);
+        Consumer<String> consumer1 = System.out::println;
         consumer1.accept("Toto");
 
         //Exemple 2
-        Consumer<Integer> consumer2 = (Integer i) -> System.out.println(i);
+        Consumer<Integer> consumer2 = System.out::println;
         consumer2.accept(10);
 
         //Exemple 3 : Création d'un Consumer de multiplication par 2
@@ -28,7 +28,7 @@ public class ConsumerExample {
         List<String> stringList = Arrays.asList("ABC","N","HO");
         Consumer<List<String>> longueurChaineDeCarractere = list -> {
             list.stream()
-                    .map(x->x.length())
+                    .map(String::length)
                     .forEach(System.out::print);
         };
         longueurChaineDeCarractere.accept(stringList); //3 1 2

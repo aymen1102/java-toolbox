@@ -1,4 +1,4 @@
-package java10.typeInference;
+package java11.typeInference;
 
 import java.util.Arrays;
 import java.util.List;

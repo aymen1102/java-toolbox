@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 import java.util.*;
 import java.util.stream.Stream;
 
-public class StreamExamples {
+public class   StreamExamples {
 
     public static void main(String[] args) {
         System.out.println("-------------------------------------------------- Stream 1 --------------------------------------------------");

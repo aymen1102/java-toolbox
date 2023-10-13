@@ -1,4 +1,4 @@
-package java12.switch_;
+package java17.switchExpression;
 
 public class SwitchExample {
 
