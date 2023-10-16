@@ -10,7 +10,7 @@ package oop.inheritance;
  * Why And When To Use "Inheritance"?
  * It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.
  */
-public class Car extends Vehicle{
+public class  Car extends Vehicle{
     public static void main(String[] args) {
         Car car = new Car();
         car.sonner();   //Tuuuuut.
