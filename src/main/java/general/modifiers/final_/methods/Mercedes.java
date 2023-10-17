@@ -1,4 +1,4 @@
-package general.modifiers.final_.methode;
+package general.modifiers.final_.methods;
 
 public class Mercedes extends Car {
 

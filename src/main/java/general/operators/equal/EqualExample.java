@@ -5,10 +5,10 @@ public class EqualExample {
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //   Différence entre == et equal()                                                                                                      //
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        String s1 = new String("chien");
-        String s2 = new String("chien");
+        String s1 = "chien";
+        String s2 = "chien";
         //Comparaison des références
-        System.out.println(s1==s2); // false
+        System.out.println(s1==s2); // true
         //Content comparaison
         System.out.println(s1.equals(s2)); //true
         //integer type

@@ -18,8 +18,8 @@ public class SingletonExample {
         /**
         * c'est le même hashcode cad que ça pointe vers le même espace mémoire
         * */
-        System.out.println("Hashcode de l'objet se est : "+singleton0.hashCode());
-        System.out.println("Hashcode de l'objet se est : "+singleton1.hashCode());
+        System.out.println("Hashcode de l'objet singleton0 est : "+singleton0.hashCode());
+        System.out.println("Hashcode de l'objet singleton1 est : "+singleton1.hashCode());
         /**
         * ça montre donc que c'est le même objet
         * */

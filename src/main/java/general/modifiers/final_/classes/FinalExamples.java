@@ -1,4 +1,4 @@
-package general.modifiers.final_.class_;
+package general.modifiers.final_.classes;
 
 /** Error
  * class FinalExamples extends FinalClass{

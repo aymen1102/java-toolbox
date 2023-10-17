@@ -7,7 +7,7 @@ package general.keywords.static_;
  * All instances of the class share the same static variable.
  * Important points for static variables:
  * We can create static variables at the class level only. See here
- * static block and static variables are executed in the order they
+ * static block and static variables are execute<d in the order they
  * are present in a program.
  */
 public class StaticVariableExample {

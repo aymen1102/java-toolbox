@@ -1,8 +1,8 @@
-package general.modifiers.final_.methode;
+package general.modifiers.final_.methods;
 
 public class Car {
     public String getTitle(){
-        return "Final Method";
+        return "Method";
     }
 
     public final String getText(){

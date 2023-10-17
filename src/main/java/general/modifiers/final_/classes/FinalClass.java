@@ -1,8 +1,8 @@
-package general.modifiers.final_.class_;
+package general.modifiers.final_.classes;
 
 final class FinalClass {
 
-    String text = "Final class";
+    public String text = "Final class";
 
     public String getFinal(){
         return "Final !";

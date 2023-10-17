@@ -23,6 +23,9 @@ public class ConstructorExample {
 
         ConstructorExample constructorExample1 = new ConstructorExample("All arguments constructor");
         System.out.println(constructorExample1.title);  // All argument constructor
+
+        System.out.println(constructorExample.hashCode());
+        System.out.println(constructorExample1.hashCode());
     }
 
 
