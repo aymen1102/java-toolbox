@@ -1,7 +1,4 @@
 package general.classe.abstract_;
-
-
-
 /**
 Une classe abstraite peut étendre une autre classe Java et implémenter plusieurs interfaces Java.
  */

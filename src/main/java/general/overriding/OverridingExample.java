@@ -13,7 +13,7 @@ public class OverridingExample extends Parent{
         parent1.display();
     }
 
-    // This method overrides diplay() of Parent
+    // This method overrides display() of Parent
     @Override
     void display(){
         System.out.println("Child's display()");

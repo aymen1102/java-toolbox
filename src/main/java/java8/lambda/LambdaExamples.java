@@ -2,10 +2,7 @@ package java8.lambda;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
+import java.util.function.*;
 
 public class LambdaExamples {
     public static void main(String[] args) {
@@ -30,6 +27,10 @@ public class LambdaExamples {
 
         //Exemple 4
         Supplier supplier = () -> "Ceci est un fournisseur";
-        System.out.println(supplier.get());  //Ceci est un fournisseur
+        System.out.println(supplier.get());  // Ceci est un fournisseur
+
+        //Exemple 5
+        BinaryOperator<Integer> result = (int x, int y) -> x + y;
+        System.out.println(result.apply(4,2)); // 6
     }
 }

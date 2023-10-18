@@ -12,6 +12,4 @@ public class Chat extends AnimalCompagnie{
     public void parler() {
         System.out.println("Miiiiiaouuuu");
     }
-
-
 }
