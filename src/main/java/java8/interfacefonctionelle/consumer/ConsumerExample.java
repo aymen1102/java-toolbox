@@ -17,7 +17,7 @@ public class ConsumerExample {
         //Exemple 3 : Création d'un Consumer de multiplication par 2
         Consumer<List<Integer>> multiplierPar2 = (integerList) -> {
                 integerList.stream()
-                        .map(x -> x*2)
+                        .map(x -> x * 2)
                         .forEach(System.out::print);
         };
         List<Integer> integerList = Arrays.asList(1,2,3,4,5);

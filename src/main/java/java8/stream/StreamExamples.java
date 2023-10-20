@@ -5,7 +5,7 @@ import java.util.stream.IntStream;
 import java.util.*;
 import java.util.stream.Stream;
 
-public class   StreamExamples {
+public class StreamExamples {
 
     public static void main(String[] args) {
         System.out.println("-------------------------------------------------- Stream 1 --------------------------------------------------");
@@ -200,9 +200,9 @@ public class   StreamExamples {
         System.out.println("-------------------------------------------------- Stream 25 --------------------------------------------------");
         List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5);
         List<Integer> list2 = Arrays.asList(6, 7, 8, 9, 10);
-        List<List<Integer>> listofLists = Arrays.asList(list1, list2);
-        System.out.println("Avant : " + listofLists);
-        List<Integer> listOfAllIntegers = listofLists.stream()
+        List<List<Integer>> listOfLists = Arrays.asList(list1, list2);
+        System.out.println("Avant : " + listOfLists);
+        List<Integer> listOfAllIntegers = listOfLists.stream()
                 .flatMap(Collection::stream)
                 .toList();
         System.out.println("Après : " + listOfAllIntegers); //Après : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -251,9 +251,9 @@ public class   StreamExamples {
                 .generate(new Random()::nextInt)
                 .limit(3)
                 .forEach(System.out::println);
-                                                    //973443298
-                                                    //364407531
-                                                    //683047583
+        //973443298
+        //364407531
+        //683047583
 
         System.out.println("-------------------------------------------------- Stream 33 --------------------------------------------------");
         List<Integer> nombres = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
@@ -273,7 +273,7 @@ public class   StreamExamples {
 
 
         System.out.println("-------------------------------------------------- Stream 34 --------------------------------------------------");
-        List<String> list = Arrays.asList("A","B","C","D","A","B","C");
+        List<String> list = Arrays.asList("A", "B", "C", "D", "A", "B", "C");
         List<String> distinctElements = list.stream()
                 .distinct()
                 .toList();

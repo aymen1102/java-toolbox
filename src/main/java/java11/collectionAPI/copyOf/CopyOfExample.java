@@ -1,6 +1,9 @@
-package java11.copyOf;
+package java11.collectionAPI.copyOf;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+
 /**La méthode copyOf sur les collections (List, Map) :
  permet de fixer une nouvelle longueur au tableau et copier un tableau dans un autre :
  méthodes copyOf(int[] original, int newLength).
@@ -8,6 +11,12 @@ import java.util.Arrays;
  vides sont initialisées à null, ou à la valeur par défaut de chaque type primitif */
 public class CopyOfExample {
     public static void main(String[] args) {
+        // Exemple 0
+        List<String> originalList = List.of("a", "b", "c");
+        List<String> unmodifiableList = List.copyOf(originalList);
+        System.out.println(unmodifiableList);
+        //unmodifiableList.add("d"); cannot add element UnsupportedOperationException
+
         // Exemple 1
         int[] T1 = { 2, 4, 5, 9, 5, 9 };
         int[] res = Arrays.copyOf(T1, 3); // [2, 4, 5]

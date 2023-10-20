@@ -1,14 +1,13 @@
 package java8.defautmethods;
 
-public class Bar implements Foo{
+public class Bar implements Foo {
 
     public static void main(String[] args) {
         // call from interface instance
         Foo foo = new Bar();
-        foo.defaultMethod();
         foo.display();
+        foo.defaultMethod();
 
-        // call from the interface
         Foo.staticMethod();
     }
 

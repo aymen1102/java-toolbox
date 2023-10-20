@@ -16,9 +16,6 @@ public class PredicateNot {
                 .forEach(System.out::println); // 5 9 1
 
         numbers.stream()
-                .filter(PredicateNot::isEven)
-                .forEach(System.out::println); // 2 6
-        numbers.stream()
                 .filter(Predicate.not(PredicateNot::isEven))
                 .forEach(System.out::println); // 5 9 1
     }

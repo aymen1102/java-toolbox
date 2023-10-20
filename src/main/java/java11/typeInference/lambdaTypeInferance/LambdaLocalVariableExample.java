@@ -1,4 +1,4 @@
-package java11.lambdaLocalVariable;
+package java11.typeInference.lambdaTypeInferance;
 
 import java.util.Arrays;
 import java.util.List;

@@ -8,7 +8,7 @@ public class LoggerExample {
     private static final Logger LOGGER = Logger.getLogger(LoggerExample.class.getName());
 
     public static void main(String[] args) throws SecurityException, IOException {
-        LOGGER.info("Logger Name: "+LOGGER.getName());
+        LOGGER.info("Logger Name: "+ LOGGER.getName());
         LOGGER.warning("Can cause ArrayIndexOutOfBoundsException");
         //An array of size 3
         int[] a = {1,2,3};

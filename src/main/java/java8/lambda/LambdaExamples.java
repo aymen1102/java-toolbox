@@ -30,7 +30,7 @@ public class LambdaExamples {
         System.out.println(supplier.get());  // Ceci est un fournisseur
 
         //Exemple 5
-        BinaryOperator<Integer> result = (int x, int y) -> x + y;
+        BinaryOperator<Integer> result = (Integer x, Integer y) -> x + y;
         System.out.println(result.apply(4,2)); // 6
     }
 }

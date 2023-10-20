@@ -8,6 +8,8 @@ public class StringAPIExamples {
         System.out.println(" ".isBlank()); //true
 
         /** strip() */
+        System.out.println(" Ay men ");
+        System.out.println(" Ay men ".strip());
         System.out.println(" Ay men ".strip().replace(" ", "*")); // Ay*men
         System.out.println(" Ay men ".stripLeading().replace(" ", "*")); // Ay*men*
         System.out.println(" Ay men ".stripTrailing().replace(" ", "*")); // *Ay*men

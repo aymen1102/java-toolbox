@@ -23,7 +23,7 @@ public class     OptionalExamples {
         String answer1 = "YES";
         String answer2 = null;
         System.out.println(Optional.ofNullable(answer1)); // Optional[YES]
-        System.out.println(Optional.ofNullable(answer2)); //Optional.empty
+        System.out.println(Optional.ofNullable(answer2)); // Optional.empty
         /*
         System.out.println(Optional.of(answer2)); // NullPointerException
         */

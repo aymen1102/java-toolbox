@@ -1,7 +1,5 @@
 package java17.records;
 
-import java17.records.Person;
-
 public class RecordExample {
 
     public static void main(String[] args) {
