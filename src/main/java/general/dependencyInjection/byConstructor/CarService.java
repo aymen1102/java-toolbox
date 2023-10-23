@@ -6,7 +6,7 @@ public class CarService {
      public CarService(){
         this.carDAO = new CarDao();
      }
-    * */
+    */
 
     /**
      * good habit : Dependency injection by constructor
