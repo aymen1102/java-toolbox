@@ -40,13 +40,10 @@ public class BestPractice11 {
 
 
         /** Case 3 : Use of Ternary Operator */
-        // Initializing String variable with null value
         String str = null;
-        String message = (str == null) ? "" :
-                str.substring(0,5);
+        String message = (str == null) ? "" : str.substring(0,5);
         System.out.println(message);   // ""
 
-        // Initializing String variable with null value
         str = "This is good";
         message = (str == null) ? "" : str.substring(0,7);
         System.out.println(message);  // This is

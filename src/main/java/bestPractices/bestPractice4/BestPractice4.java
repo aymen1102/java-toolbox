@@ -1,7 +1,8 @@
 package bestPractices.bestPractice4;
 
 /** Use Underscores in lengthy Numeric Literals
- This feature was introduced in Java 7 that helps in writing lengthy numeric literals in a much more readable way.
+ This feature was introduced in Java 7 that helps in writing
+ lengthy numeric literals in a much more readable way.
  So instead of writing in the old and common way like this */
 public class  BestPractice4 {
 
