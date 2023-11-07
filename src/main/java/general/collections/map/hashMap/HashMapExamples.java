@@ -1,16 +1,16 @@
-package general.collections.map.hashmap;
+package general.collections.map.hashMap;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class HashmapExamples {
+public class HashMapExamples {
 
     public static void main(String[] args) {
         Map<Integer,String> map = new HashMap<>();
-        map.put(1,"Papa");
-        map.put(2,"Maman");
-        map.put(3,"Oncle");
-        map.put(4,"Tante");
+        map.put(1, "Papa");
+        map.put(2, "Maman");
+        map.put(3, "Oncle");
+        map.put(4, "Tante");
 
         System.out.println(map.get(2)); // Maman
         System.out.println(map.values()); // [Papa, Maman, Oncle, Tante]
@@ -21,8 +21,8 @@ public class HashmapExamples {
         System.out.println(map.size());    // 4
 
         for (Map.Entry m : map.entrySet()){
-            System.out.println(m.getKey()); // 1 . . .
-            System.out.println(m.getValue()); // Maman . . .
+            System.out.println(m.getKey()); // 1 2 3 4
+            System.out.println(m.getValue()); // Papa, Maman, Oncle, Tante
         }
     }
 }

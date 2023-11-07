@@ -14,9 +14,8 @@ public class SetExamples {
         System.out.println(numbers); // [One, Two, Three]
 
         Iterator<String> iterator = numbers.iterator();
-        while (iterator.hasNext()) {
+        while (iterator.hasNext())
             System.out.println(iterator.next()); // One Two Three
-        }
 
         for (String myNumber : numbers)
             System.out.println(myNumber);  // One Two Three
@@ -36,12 +35,11 @@ public class SetExamples {
         numbersSet.add(3);
         numbersSet.add(2);
 
-        List<Integer> aList = new ArrayList<Integer>();
+        List<Integer> integerList = new ArrayList<>();
         for (int x : numbersSet)
-            aList.add(x);
+            integerList.add(x);
 
-        Collections.sort(aList);
-        System.out.println(aList);  // [1, 2, 3, 4]
-        
+        Collections.sort(integerList);
+        System.out.println(integerList);  // [1, 2, 3, 4]
     }
 }

@@ -1,4 +1,4 @@
-package general.collections.list.stack;
+package general.collections.list.vector.stack;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package general.classe.interface_;
+package general.classe.interfaces;
 
 interface Human {
     void parler();

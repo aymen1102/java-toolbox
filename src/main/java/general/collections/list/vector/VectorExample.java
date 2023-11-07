@@ -2,21 +2,18 @@ package general.collections.list.vector;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Iterator;
 import java.util.Vector;
 
 /**
- * ArrayList and Vectors both implement the List interface,
- * and both use (dynamically resizable) arrays for their internal data structure,
- * much like using an ordinary array.
- * ArrayList is not synchronized. Vector is synchronized.
- * ArrayList increments 50% of the current array size if the number of elements exceeds ts capacity.
- * Vector increments 100% means doubles the array size if the total number of elements exceeds its capacity.
- * ArrayList is fast because it is non-synchronized.
- * Vector is slow because it is synchronized, i.e., in a multithreading environment,
- * it holds the other threads in a runnable or non-runnable state until the current thread releases
- * the lock of the object.
- * ArrayList uses the Iterator interface to traverse the elements.
- * A Vector can use the Iterator interface or Enumeration interface to traverse the elements.
+ Difference between ArrayList and Vector
+ Synchronization: Vector is synchronized, therefore thread-safe; ArrayList is non-synchronized, faster in monothread.
+ Performance: Vector slower due to synchronization; ArrayList faster.
+ Capacity: Vector doubles its capacity; ArrayList increases it by 50%.
+ Inheritance: Vector inherits from AbstractList; ArrayList from AbstractCollection.
+ Methods: Vector has additional methods not present in ArrayList.
+ History: Vector is older; ArrayList introduced in JDK 1.2.
+ Security: Vector for multithreading; ArrayList requires manual synchronization.
  */
 public class VectorExample {
     public static void main(String[] args) {
@@ -51,5 +48,10 @@ public class VectorExample {
 
         int indexOfComputer = products.indexOf("Computer");
         System.out.println(indexOfComputer); // 0
+
+        Iterator<String> iterator = products.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
