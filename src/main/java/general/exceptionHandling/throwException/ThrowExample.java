@@ -1,6 +1,4 @@
-package general.exceptionHandling.throw_;
-
-import java.io.IOException;
+package general.exceptionHandling.throwException;
 
 /**
  * In Java, exceptions allows us to write good quality codes where the errors are checked

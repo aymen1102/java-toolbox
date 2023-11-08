@@ -12,9 +12,9 @@ public class HashCodeExample {
         String studentName0 = "Antony";
         String studentName1 = "Antony";
         String studentName2 = "Romain";
-        if(studentName0.equals(studentName1))
-            System.out.println("Equal variable :\n"+studentName0.hashCode()+"\n"+studentName1.hashCode());
-        if(!studentName0.equals(studentName2))
-            System.out.println("Different variable :\n"+studentName0.hashCode()+"\n"+studentName2.hashCode());
+        if (studentName0.equals(studentName1))
+            System.out.println("Equal variable :\n" + studentName0.hashCode() + "\n" + studentName1.hashCode());
+        if (!studentName0.equals(studentName2))
+            System.out.println("Different variable :\n" + studentName0.hashCode() + "\n" + studentName2.hashCode());
     }
 }
