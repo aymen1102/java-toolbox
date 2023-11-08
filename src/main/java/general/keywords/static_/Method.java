@@ -10,12 +10,12 @@ package general.keywords.static_;
  * They can only directly call other static methods.
  * They can only directly access static data.
  * They cannot refer to this or super in any way.
- * */
-public class StaticMethodExample {
+ */
+public class Method {
     static int a = 0;
     int b = 2;
 
-    static int staticMethod(){
+    static int staticMethod() {
         a = 10;
         //b = 10; // compilation error
         return a;

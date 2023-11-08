@@ -8,7 +8,7 @@ import java.util.Optional;
  * to facilitate code to handle values as ‘available’ or ‘not available’ instead of checking null values.
  * It is introduced in Java 8 and is similar to what Optional is in Guava.
  */
-public class     OptionalExamples {
+public class OptionalExamples {
     public static void main(String[] args) {
 
         System.out.println("Exemple 1");
@@ -42,7 +42,7 @@ public class     OptionalExamples {
         cars[3] = "Citroen";
 
         Optional<String> car2 = Optional.ofNullable(cars[2]);
-        if (car2.isPresent()){
+        if (car2.isPresent()) {
             String lowercaseString1 = cars[2].toLowerCase();
             System.out.println(lowercaseString1);
         } else {

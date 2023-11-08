@@ -9,6 +9,20 @@ public class Pair<K, V> {
         this.value = value;
     }
 
+    public static void main(String[] args) {
+        // Create a Pair with String and Integer
+        Pair<String, Integer> grade = new Pair<>("Math", 90);
+        System.out.println(grade.getKey() + ": " + grade.getValue());
+
+        // Create a Pair with Integer and String
+        Pair<Integer, String> reversedPair = new Pair<>(1, "One");
+        System.out.println(reversedPair.getKey() + " = " + reversedPair.getValue());
+
+        // Create a Pair with two different object types
+        Pair<String, Boolean> isAdult = new Pair<>("John", true);
+        System.out.println(isAdult.getKey() + " is adult? " + isAdult.getValue());
+    }
+
     public K getKey() {
         return key;
     }
@@ -23,20 +37,6 @@ public class Pair<K, V> {
 
     public void setValue(V value) {
         this.value = value;
-    }
-
-    public static void main(String[] args) {
-        // Create a Pair with String and Integer
-        Pair<String, Integer> grade = new Pair<>("Math", 90);
-        System.out.println(grade.getKey() + ": " + grade.getValue());
-
-        // Create a Pair with Integer and String
-        Pair<Integer, String> reversedPair = new Pair<>(1, "One");
-        System.out.println(reversedPair.getKey() + " = " + reversedPair.getValue());
-
-        // Create a Pair with two different object types
-        Pair<String, Boolean> isAdult = new Pair<>("John", true);
-        System.out.println(isAdult.getKey() + " is adult? " + isAdult.getValue());
     }
 }
 

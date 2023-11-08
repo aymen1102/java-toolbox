@@ -6,8 +6,15 @@ import java.util.List;
 // Subject
 interface Subject {
     void addObserver(Observer o);
+
     void removeObserver(Observer o);
+
     void notifyObservers();
+}
+
+// Observer
+interface Observer {
+    void update(int state);
 }
 
 class ConcreteSubject implements Subject {
@@ -32,11 +39,6 @@ class ConcreteSubject implements Subject {
             o.update(state);
         }
     }
-}
-
-// Observer
-interface Observer {
-    void update(int state);
 }
 
 class ConcreteObserver implements Observer {

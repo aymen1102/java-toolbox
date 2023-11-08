@@ -5,9 +5,9 @@ package general.exceptionHandling.throwException;
  * at the compile time instead of runtime and we can create custom exceptions making the
  * code recovery and debugging easier.
  * - Java throw keyword is used throw an exception explicitly in the code,
- *   inside the function or the block of code.
+ * inside the function or the block of code.
  * - Type of exception Using throw keyword, we can only propagate unchecked exception i.e.,
- *   the checked exception cannot be propagated using throw only.
+ * the checked exception cannot be propagated using throw only.
  * - The throw keyword is followed by an instance of Exception to be thrown.
  * - throw is used within the method.
  * - We are allowed to throw only one exception at a time i.e. we cannot throw multiple  exceptions.
@@ -28,11 +28,10 @@ public class ThrowExample {
     }
 
     static void validateAge(int age) {
-        if(age<18) {
+        if (age < 18) {
             //throw Arithmetic exception if not eligible to vote
             throw new ArithmeticException("Person is not eligible to vote");
-        }
-        else {
+        } else {
             System.out.println("Person is eligible to vote!!");
         }
     }

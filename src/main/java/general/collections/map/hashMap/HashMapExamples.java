@@ -6,7 +6,7 @@ import java.util.Map;
 public class HashMapExamples {
 
     public static void main(String[] args) {
-        Map<Integer,String> map = new HashMap<>();
+        Map<Integer, String> map = new HashMap<>();
         map.put(1, "Papa");
         map.put(2, "Maman");
         map.put(3, "Oncle");
@@ -20,7 +20,7 @@ public class HashMapExamples {
         System.out.println(map.keySet());  // [1, 2, 3, 4]
         System.out.println(map.size());    // 4
 
-        for (Map.Entry m : map.entrySet()){
+        for (Map.Entry m : map.entrySet()) {
             System.out.println(m.getKey()); // 1 2 3 4
             System.out.println(m.getValue()); // Papa, Maman, Oncle, Tante
         }

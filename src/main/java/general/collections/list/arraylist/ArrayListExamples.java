@@ -17,7 +17,7 @@ public class ArrayListExamples {
         String product1 = products.get(1);
         System.out.println("Element at index 1: " + product1); // Mouse
 
-        products.set(1,"Printer");
+        products.set(1, "Printer");
         System.out.println("ArrayList: " + products); // [Computer, Printer, Keyboard, Screen]
 
         products.remove(3);
@@ -27,7 +27,7 @@ public class ArrayListExamples {
         System.out.println("Size : " + size); // 3
 
         products.sort(Comparator.naturalOrder());
-        System.out.println("ArrayList: " +products); // [Computer, Keyboard, Printer]
+        System.out.println("ArrayList: " + products); // [Computer, Keyboard, Printer]
 
         boolean containsComputer = products.contains("Computer");
         System.out.println(containsComputer); //true

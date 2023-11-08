@@ -166,7 +166,7 @@ public class Codingame {
 
 
     /*-------------------------------------------------- calc --------------------------------------------------*/
-    public static int  calc(int[] array, int n1, int n2) {
+    public static int calc(int[] array, int n1, int n2) {
         int sum = 0;
         for (int i = n1; i <= n2; i++) {
             sum = sum + array[i];
@@ -232,13 +232,13 @@ public class Codingame {
 
     /*-------------------------------------------------- reshape --------------------------------------------------*/
     static String reshape(int n, String text) {
-        String textWithoutSpaces = text.replace(" ","");
+        String textWithoutSpaces = text.replace(" ", "");
         String result = "";
         for (int i = 0; i < textWithoutSpaces.length(); i++) {
-            if(i % n == 0 && i !=0)
-                result=result+"\n"+textWithoutSpaces.charAt(i);
+            if (i % n == 0 && i != 0)
+                result = result + "\n" + textWithoutSpaces.charAt(i);
             else
-                result=result+textWithoutSpaces.charAt(i);
+                result = result + textWithoutSpaces.charAt(i);
         }
         return result;
     }
@@ -257,14 +257,14 @@ public class Codingame {
             else if (c == ')')
                 if (stack.isEmpty())
                     return false;
-                else if(stack.peek() == '(')
+                else if (stack.peek() == '(')
                     stack.pop();
                 else
                     return false;
-            else if(c == ']')
-                if(stack.isEmpty())
+            else if (c == ']')
+                if (stack.isEmpty())
                     return false;
-                else if(stack.peek() == '[')
+                else if (stack.peek() == '[')
                     stack.pop();
                 else
                     return false;

@@ -1,7 +1,6 @@
 package general.serialization;
 
 import java.io.FileInputStream;
-import java.io.ObjectInput;
 import java.io.ObjectInputStream;
 
 public class DeserializationExample {
@@ -17,7 +16,7 @@ public class DeserializationExample {
             objectInputStream.close();
             System.out.println("Object has been deserialized");
 
-        } catch (Exception exception){
+        } catch (Exception exception) {
             System.out.println(exception);
         }
     }

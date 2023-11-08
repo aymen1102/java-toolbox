@@ -10,9 +10,9 @@ public class WriteStringExample {
         Path path = Paths.get("src/main/resources/sample.txt");
         String fileContent = Files.readString(path);
 
-        String newFileContent = fileContent.replace("Line","Lines");
+        String newFileContent = fileContent.replace("Line", "Lines");
         Path newFilePath = Paths.get("src/main/resources/new-sample.txt");
 
-        Files.writeString(newFilePath,newFileContent);
+        Files.writeString(newFilePath, newFileContent);
     }
 }

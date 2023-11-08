@@ -4,7 +4,7 @@ final class FinalClass {
 
     public String text = "Final class";
 
-    public String getFinal(){
+    public String getFinal() {
         return "Final !";
     }
 }

@@ -5,15 +5,15 @@ interface OldSystem {
     void oldMethod();
 }
 
+// Interface cible
+interface NewSystem {
+    void newMethod();
+}
+
 class OldSystemImpl implements OldSystem {
     public void oldMethod() {
         System.out.println("Old system method");
     }
-}
-
-// Interface cible
-interface NewSystem {
-    void newMethod();
 }
 
 // Adapter

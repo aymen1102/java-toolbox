@@ -8,6 +8,11 @@ public class Account {
     private BigDecimal balance;
     private List<Transaction> transactionsList;
 
+    public static BigDecimal decreaseBalance(Account account, Transaction transaction) {
+        account.setBalance(account.getBalance().subtract(transaction.getTransactionAmount()));
+        return account.getBalance();
+    }
+
     public BigDecimal getNewBalance(Account account, Transaction transaction) {
         if (transaction.isDeposit())
             return increaseBalance(account, transaction);
@@ -22,17 +27,12 @@ public class Account {
         return account.getBalance();
     }
 
-    public static BigDecimal decreaseBalance(Account account, Transaction transaction) {
-        account.setBalance(account.getBalance().subtract(transaction.getTransactionAmount()));
-        return account.getBalance();
+    public BigDecimal getBalance() {
+        return balance;
     }
 
     public void setBalance(BigDecimal balance) {
         this.balance = balance;
-    }
-
-    public BigDecimal getBalance() {
-        return balance;
     }
 
     public List<Transaction> getTransactionsList() {

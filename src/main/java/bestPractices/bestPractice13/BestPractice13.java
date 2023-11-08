@@ -18,10 +18,10 @@ public class BestPractice13 {
         int d = 5765;
 
         /** Bad habit*/
-        if(a>d){
-            if(c>b){
-                if(d==c){
-                    if(c==b){
+        if (a > d) {
+            if (c > b) {
+                if (d == c) {
+                    if (c == b) {
                         System.out.println("Finally, i'am here ! ");
                     }
                 }
@@ -29,7 +29,7 @@ public class BestPractice13 {
         }
 
         /** Good habit*/
-        if((c>b&&d==c)&&c==b){
+        if ((c > b && d == c) && c == b) {
             System.out.println("");
         }
     }

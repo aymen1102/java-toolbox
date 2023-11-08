@@ -1,12 +1,13 @@
 package bestPractices.bestPractice1;
 
-/** Use StringBuilder or StringBuffer for String Concatenation  :
+/**
+ * Use StringBuilder or StringBuffer for String Concatenation  :
  * The java best practice, in that case, would be using “StringBuilder” or “StringBuffer”.
  * These built-in functions modify a String without creating intermediate
  * String objects saving processing time and unnecessary memory usage.
  * StringBuilder : asynchronous
  * StringBuffer  : synchronous
- * */
+ */
 public class BestPractice1 {
 
     public static void main(String[] args) {
@@ -14,8 +15,8 @@ public class BestPractice1 {
 
         /** bad habit */
         String requestString = "INSERT INTO USERS (name,age)";
-        requestString += " values ('"+ user.getName();
-        requestString += "',"+ user.getAge();
+        requestString += " values ('" + user.getName();
+        requestString += "'," + user.getAge();
         requestString += ")";
         System.out.println(requestString);
 

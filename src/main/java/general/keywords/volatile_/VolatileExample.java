@@ -13,7 +13,7 @@ public class VolatileExample {
         return counter;
     }
 
-    public void increaseCounter(){
+    public void increaseCounter() {
         counter++;
     }
 }

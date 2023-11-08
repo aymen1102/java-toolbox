@@ -2,6 +2,7 @@ package bestPractices.bestPractice17;
 
 public class CarDao {
     private String carBrand;
+
     public CarDao() {
     }
 
@@ -9,7 +10,7 @@ public class CarDao {
         this.carBrand = carBrand;
     }
 
-    public String getCarBrand(){
+    public String getCarBrand() {
         return carBrand;
     }
 }

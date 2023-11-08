@@ -1,29 +1,30 @@
 package general.variables.reference.bigDecimal;
 
 import java.math.BigDecimal;
-/**.NET and Java also have Decimal/BigDecimal class that has higher precision than double.
+
+/**
+ * .NET and Java also have Decimal/BigDecimal class that has higher precision than double.
  * For more accurate calculations like in financial and banking applications, Decimal is used because it further reduces rounding errors.
  * The BigDecimal class provides operations on double numbers for arithmetic, scale handling, rounding, comparison,
  * format conversion and hashing. It can handle very large and very small floating point numbers with great precision
  * but compensating with the time complexity a bit.
- A BigDecimal consists of a random precision integer unscaled value and a 32-bit integer scale. If greater than or equal to zero,
- the scale is the number of digits to the right of the decimal point.
- If less than zero, the unscaled value of the number is multiplied by 10^(-scale).
- Input : double a=0.03;
- double b=0.04;
- double c=b-a;
- System.out.println(c);
- Output :0.009999999999999998
-
- Input : BigDecimal _a = new BigDecimal("0.03");
- BigDecimal _b = new BigDecimal("0.04");
- BigDecimal _c = _b.subtract(_a);
- System.out.println(_c);
- Output :0.01
+ * A BigDecimal consists of a random precision integer unscaled value and a 32-bit integer scale. If greater than or equal to zero,
+ * the scale is the number of digits to the right of the decimal point.
+ * If less than zero, the unscaled value of the number is multiplied by 10^(-scale).
+ * Input : double a=0.03;
+ * double b=0.04;
+ * double c=b-a;
+ * System.out.println(c);
+ * Output :0.009999999999999998
+ * <p>
+ * Input : BigDecimal _a = new BigDecimal("0.03");
+ * BigDecimal _b = new BigDecimal("0.04");
+ * BigDecimal _c = _b.subtract(_a);
+ * System.out.println(_c);
+ * Output :0.01
  */
 public class BigDecimalExample {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // Create two new BigDecimals
         BigDecimal bd1 =
                 new BigDecimal("124567890.0987654321");

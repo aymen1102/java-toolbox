@@ -7,25 +7,30 @@ package designPatterns.structural.facade;
  * This pattern involves a single class which provides simplified methods required by client and
  * delegates calls to methods of existing system classes.
  */
-/** This is a facade class */
+
+/**
+ * This is a facade class
+ */
 public class ShapeFacade {
     private Shape circle;
     private Shape rectangle;
     private Shape square;
 
-    public ShapeFacade (){
-        circle=new Circle();
-        rectangle=new Rectangle();
-        square=new Square();
+    public ShapeFacade() {
+        circle = new Circle();
+        rectangle = new Rectangle();
+        square = new Square();
     }
 
-    public void drawCircle(){
+    public void drawCircle() {
         circle.draw();
     }
-    public void drawRectangle(){
+
+    public void drawRectangle() {
         rectangle.draw();
     }
-    public void drawSquare(){
+
+    public void drawSquare() {
         square.draw();
     }
 }

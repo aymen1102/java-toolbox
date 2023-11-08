@@ -13,14 +13,14 @@ public class FunctionExamples {
 
 
         // Exemple 2
-        Function<Integer,Integer> multiplierPar2 = x -> x*2;
+        Function<Integer, Integer> multiplierPar2 = x -> x * 2;
         Integer lengthMultiplierPar2 = getNameLength.andThen(multiplierPar2).apply("Aymen");
         System.out.println(lengthMultiplierPar2);  // 10
 
 
         // Exemple 3
-        List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
-        Function<List<Integer>,List<Integer>> findPairNumbers = (pairNumbers) ->{
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        Function<List<Integer>, List<Integer>> findPairNumbers = (pairNumbers) -> {
             pairNumbers = numbers.stream()
                     .filter(x -> x % 2 == 0)
                     .toList();

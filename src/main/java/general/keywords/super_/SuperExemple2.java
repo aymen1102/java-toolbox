@@ -1,13 +1,13 @@
 package general.keywords.super_;
 
 class E {
-    E(){
+    E() {
         System.out.println("E est crée");
     }
 }
 
-class F extends  E {
-    F(){
+class F extends E {
+    F() {
         super();
         System.out.println("F est crée");
     }

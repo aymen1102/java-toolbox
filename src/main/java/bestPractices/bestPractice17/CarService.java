@@ -9,9 +9,9 @@ public class CarService {
     private CarDao carDAO;
     /** bad habit : CarService depends on CarDAo
      public CarService(){
-        this.carDAO = new CarDao();
+     this.carDAO = new CarDao();
      }
-    * */
+     * */
 
     /**
      * good habit : Dependency injection by constructor
@@ -20,7 +20,7 @@ public class CarService {
         this.carDAO = carDAO;
     }
 
-    public String getBrandNameUpperCase(){
+    public String getBrandNameUpperCase() {
         return carDAO.getCarBrand();
     }
 }

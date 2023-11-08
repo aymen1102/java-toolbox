@@ -1,16 +1,17 @@
 package general.keywords.super_;
 
-class C{
-    void show(){
+class C {
+    void show() {
         System.out.println("C'est la classe C");
     }
 }
 
-class D extends C{
-    void show(){
+class D extends C {
+    void show() {
         System.out.println("C'est la classe D");
     }
-    void dispay(){
+
+    void dispay() {
         show(); // C'est la classe D
         super.show(); // C'est la classe C
     }

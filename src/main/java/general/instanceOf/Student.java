@@ -5,9 +5,9 @@ package general.instanceOf;
  * The instanceof in java is also known as type comparison operator because it compares the instance with type.
  * It returns either true or false. If we apply the instanceof operator with any variable that has null value, it returns false.
  */
-public class InstanceOfExample {
+public class Student {
     public static void main(String[] args) {
-        InstanceOfExample instanceOfExample = new InstanceOfExample();
-        System.out.println(instanceOfExample instanceof InstanceOfExample); // true
+        Student student = new Student();
+        System.out.println(student instanceof Student); // true
     }
 }

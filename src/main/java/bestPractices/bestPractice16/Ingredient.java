@@ -15,10 +15,11 @@ public class Ingredient {
     @Column(name = "name", unique = false)
     private String name;
 
-	public Ingredient() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+    public Ingredient() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
     public Ingredient(String name) {
         this.name = name;
     }

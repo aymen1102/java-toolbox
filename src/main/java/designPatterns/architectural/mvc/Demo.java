@@ -14,7 +14,7 @@ public class Demo {
     public static void main(String[] args) {
 
         //fetch student record based on his roll no from the database
-        StudentModel model  = new StudentModel("Robert","10");
+        StudentModel model = new StudentModel("Robert", "10");
 
         //Create a view : to write student details on console
         StudentView view = new StudentView();

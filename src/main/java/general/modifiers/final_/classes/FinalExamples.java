@@ -1,9 +1,10 @@
 package general.modifiers.final_.classes;
 
-/** Error
+/**
+ * Error
  * class FinalExamples extends FinalClass{
- *
- *
+ * <p>
+ * <p>
  * }
- * */
+ */
 

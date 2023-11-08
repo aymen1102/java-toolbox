@@ -18,7 +18,7 @@ public class ForExample {
             if (i == 4) {
                 break;
             }
-            System.out.print(" "+i);
+            System.out.print(" " + i);
         }
 
         System.out.println("\n* simple for loop with continue : ");
@@ -26,7 +26,7 @@ public class ForExample {
             if (i == 4) {
                 continue;
             }
-            System.out.print(" "+i);
+            System.out.print(" " + i);
         }
     }
 }

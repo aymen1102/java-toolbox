@@ -1,8 +1,6 @@
 package general.collections.queue.priorityQueue;
 
-import java.util.Iterator;
 import java.util.PriorityQueue;
-import java.util.Queue;
 
 /**
  * PriorityQueue in Java is a data structure that implements the Queue interface and provides a queue-based framework
@@ -14,8 +12,7 @@ import java.util.Queue;
  * A PriorityQueue does not permit null elements and is not thread-safe; concurrent modifications without proper synchronization will result in data corruption.
  */
 public class PriorityQueueExample {
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         // Creating a PriorityQueue
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
 

@@ -28,11 +28,11 @@ public class ThrowsExample {
 }
 
 
-
 class Main {
     public static void main(String[] args) throws Exception {
         dangerousMethod();
     }
+
     public static void dangerousMethod() throws Exception {
         throw new IllegalStateException("This is an exception.");
     }

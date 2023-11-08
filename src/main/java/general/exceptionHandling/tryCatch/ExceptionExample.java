@@ -10,9 +10,9 @@ public class ExceptionExample {
             System.out.println("What is your birth year ?");
             int yearOfBirth = scanner.nextInt();
             System.out.println(yearOfBirth);
-        } catch (InputMismatchException e){
+        } catch (InputMismatchException e) {
             e.printStackTrace();
-        }  finally {
+        } finally {
             System.out.println("ok");
         }
     }

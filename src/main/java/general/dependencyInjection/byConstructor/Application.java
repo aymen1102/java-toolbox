@@ -1,5 +1,9 @@
 package general.dependencyInjection.byConstructor;
 
+interface Service {
+    void serve();
+}
+
 /**
  * Injection by constructor: This is the most recommended method for dependency injection in Java, particularly with frameworks like Spring.
  * It guarantees object immutability, facilitates unit testing and ensures that the object always has all its dependencies before it is used.
@@ -10,10 +14,6 @@ public class Application {
         Client client = new Client(service); // Injection
         client.doSomething();  // Service is serving.
     }
-}
-
-interface Service {
-    void serve();
 }
 
 class ServiceImpl implements Service {

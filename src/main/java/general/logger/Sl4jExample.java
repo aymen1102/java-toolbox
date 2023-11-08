@@ -3,7 +3,6 @@ package general.logger;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
-import java.util.logging.Level;
 
 @Slf4j
 public class Sl4jExample {
@@ -15,7 +14,7 @@ public class Sl4jExample {
         try {
             int maxElement = integerArray[3];
         } catch (ArrayIndexOutOfBoundsException exception) {
-            log.error("this is an error",exception);
+            log.error("this is an error", exception);
         }
     }
 }

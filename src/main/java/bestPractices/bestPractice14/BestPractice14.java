@@ -27,19 +27,19 @@ public class BestPractice14 {
         /**Good habit - Primitive data types */
         byte minByte = -128;
         byte maxByte = 127;     //1 byte
-        System.out.println("le type byte est entre "+minByte+" et "+maxByte);
+        System.out.println("le type byte est entre " + minByte + " et " + maxByte);
 
         short minShort = -32_768;
         short maxShort = 32_767;  //2 bytes
-        System.out.println("le type short est entre "+minShort+" et "+maxShort);
+        System.out.println("le type short est entre " + minShort + " et " + maxShort);
 
         int minInt = -2_147_483_648;
         int maxInt = 2_147_483_647;   //4 bytes
-        System.out.println("le type int est entre "+minInt+" et "+maxInt);
+        System.out.println("le type int est entre " + minInt + " et " + maxInt);
 
         long minLong = -9_223_372_036_854_775_808L;
-        long maxLong =  9_223_372_036_854_775_807L;    //8 bytes
-        System.out.println("le type long est entre "+minLong+" et "+maxLong);
+        long maxLong = 9_223_372_036_854_775_807L;    //8 bytes
+        System.out.println("le type long est entre " + minLong + " et " + maxLong);
 
         float floatNumber = 3.14f;    // 4 bytes
         System.out.println(floatNumber);
@@ -52,7 +52,6 @@ public class BestPractice14 {
 
         char charachter = '@';
         System.out.println(charachter);
-
 
 
     }

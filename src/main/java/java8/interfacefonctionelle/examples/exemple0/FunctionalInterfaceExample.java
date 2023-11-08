@@ -14,11 +14,13 @@ package java8.interfacefonctionelle.examples.exemple0;
  */
 @FunctionalInterface
 public interface FunctionalInterfaceExample {
-    int multiply(int a,int b);
-    static void staticMethod(){
+    static void staticMethod() {
         System.out.println("This is a static method !");
     }
-    default void defaultMethod(){
+
+    int multiply(int a, int b);
+
+    default void defaultMethod() {
         System.out.println("This is a default method !");
     }
 }

@@ -1,6 +1,6 @@
 package general.classe.abstraction;
 
-public class Dog extends AnimalPet{
+public class Dog extends AnimalPet {
 
     public Dog(String name) {
         super(name);

@@ -1,11 +1,11 @@
 package general.modifiers.final_.methods;
 
 public class Car {
-    public String getTitle(){
+    public String getTitle() {
         return "Method";
     }
 
-    public final String getText(){
+    public final String getText() {
         return "Final Method";
     }
 }

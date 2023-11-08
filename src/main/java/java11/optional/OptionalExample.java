@@ -1,7 +1,7 @@
 package java11.optional;
 
-import java.util.Optional;
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 public class OptionalExample {
     public static void main(String[] args) {

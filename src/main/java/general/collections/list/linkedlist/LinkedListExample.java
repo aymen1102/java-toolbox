@@ -24,22 +24,22 @@ public class LinkedListExample {
         products.add("Keyboard");
         products.add("Screen");
 
-        System.out.println("ArrayList: " +products); // [Computer, Mouse, Keyboard, Screen]
+        System.out.println("ArrayList: " + products); // [Computer, Mouse, Keyboard, Screen]
 
         String product1 = products.get(1);
         System.out.println("Element at index 1: " + product1); // Mouse
 
-        products.set(1,"Printer");
-        System.out.println("LinkedList: " +products); // [Computer, Printer, Keyboard, Screen]
+        products.set(1, "Printer");
+        System.out.println("LinkedList: " + products); // [Computer, Printer, Keyboard, Screen]
 
         products.remove(3);
-        System.out.println("LinkedList: " +products); // [Computer, Printer, Keyboard]
+        System.out.println("LinkedList: " + products); // [Computer, Printer, Keyboard]
 
         int size = products.size();
-        System.out.println("Size : "+size); // 3
+        System.out.println("Size : " + size); // 3
 
         products.sort(Comparator.naturalOrder());
-        System.out.println("LinkedList: " +products); // [Computer, Keyboard, Printer]
+        System.out.println("LinkedList: " + products); // [Computer, Keyboard, Printer]
 
         boolean containsComputer = products.contains("Computer");
         System.out.println(containsComputer); //true

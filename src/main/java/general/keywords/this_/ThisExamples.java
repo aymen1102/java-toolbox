@@ -4,14 +4,14 @@ public class ThisExamples {
 
     public String nom = "AYMEN";
 
-    public String setNom(String nom){
-        return this.nom;
-    }
-
     public static void main(String[] args) {
         ThisExamples thisExamples = new ThisExamples();
         System.out.println(thisExamples.setNom("BAROUDI")); //AYMEN
         System.out.println();
+    }
+
+    public String setNom(String nom) {
+        return this.nom;
     }
 
 }

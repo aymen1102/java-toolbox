@@ -2,7 +2,6 @@ package general.collections.queue.deque;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Iterator;
 
 /**
  * Deque in Java is a double-ended queue interface that extends the Queue interface.

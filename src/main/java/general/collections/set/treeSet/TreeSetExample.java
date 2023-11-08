@@ -1,18 +1,17 @@
 package general.collections.set.treeSet;
 
-import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
 
 /**
- TreeSet in Java is an implementation of the SortedSet interface that uses a Red-Black tree for storage.
- The key feature of a TreeSet is that it stores elements in sorted, ascending order according to their natural ordering,
- or by a Comparator provided at set creation.
- All elements inserted into the set must implement the Comparable interface (if natural ordering is used) or
- be comparable by the provided Comparator to maintain order.
- TreeSet offers logarithmic time complexity for common operations such as add, remove, and contains.
- It's beneficial when you require a collection to maintain order and provide efficient retrieval.
- However, it does not allow null elements and is not synchronized, which means it is not thread-safe without external synchronization.
+ * TreeSet in Java is an implementation of the SortedSet interface that uses a Red-Black tree for storage.
+ * The key feature of a TreeSet is that it stores elements in sorted, ascending order according to their natural ordering,
+ * or by a Comparator provided at set creation.
+ * All elements inserted into the set must implement the Comparable interface (if natural ordering is used) or
+ * be comparable by the provided Comparator to maintain order.
+ * TreeSet offers logarithmic time complexity for common operations such as add, remove, and contains.
+ * It's beneficial when you require a collection to maintain order and provide efficient retrieval.
+ * However, it does not allow null elements and is not synchronized, which means it is not thread-safe without external synchronization.
  */
 public class TreeSetExample {
     public static void main(String[] args) {

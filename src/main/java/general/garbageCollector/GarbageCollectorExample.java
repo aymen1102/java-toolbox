@@ -1,8 +1,5 @@
 package general.garbageCollector;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class GarbageCollectorExample {
 
     public static void main(String[] args) {
@@ -16,11 +13,11 @@ public class GarbageCollectorExample {
          * By assigning a reference to another example : gc1=gc2;
          * By anonymous object example : new GarbageCollectorExample();
          */
-        gc1=null;
-        gc2=null;
+        gc1 = null;
+        gc2 = null;
 
         System.gc();    // object is garbage collected
-                        // object is garbage collected
+        // object is garbage collected
     }
 
     /**
@@ -28,7 +25,7 @@ public class GarbageCollectorExample {
      * This method can be used to perform cleanup processing.
      * This method is defined in Object class
      */
-    public void finalize(){
+    public void finalize() {
         System.out.println("object is garbage collected");
     }
 }

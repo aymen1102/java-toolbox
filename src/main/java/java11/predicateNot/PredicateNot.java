@@ -5,7 +5,7 @@ import java.util.function.Predicate;
 
 public class PredicateNot {
     public static void main(String[] args) {
-        List<Integer> numbers = List.of(2,5,6,9,1);
+        List<Integer> numbers = List.of(2, 5, 6, 9, 1);
         Predicate<Integer> isEven =
                 number -> number % 2 == 0;
         numbers.stream()
@@ -19,7 +19,8 @@ public class PredicateNot {
                 .filter(Predicate.not(PredicateNot::isEven))
                 .forEach(System.out::println); // 5 9 1
     }
-    public static boolean isEven(Integer number){
+
+    public static boolean isEven(Integer number) {
         return number % 2 == 0;
     }
 }

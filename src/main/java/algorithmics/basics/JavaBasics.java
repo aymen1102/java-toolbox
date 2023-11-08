@@ -126,8 +126,6 @@ public class JavaBasics {
     }
 
 
-
-
     static void question1() {
         System.out.println("-------------------------------------------------- Question 1 --------------------------------------------------");
         System.out.println("Hello !");
@@ -296,26 +294,26 @@ public class JavaBasics {
     static void question18() {
         System.out.println("-------------------------------------------------- Question 18 --------------------------------------------------");
         /**int binary1 = 110;
-        int binary2 = 101;
-        int result = 0;
-        System.out.println("The first binary number :"+binary1);
-        System.out.println("The second binary number :"+binary2);
-        int[] sum = new int[20];
-        int i = 0;
-        int remainder = 0;
-        while (binary1 !=0 || binary2 !=0){
-            sum[i++]= (binary1 % 10 + binary2 % 10 + remainder) % 2;
-            remainder =  (binary1 % 10 + binary2 % 10 + remainder) / 2;
-            binary1 = binary1 / 10;
-            binary2 = binary2 / 10;
-        }
-        if(remainder != 0)
-            sum[i++] = remainder;
-        i--;
-        while (i>=0){
-            result = result * 10 + sum[i--];
-        }
-        System.out.println("Product of two binary numbers : "+result);*/
+         int binary2 = 101;
+         int result = 0;
+         System.out.println("The first binary number :"+binary1);
+         System.out.println("The second binary number :"+binary2);
+         int[] sum = new int[20];
+         int i = 0;
+         int remainder = 0;
+         while (binary1 !=0 || binary2 !=0){
+         sum[i++]= (binary1 % 10 + binary2 % 10 + remainder) % 2;
+         remainder =  (binary1 % 10 + binary2 % 10 + remainder) / 2;
+         binary1 = binary1 / 10;
+         binary2 = binary2 / 10;
+         }
+         if(remainder != 0)
+         sum[i++] = remainder;
+         i--;
+         while (i>=0){
+         result = result * 10 + sum[i--];
+         }
+         System.out.println("Product of two binary numbers : "+result);*/
     }
 
 
@@ -324,13 +322,13 @@ public class JavaBasics {
         int decimalNumber = 21;
         int i = 0;
         int[] binaryNumber = new int[20];
-        System.out.println("Convert decimal number "+decimalNumber+" to binary : ");
-        while (decimalNumber != 0){
+        System.out.println("Convert decimal number " + decimalNumber + " to binary : ");
+        while (decimalNumber != 0) {
             binaryNumber[i++] = decimalNumber % 2;
             decimalNumber = decimalNumber / 2;
         }
         i--;
-        while (i>=0)
+        while (i >= 0)
             System.out.print(binaryNumber[i--]);         // 10101
         System.out.println("\n");
     }
@@ -340,9 +338,9 @@ public class JavaBasics {
         System.out.println("-------------------------------------------------- Question 20 --------------------------------------------------");
         int decimalNumber = 1256;
         int remainder;
-        String hexadecimalNumber="";
-        char[] hexadecimal ={'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'};
-        while (decimalNumber!=0){
+        String hexadecimalNumber = "";
+        char[] hexadecimal = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+        while (decimalNumber != 0) {
             remainder = decimalNumber % 16;
             hexadecimalNumber = hexadecimal[remainder] + hexadecimalNumber;
             decimalNumber = decimalNumber / 16;
@@ -362,13 +360,13 @@ public class JavaBasics {
         int decimalNumber = 0;
         int remainder;
         int i = 1;
-        while (binaryNumber!=0){
+        while (binaryNumber != 0) {
             remainder = decimalNumber % 10;
             decimalNumber = decimalNumber + remainder * i;
             binaryNumber = binaryNumber / 10;
             i = i * 2;
         }
-        System.out.println("Convert binary number to decimal : "+ decimalNumber);
+        System.out.println("Convert binary number to decimal : " + decimalNumber);
     }
 
 
@@ -747,18 +745,20 @@ public class JavaBasics {
         System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
         String input = "Aymen";
         char[] inputChars = input.toCharArray();
-        String output ="";
+        String output = "";
         int i = inputChars.length - 1;
-        while (i >= 0){
+        while (i >= 0) {
             output += inputChars[i];
             i--;
         }
-        System.out.println("Reverse word : "+output);
+        System.out.println("Reverse word : " + output);
     }
+
     private static void question62() {
         System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
 
     }
+
     private static void question63() {
         System.out.println("-------------------------------------------------- Question   --------------------------------------------------");
 
@@ -910,13 +910,13 @@ public class JavaBasics {
             if (n % 2 == 0)
                 n = n / 2;
             else
-                n = (n * 3 + 1)/2;
+                n = (n * 3 + 1) / 2;
         }
-        System.out.println("value of n :"+n);
+        System.out.println("value of n :" + n);
     }
 
 
-    static void question87(){
+    static void question87() {
         System.out.println("-------------------------------------------------- Question 87  --------------------------------------------------");
         Integer number = 956;
         Integer sum = 0;
@@ -926,7 +926,7 @@ public class JavaBasics {
         for (int i = 0; i < chars.length; i++) {
             sum = sum + Integer.valueOf(chars[i]);
         }
-        System.out.println("The sum is : "+sum);
+        System.out.println("The sum is : " + sum);
 
         // print sun numbers in english
     }

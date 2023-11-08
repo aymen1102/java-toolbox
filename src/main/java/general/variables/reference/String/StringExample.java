@@ -23,10 +23,10 @@ public class StringExample {
         // substring string
         System.out.println(first.substring(3));  //lo
         // contains
-        System.out.println(first+" contains : "+first.contains("Hel"));  // Hello  contains : true
+        System.out.println(first + " contains : " + first.contains("Hel"));  // Hello  contains : true
         // charAt
-        System.out.println("charAt[3] : "+ first.charAt(3));  // l
-        System.out.println("charAt[3] : "+ first.charAt(3));  // l
+        System.out.println("charAt[3] : " + first.charAt(3));  // l
+        System.out.println("charAt[3] : " + first.charAt(3));  // l
         // use the escape character
         String example = "This is the \"String\" class.";  // This is the "String" class.
         System.out.println(example);

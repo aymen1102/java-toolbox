@@ -12,15 +12,15 @@ public class LambdaExamples {
         consumer.accept("Toto"); // Toto
 
         //Exemple 2
-        Function<String,Integer> function = (String name) -> {
-            return  name.length();
+        Function<String, Integer> function = (String name) -> {
+            return name.length();
         };
         Integer nameLength = function.apply("Gregoire");
         System.out.println(nameLength);   // 8
 
         //Exemple 3
         Predicate<String> predicate = value3 -> value3.startsWith("S");
-        List<String> stringList = Arrays.asList("Alice","Salim","Salma");
+        List<String> stringList = Arrays.asList("Alice", "Salim", "Salma");
         stringList.stream()
                 .filter(predicate)
                 .forEach(System.out::println); // Salim Salma
@@ -31,6 +31,6 @@ public class LambdaExamples {
 
         //Exemple 5
         BinaryOperator<Integer> result = (Integer x, Integer y) -> x + y;
-        System.out.println(result.apply(4,2)); // 6
+        System.out.println(result.apply(4, 2)); // 6
     }
 }

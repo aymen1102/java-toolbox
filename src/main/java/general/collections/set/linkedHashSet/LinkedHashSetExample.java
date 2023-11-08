@@ -1,16 +1,14 @@
 package general.collections.set.linkedHashSet;
 
-import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
-import java.util.Map;
 import java.util.Set;
 
 /**
- HashSet is an implementation of the Set interface that does not guarantee the order of its elements,
- while LinkedHashSet maintains elements in the order they were inserted due to an internal doubly-linked list.
- LinkedHashSet consumes more memory than HashSet because of this linked list, but it provides a predictable iteration order.
- Choose HashSet if order is not important and you want to use less memory.
- Use LinkedHashSet if you need to maintain the insertion order of elements.
+ * HashSet is an implementation of the Set interface that does not guarantee the order of its elements,
+ * while LinkedHashSet maintains elements in the order they were inserted due to an internal doubly-linked list.
+ * LinkedHashSet consumes more memory than HashSet because of this linked list, but it provides a predictable iteration order.
+ * Choose HashSet if order is not important and you want to use less memory.
+ * Use LinkedHashSet if you need to maintain the insertion order of elements.
  */
 public class LinkedHashSetExample {
     public static void main(String[] args) {

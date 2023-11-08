@@ -12,21 +12,21 @@ abstract class Bank {
     public String bankName;
     protected int customerNumbers;
 
+    static int getAccountNumber() {
+        return 6565654;
+    }
+
     abstract int getInterestRate();
 
-    public String getCity(){
+    public String getCity() {
         return "Paris";
     }
 
-    private String getBalance(){
+    private String getBalance() {
         return "99965469464";
     }
 
-    protected String getTitle(){
+    protected String getTitle() {
         return "Invest";
-    }
-
-    static int getAccountNumber(){
-        return 6565654;
     }
 }

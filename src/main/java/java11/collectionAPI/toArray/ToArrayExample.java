@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ToArrayExample {
     public static void main(String[] args) {
-        List<String> names = List.of("Antoine","Marie");
+        List<String> names = List.of("Antoine", "Marie");
 
         // Before
         System.out.println("List to Array example in Java 8:");

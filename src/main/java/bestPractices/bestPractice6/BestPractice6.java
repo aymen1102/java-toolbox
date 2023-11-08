@@ -1,26 +1,27 @@
 package bestPractices.bestPractice6;
 
-/** Ordering Class members by scopes */
+/**
+ * Ordering Class members by scopes
+ */
 public class BestPractice6 {
 
-    /** Bad Habit */
-    private String errorMessage;
-    protected int numberOfRows;
-    float columnWidth;
     public String title;
+    public String computer;
+    protected int numberOfRows;
+    protected String movie;
+    protected float age;
+    float columnWidth;
+    int number;
+    String local;
+    /**
+     * Bad Habit
+     */
+    private String errorMessage;
     private int numberOfColumns;
-
-
-    /** best practice */
+    /**
+     * best practice
+     */
     private int numberOfStudent;
     private String name;
     private boolean isTrue;
-
-    protected String movie;
-    protected float age;
-
-    int number;
-    String local;
-
-    public String computer;
 }

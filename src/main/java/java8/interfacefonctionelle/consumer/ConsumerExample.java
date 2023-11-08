@@ -16,16 +16,16 @@ public class ConsumerExample {
 
         //Exemple 3 : Création d'un Consumer de multiplication par 2
         Consumer<List<Integer>> multiplierPar2 = (integerList) -> {
-                integerList.stream()
-                        .map(x -> x * 2)
-                        .forEach(System.out::print);
+            integerList.stream()
+                    .map(x -> x * 2)
+                    .forEach(System.out::print);
         };
-        List<Integer> integerList = Arrays.asList(1,2,3,4,5);
+        List<Integer> integerList = Arrays.asList(1, 2, 3, 4, 5);
         multiplierPar2.accept(integerList); //2 4 6 8 10
 
         //Exemple4 : Création d'un consumer qui retourne la longueur d'une chaine de carractère
         System.out.println();
-        List<String> stringList = Arrays.asList("ABC","N","HO");
+        List<String> stringList = Arrays.asList("ABC", "N", "HO");
         Consumer<List<String>> longueurChaineDeCarractere = list -> {
             list.stream()
                     .map(String::length)
