@@ -1,13 +1,12 @@
 package general.logger;
 
-import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class LoggerExample {
     private static final Logger LOGGER = Logger.getLogger(LoggerExample.class.getName());
 
-    public static void main(String[] args) throws SecurityException, IOException {
+    public static void main(String[] args) {
         LOGGER.info("Logger Name: " + LOGGER.getName());
         LOGGER.warning("Can cause ArrayIndexOutOfBoundsException");
         //An array of size 3

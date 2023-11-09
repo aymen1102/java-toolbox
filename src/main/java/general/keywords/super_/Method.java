@@ -12,12 +12,12 @@ class D extends C {
     }
 
     void dispay() {
-        show(); // C'est la classe D
-        super.show(); // C'est la classe C
+        show();
+        super.show();
     }
 }
 
-public class SuperExemple1 {
+public class Method {
     public static void main(String[] args) {
         D d = new D();
         d.dispay();

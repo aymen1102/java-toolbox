@@ -2,18 +2,18 @@ package general.keywords.super_;
 
 class E {
     E() {
-        System.out.println("E est crée");
+        System.out.println("E created");
     }
 }
 
 class F extends E {
     F() {
         super();
-        System.out.println("F est crée");
+        System.out.println("F created");
     }
 }
 
-public class SuperExemple2 {
+public class Constructor {
     public static void main(String[] args) {
         F f = new F();
     }

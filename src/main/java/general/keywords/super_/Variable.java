@@ -8,8 +8,8 @@ class B extends A {
     String name = "Beatrice";
 
     void showName() {
-        System.out.println(name); //Beatrice
-        System.out.println(super.name); //Antoine
+        System.out.println(name);   // Beatrice
+        System.out.println(super.name);     // Antoine
     }
 }
 
