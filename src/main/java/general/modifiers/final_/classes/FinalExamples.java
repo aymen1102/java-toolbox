@@ -1,10 +1,8 @@
 package general.modifiers.final_.classes;
 
 /**
- * Error
+ * Cannot inherit from final general.modifiers.final_.classes.FinalClas
+ *
  * class FinalExamples extends FinalClass{
- * <p>
- * <p>
  * }
  */
-

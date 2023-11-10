@@ -5,14 +5,14 @@ public class Bar implements Foo {
     public static void main(String[] args) {
         // call from interface instance
         Foo foo = new Bar();
-        foo.maMethodeParDefaut();
-        foo.display();
+        foo.defaultMethod();
+        foo.simpleMethod();
 
         // call from the interface
-        Foo.maMethodeStatic();
+        Foo.staticMethod();
     }
 
-    public void display() {
-        System.out.println("Ici j'ai implémenté une méthode");
+    public void simpleMethod() {
+        System.out.println("Here, i implemented a simple method");
     }
 }

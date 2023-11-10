@@ -1,16 +1,13 @@
 package general.modifiers.default_.method;
 
 public interface Foo {
-
-    public static void maMethodeStatic() {
-        System.out.println("Ici j'ai implémenté une méthode statique");
+    static void staticMethod() {
+        System.out.println("Here, i implemented a static method");
     }
 
-
-    default void maMethodeParDefaut() {
-        System.out.println("Ici j'ai implémenté une méthode par défaut");
+    default void defaultMethod() {
+        System.out.println("Here, i implemented a default method");
     }
 
-    public void display();
-
+    void simpleMethod();
 }
