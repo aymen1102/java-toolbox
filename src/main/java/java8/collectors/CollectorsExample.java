@@ -6,6 +6,15 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * Collector is used in combination with the Stream API to perform mutable fold operations, such as accumulating elements
+ * into collections, summarizing elements according to various criteria, or performing complex conversions.
+ * Collecting Data: Collectors are often used to gather elements of a stream into a collection, like a List, Set, or Map.
+ * Predefined Collectors: Java provides many predefined collectors in the java.util.stream.Collectors class, including methods like toList(), toSet(), toMap(), etc.
+ * Custom Collectors: You can also create custom collectors to define specific aggregation logic.
+ * Used with collect Method: Collectors are used as the argument to the collect() method of a Stream.
+ * In summary, Collectors provide a way to collect elements from a stream into a container or perform aggregate operations.
+ */
 public class CollectorsExample {
 
     public static void main(String[] args) {

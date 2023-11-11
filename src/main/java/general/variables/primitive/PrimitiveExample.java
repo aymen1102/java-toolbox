@@ -1,12 +1,15 @@
 package general.variables.primitive;
 
 /**
- * -	Integer est une classe, alors que int est un type primitif
- * -	Avec la classe Integer, il existe plein de méthodes intéressantes
- * -	Int stocke les données alors qu’une référence stocke une adresse
- * -	Une variable de type primitif consomme moins de mémoire qu’une référence
- * -	Une variable de type primitif est plus rapide qu’une référence
- * -	Un type primitive ne peut pas être null contrairement à une référence
+ * Nature: Integer is a wrapper class in Java for the primitive type int. Integer is therefore an object, whereas int is a primitive type.
+ * Methods: The Integer class provides many useful methods for processing integers. These methods are not available with the primitive int type.
+ * Storage: int stores the numerical value directly, while Integer stores a reference to a memory location where the value is stored.
+ * Memory and Performance: A primitive variable like int generally consumes less memory and is faster to access than its object
+ * counterpart, Integer. This is because objects have an additional overhead for storing metadata.
+ * Nullability: Primitive types, such as int, always have a value and can never be null.
+ * In contrast, Integer is an object and can therefore have a null value.
+ * Usage: Primitive types are generally used when performance and memory are critical, while objects,
+ * such as Integer, offer greater flexibility, particularly thanks to the possibility of using them in collections and generic methods.
  */
 public class PrimitiveExample {
 

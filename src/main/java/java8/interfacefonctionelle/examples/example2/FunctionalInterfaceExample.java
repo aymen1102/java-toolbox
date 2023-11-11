@@ -1,4 +1,4 @@
-package java8.interfacefonctionelle.examples.exemple1;
+package java8.interfacefonctionelle.examples.example2;
 
 /**
  * A functional interface is an interface that contains only one abstract method.
@@ -14,15 +14,5 @@ package java8.interfacefonctionelle.examples.exemple1;
  */
 @FunctionalInterface
 public interface FunctionalInterfaceExample {
-    static void staticMethod() {
-        System.out.println("This is a static method !");
-    }
-
-    void myFunction();
-
-    default void defaultMethod() {
-        System.out.println("This is a default method !");
-    }
+    int multiply(int a, int b);
 }
-
-

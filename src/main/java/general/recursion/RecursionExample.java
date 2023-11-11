@@ -12,9 +12,9 @@ public class RecursionExample {
         System.out.println(result);
     }
 
-    public static int sum(int k) {
-        if (k > 0) {
-            return k + sum(k - 1);
+    public static int sum(int number) {
+        if (number > 0) {
+            return number + sum(number - 1);
         } else {
             return 0;
         }

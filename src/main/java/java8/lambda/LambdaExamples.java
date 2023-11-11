@@ -4,6 +4,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.*;
 
+/**
+ * A lambda expression, often simply called "lambda", is an anonymous function, i.e. a function without a name.
+ * It was introduced in Java 8 to help implement the functional interface in a more concise, readable and expressive way.
+ * It is mainly used to define inline interface implementations for functional methods. In Java, the functional interface
+ * is an interface that contains a single abstract method. Lambda expressions are useful in various contexts,
+ * notably in functional programming and when using the Stream API in Java to handle collections declaratively.
+ */
 public class LambdaExamples {
     public static void main(String[] args) {
         //Exemple 1

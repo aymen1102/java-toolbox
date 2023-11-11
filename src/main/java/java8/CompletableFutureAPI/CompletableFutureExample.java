@@ -5,6 +5,14 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
+/**
+ * CompletableFuture in Java is a class introduced in Java 8, residing in the java.util.concurrent package.
+ * It represents a future result of an asynchronous computation—a concept that allows you to write non-blocking
+ * code by running a task on a separate thread and then carrying on with other tasks until the result is ready.
+ * CompletableFuture provides methods for manually completing the computation, combining several futures together,
+ * and applying functions or actions upon the result. It enhances the capabilities of Future with additional completion
+ * logic and method chaining, making it easier to manage a sequence of asynchronous tasks and their dependencies.
+ */
 public class CompletableFutureExample {
 
     public static void main(String[] args) {

@@ -4,33 +4,38 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
+/**
+ * The Consumer functional interface is part of the java.util.function package and represents an operation that takes
+ * one argument and returns no value. It has a method called accept() which consumes a parameter of type T and returns nothing.
+ * Consumer is mainly used to implement void-functional behaviors (operations that take an element and execute an action without returning a result).
+ * The main advantage of using Consumer is that it allows great flexibility in performing various operations without the need to return a value.
+ */
 public class ConsumerExample {
     public static void main(String[] args) {
-        //Exemple 1
+        //  Example 1
         Consumer<String> consumer1 = System.out::println;
-        consumer1.accept("Toto");
+        consumer1.accept("Toto");   // Toto
 
-        //Exemple 2
+        //  Example 2
         Consumer<Integer> consumer2 = System.out::println;
-        consumer2.accept(10);
+        consumer2.accept(10);   // 10
 
-        //Exemple 3 : Création d'un Consumer de multiplication par 2
-        Consumer<List<Integer>> multiplierPar2 = (integerList) -> {
-            integerList.stream()
+        //  Example 3
+        Consumer<List<Integer>> consumer3 = numberList -> {
+            numberList.stream()
                     .map(x -> x * 2)
                     .forEach(System.out::print);
         };
-        List<Integer> integerList = Arrays.asList(1, 2, 3, 4, 5);
-        multiplierPar2.accept(integerList); //2 4 6 8 10
+        List<Integer> numberList = Arrays.asList(1, 2, 3, 4, 5);
+        consumer3.accept(numberList);     //2 4 6 8 10
 
-        //Exemple4 : Création d'un consumer qui retourne la longueur d'une chaine de carractère
-        System.out.println();
+        //  Example 4
         List<String> stringList = Arrays.asList("ABC", "N", "HO");
-        Consumer<List<String>> longueurChaineDeCarractere = list -> {
+        Consumer<List<String>> consumer4 = list -> {
             list.stream()
                     .map(String::length)
                     .forEach(System.out::print);
         };
-        longueurChaineDeCarractere.accept(stringList); //3 1 2
+        consumer4.accept(stringList); //3 1 2
     }
 }

@@ -10,7 +10,6 @@ public class StringExample {
         // create a string
         String first = "Hello ";
         String second = "world !";
-        String third = " :D";
 
         System.out.println("String: " + first); //String: Hello
 

@@ -1,9 +1,9 @@
 package general.thread;
 
-public class ThreadSleepExample {
-    public static void main(String[] args) throws Exception {
+public class ThreadSleepExample extends Thread {
+    public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < 5; i++) {
-            Thread.sleep(500);
+            sleep(500);
             System.out.println(i);
         }
     }

@@ -11,17 +11,6 @@ import java.math.BigDecimal;
  * A BigDecimal consists of a random precision integer unscaled value and a 32-bit integer scale. If greater than or equal to zero,
  * the scale is the number of digits to the right of the decimal point.
  * If less than zero, the unscaled value of the number is multiplied by 10^(-scale).
- * Input : double a=0.03;
- * double b=0.04;
- * double c=b-a;
- * System.out.println(c);
- * Output :0.009999999999999998
- * <p>
- * Input : BigDecimal _a = new BigDecimal("0.03");
- * BigDecimal _b = new BigDecimal("0.04");
- * BigDecimal _c = _b.subtract(_a);
- * System.out.println(_c);
- * Output :0.01
  */
 public class BigDecimalExample {
     public static void main(String[] args) {

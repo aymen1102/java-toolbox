@@ -4,11 +4,16 @@ public class ThreadExample extends Thread {
     public static void main(String[] args) {
         ThreadExample monThread = new ThreadExample();
         monThread.start();
-        System.out.println("Ici je suis en dehors du thread");
+        System.out.println("Here, i'm outside the thread");
     }
 
     @Override
     public void run() {
-        System.out.println("Ici je suis à l'intérieur du thread");
+        try {
+            sleep(1000);
+            System.out.println("Here, i'm inside the thread");
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

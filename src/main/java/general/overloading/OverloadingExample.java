@@ -9,19 +9,14 @@ public class OverloadingExample {
 
     public static void main(String[] args) {
         display(3);
-        display(3, 2);
         display("Good !");
     }
 
-    private static void display(int a) {
-        System.out.println("Argument :" + a);
+    private static void display(int number) {
+        System.out.println("Argument : " + number);
     }
 
-    private static void display(int a, int b) {
-        System.out.println("Arguments :" + a + "," + b);
-    }
-
-    private static void display(String a) {
-        System.out.println("Argument :" + a);
+    private static void display(String text) {
+        System.out.println("Argument : " + text);
     }
 }

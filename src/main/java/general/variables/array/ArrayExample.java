@@ -1,23 +1,26 @@
 package general.variables.array;
 
 public class ArrayExample {
+    static String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    static int[][] myNumbers = {{12, 21, 35, 43}, {95, 56, 17}};
+
     public static void main(String[] args) {
-        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        System.out.println("- Using for i loop :");
         for (int i = 0; i < cars.length; i++) {
             System.out.println(cars[i]);
         }
 
-        for (String i : cars) {
-            System.out.println(i);
+        System.out.println("- Using enhanced loop :");
+        for (String car : cars) {
+            System.out.println(car);
         }
 
-        int[][] myNumbers = {{1, 2, 3, 4}, {5, 6, 7}};
-        int x = myNumbers[1][2];
-        System.out.println(x); // Outputs 7
+        System.out.println("- Get data from multi-dimensional array: ");
+        System.out.println(myNumbers[1][2]); // Outputs 17
 
+        System.out.println("- Get all data from multi-dimensional array: ");
         for (int i = 0; i < myNumbers.length; ++i) {
             for (int j = 0; j < myNumbers[i].length; ++j) {
-                System.out.println(myNumbers[i][j]);
             }
         }
     }
