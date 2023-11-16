@@ -11,11 +11,11 @@ public class MethodReferenceExamples {
     }
 
     public static void main(String[] args) {
-        //Exemple 1
+        //Example 1
         Sayable sayable = MethodReferenceExamples::saySomething;
         sayable.say();
 
-        //Exemple 2
+        //Example 2
         Thread thread = new Thread(MethodReferenceExamples::threadStatus);
         thread.start();
     }

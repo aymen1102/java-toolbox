@@ -13,30 +13,28 @@ import java.util.function.*;
  */
 public class LambdaExamples {
     public static void main(String[] args) {
-        //Exemple 1
+        //Example 1
         Consumer<String> consumer =
                 (String s) -> System.out.println(s);
         consumer.accept("Toto"); // Toto
 
-        //Exemple 2
-        Function<String, Integer> function = (String name) -> {
-            return name.length();
-        };
-        Integer nameLength = function.apply("Gregoire");
+        //Example 2
+        Function<String, Integer> function = name -> name.length();
+        Integer nameLength = function.apply("George");
         System.out.println(nameLength);   // 8
 
-        //Exemple 3
+        //Example 3
         Predicate<String> predicate = value3 -> value3.startsWith("S");
         List<String> stringList = Arrays.asList("Alice", "Salim", "Salma");
         stringList.stream()
                 .filter(predicate)
                 .forEach(System.out::println); // Salim Salma
 
-        //Exemple 4
-        Supplier supplier = () -> "Ceci est un fournisseur";
-        System.out.println(supplier.get());  // Ceci est un fournisseur
+        //Example 4
+        Supplier supplier = () -> "This is a supplier";
+        System.out.println(supplier.get());
 
-        //Exemple 5
+        //Example 5
         BinaryOperator<Integer> result = (Integer x, Integer y) -> x + y;
         System.out.println(result.apply(4, 2)); // 6
     }

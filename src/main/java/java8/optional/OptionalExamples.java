@@ -13,10 +13,9 @@ public class OptionalExamples {
 
         System.out.println("Exemple 1");
         Optional<String> gender = Optional.of("MALE");
-        System.out.println(gender); // Optional[MALE]
+        System.out.println(gender);  // Optional[MALE]
         System.out.println(gender.get());  //MALE
         System.out.println(Optional.empty());  //Optional.empty
-
 
         System.out.println("\n");
         System.out.println("Exemple 2");
@@ -51,7 +50,7 @@ public class OptionalExamples {
 
         cars[2] = "Bugatti";
         Optional<String> checkIfNull0 = Optional.ofNullable(cars[2]);
-        checkIfNull0.ifPresent(System.out::println); //Bugatti
+        checkIfNull0.ifPresent(System.out::println);    //Bugatti
         System.out.println(checkIfNull0.get());        //Bugatti
     }
 }

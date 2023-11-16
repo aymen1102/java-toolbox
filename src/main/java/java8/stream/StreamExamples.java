@@ -10,26 +10,26 @@ public class StreamExamples {
     public static void main(String[] args) {
         System.out.println("-------------------------------------------------- Stream 1 --------------------------------------------------");
         IntStream.range(1, 4)
-                .forEach(System.out::println);  //1 2 3 4
+                .forEach(System.out::println);  // 1 2 3
 
 
         System.out.println("-------------------------------------------------- Stream 2 --------------------------------------------------");
         IntStream.range(1, 10)
                 .skip(5)
-                .forEach(System.out::println);  //6 7 8 9
+                .forEach(System.out::println);  // 6 7 8 9
 
 
         System.out.println("-------------------------------------------------- Stream 3 --------------------------------------------------");
         System.out.println(
                 IntStream.range(1, 5)
                         .sum()
-        ); //10
+        );                                       // 10
 
 
         System.out.println("-------------------------------------------------- Stream 4 --------------------------------------------------");
         IntStream.range(1, 4)
                 .mapToObj(x -> "a" + x)
-                .forEach(System.out::println); //a1 a2 a3
+                .forEach(System.out::println);   // a1  a2  a3
 
 
         System.out.println("-------------------------------------------------- Stream 5 --------------------------------------------------");
@@ -37,29 +37,29 @@ public class StreamExamples {
         Arrays.stream(intTable)
                 .map(x -> 2 * x + 1)
                 .average()
-                .ifPresent(System.out::println);  //5.0
+                .ifPresent(System.out::println);  // 5.0
 
 
         System.out.println("-------------------------------------------------- Stream 6 --------------------------------------------------");
-        String[] names = {"Soolking", "Al", "Ankit", "Sa"};
+        String[] names = {"Sulking", "Al", "Ankit", "Sa"};
         Arrays.stream(names)
                 .filter(x -> x.startsWith("S"))
                 .sorted()
-                .forEach(System.out::println); //Sa Soolking
+                .forEach(System.out::println);   // Sulking Sa
 
 
         System.out.println("-------------------------------------------------- Stream 7 --------------------------------------------------");
         List<String> list7 = Arrays.asList("a1", "a2", "a3", "a4");
         list7.stream()
                 .findFirst()
-                .ifPresent(System.out::println); //a1
+                .ifPresent(System.out::println); // a1
 
 
         System.out.println("-------------------------------------------------- Stream 8 --------------------------------------------------");
         Stream.iterate(1, x -> x + 1)
                 .filter(x -> x % 5 == 0)
                 .limit(4)
-                .forEach(System.out::println); //5 10 15 20
+                .forEach(System.out::println); // 5 10 15 20
 
 
         System.out.println("-------------------------------------------------- Stream 9 --------------------------------------------------");
@@ -78,14 +78,14 @@ public class StreamExamples {
         System.out.println("-------------------------------------------------- Stream 10 --------------------------------------------------");
         Stream.of("a1", "a2", "a3", "a4")
                 .findFirst()
-                .ifPresent(System.out::println); //a1
+                .ifPresent(System.out::println);    // a1
 
 
         System.out.println("-------------------------------------------------- Stream 11 --------------------------------------------------");
         Stream.of("Ava", "Aneri", "Alberto")
                 .sorted()
                 .findFirst()
-                .ifPresent(System.out::println); //Alberto
+                .ifPresent(System.out::println);    // Alberto
 
 
         System.out.println("-------------------------------------------------- Stream 12 --------------------------------------------------");
@@ -93,14 +93,14 @@ public class StreamExamples {
                 .map(x -> x.substring(1))
                 .mapToInt(Integer::parseInt)
                 .max()
-                .ifPresent(System.out::println); //3
+                .ifPresent(System.out::println);    // 3
 
 
         System.out.println("-------------------------------------------------- Stream 13 --------------------------------------------------");
         Stream.of(1.0, 2.0, 3.0)
                 .mapToInt(Double::intValue)
                 .mapToObj(x -> "a" + x)
-                .forEach(System.out::println); //a1a2a3
+                .forEach(System.out::println); //a1 a2 a3
 
 
         System.out.println("-------------------------------------------------- Stream 14 --------------------------------------------------");
@@ -147,14 +147,14 @@ public class StreamExamples {
         float somme = productList.stream()
                 .map(Product::getPrice)
                 .reduce(0.0f, Float::sum);
-        System.out.println(somme); //2400.0
+        System.out.println(somme); //   2400.0
 
 
         System.out.println("-------------------------------------------------- Stream 19 --------------------------------------------------");
         double somme0 = productList.stream()
                 .mapToDouble(Product::getPrice).
                 sum();
-        System.out.println(somme0); //2400.0
+        System.out.println(somme0); //  2400.0
 
 
         System.out.println("-------------------------------------------------- Stream 20 --------------------------------------------------");
@@ -162,7 +162,7 @@ public class StreamExamples {
                 .map(Product::getPrice)
                 .mapToInt(Float::intValue)
                 .max()
-                .ifPresent(System.out::println); //1200
+                .ifPresent(System.out::println); // 1200
 
 
         System.out.println("-------------------------------------------------- Stream 21 --------------------------------------------------");
@@ -194,25 +194,25 @@ public class StreamExamples {
                 .peek(System.out::println) //MOHAN JOHN VAIBHAV AMIT
                 .filter(x -> x.startsWith("J"))
                 .count();
-        System.out.println("Count of names start with J : " + count); //1
+        System.out.println("Count of names start with J : " + count); //    1
 
 
         System.out.println("-------------------------------------------------- Stream 25 --------------------------------------------------");
         List<Integer> list1 = Arrays.asList(1, 2, 3, 4, 5);
         List<Integer> list2 = Arrays.asList(6, 7, 8, 9, 10);
         List<List<Integer>> listOfLists = Arrays.asList(list1, list2);
-        System.out.println("Avant : " + listOfLists);
+        System.out.println("Before : " + listOfLists);      //  Before : [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]]
         List<Integer> listOfAllIntegers = listOfLists.stream()
                 .flatMap(Collection::stream)
                 .toList();
-        System.out.println("Après : " + listOfAllIntegers); //Après : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        System.out.println("After : " + listOfAllIntegers); //  After : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
         System.out.println("-------------------------------------------------- Stream 26 --------------------------------------------------");
         List<Integer> ages = Arrays.asList(17, 23, 10);
         Integer total = ages.stream()
                 .reduce(0, Integer::sum);
-        System.out.println(total); //50
+        System.out.println(total); // 50
 
 
         System.out.println("-------------------------------------------------- Stream 27 --------------------------------------------------");
@@ -247,8 +247,7 @@ public class StreamExamples {
                 .ifPresent(System.out::println); // Product [id=1, name=Computer, price=1200.0]
 
         System.out.println("-------------------------------------------------- Stream 32 --------------------------------------------------");
-        Stream
-                .generate(new Random()::nextInt)
+        Stream.generate(new Random()::nextInt)
                 .limit(3)
                 .forEach(System.out::println);
         //973443298
