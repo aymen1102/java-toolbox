@@ -255,9 +255,9 @@ public class StreamExamples {
         //683047583
 
         System.out.println("-------------------------------------------------- Stream 33 --------------------------------------------------");
-        List<Integer> nombres = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
-        List<Integer> troisPremierNombrePairAuCarre =
-                nombres.stream()
+        List<Integer> numbers33 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8);
+        List<Integer> stream33 =
+                numbers.stream()
                         .filter(n -> {
                             System.out.println("filter " + n);
                             return n % 2 == 0;
@@ -268,7 +268,7 @@ public class StreamExamples {
                         })
                         .limit(3)
                         .toList();
-        System.out.println(troisPremierNombrePairAuCarre); // [4, 16, 36]
+        System.out.println(stream33); // [4, 16, 36]
 
 
         System.out.println("-------------------------------------------------- Stream 34 --------------------------------------------------");

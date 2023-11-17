@@ -6,7 +6,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class ReadStringExample {
-
     public static void main(String[] args) throws IOException {
         Path path = Paths.get("src/main/resources/sample.txt");
         String fileContent = Files.readString(path);
