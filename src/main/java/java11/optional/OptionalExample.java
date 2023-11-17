@@ -6,19 +6,19 @@ import java.util.Optional;
 public class OptionalExample {
     public static void main(String[] args) {
         System.out.println("*** isPresent/isEmpty ***");
-        Optional<String> car = Optional.of("Mercedes");
-        car.ifPresent(System.out::println); //Mercedes
-        System.out.println(car.isEmpty());  //false
-        System.out.println(car.isPresent()); //true
+        Optional<String> optional1 = Optional.of("Mercedes");
+        optional1.ifPresent(System.out::println); //Mercedes
+        System.out.println(optional1.isEmpty());  //false
+        System.out.println(optional1.isPresent()); //true
 
-        car = Optional.empty();
-        System.out.println(car.isEmpty());      //true
-        System.out.println(car.isPresent());    //false
+        optional1 = Optional.empty();
+        System.out.println(optional1.isEmpty());      //true
+        System.out.println(optional1.isPresent());    //false
 
 
         System.out.println("*** orElseThrow ***");
-        Optional<String> optional = Optional.ofNullable("Hello, world!");
-        String value = optional.orElseThrow(() -> new NoSuchElementException("Value is absent"));
+        Optional<String> optional2 = Optional.ofNullable("Hello, world!");
+        String value = optional2.orElseThrow(() -> new NoSuchElementException("Value is absent"));
         System.out.println(value);
 
         Optional<String> emptyOptional = Optional.empty();

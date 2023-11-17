@@ -1,5 +1,16 @@
 package java17.records;
 
+/**
+ * Records in Java 17 are a language feature that allows you to create immutable data classes (without setters)
+ * in a more concise and robust way.
+ * They are particularly useful for classes whose main purpose is to store data without modifying its behavior.
+ * Records automatically generate methods such as equals(), hashCode() and toString().
+ * Advantages:
+ * Immutability: All instance variables are final by default.
+ * Simplicity: Less boilerplate code.
+ * Readability: Cleaner, easier-to-understand code.
+ * Data integrity: since data is immutable, it is safer in a multithreaded environment.
+ */
 public class RecordExample {
 
     public static void main(String[] args) {
