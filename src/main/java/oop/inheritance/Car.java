@@ -13,7 +13,7 @@ package oop.inheritance;
 public class Car extends Vehicle {
     public static void main(String[] args) {
         Car car = new Car();
-        car.sonner();   //Tuuuuut.
-        System.out.println(car.brand);  //Mercedes
+        car.move();   // moving...
+        System.out.println(car.brand);  // Mercedes
     }
 }

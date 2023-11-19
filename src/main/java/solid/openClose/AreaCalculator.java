@@ -1,15 +1,22 @@
 package solid.openClose;
 
 /**
- * In this example, we apply the Open-Closed Principle by creating an interface Shape that defines a calculateArea
- * method to calculate the area of different geometric shapes.
- * Next, we have two classes, Circle and Rectangle, that implement this interface.
- * If we want to add new geometric shapes, we can create new classes that also implement the Shape interface without modifying the existing code.
- * Finally, the AreaCalculator class uses an array of shapes to calculate the sum of their areas, without needing to know the details of each specific shape.
- * Thus, our code is open for extension (adding new shapes) but closed for modification (existing classes are not altered).
+ Open for Extension: This part of the principle suggests that the behavior of a module can be extended.
+ That means you should be able to add new functionality or components to the module without altering its existing code.
+ Essentially, it's about making the module adaptable or extendable to new situations or requirements.
+ Closed for Modification: This aspect implies that once a module has been developed and tested,
+ its existing code should not be modified to add new functionality. Instead, its existing behavior
+ can be extended by adding new code, not by changing the old code that is already working.
  */
 public class AreaCalculator {
-    public double calculateTotalArea(Shape[] shapes) {
+    public static void main(String[] args) {
+        Circle circle = new Circle(2.0);
+        Rectangle rectangle = new Rectangle(5,2);
+        Shape[] shapes = {circle, rectangle};
+        System.out.println(calculateTotalArea(shapes));
+    }
+
+    public static double calculateTotalArea(Shape[] shapes) {
         double totalArea = 0;
         for (Shape shape : shapes) {
             totalArea += shape.calculateArea();

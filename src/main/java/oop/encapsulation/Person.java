@@ -1,11 +1,9 @@
 package oop.encapsulation;
 
 /**
- * The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users.
- * To achieve this, you must:
- * declare class variables/attributes as private
- * provide public get and set methods to access and update the value of a private variable
- */
+ This is the first cornerstone of OOP, aimed at wrapping data (variables) and code (functions/methods) in a single unit - the object.
+ Encapsulation protects data integrity by preventing direct access to a class's attributes and forcing the use of access methods (getters and setters).
+ In this way, data is protected from unwanted access and modification.*/
 public class Person {
 
     private String name;  // private = restricted access
