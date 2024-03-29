@@ -10,7 +10,7 @@ public class ThreadExample extends Thread {
     @Override
     public void run() {
         try {
-            sleep(1000);
+            sleep(4000);
             System.out.println("Here, i'm inside the thread");
         } catch (InterruptedException e) {
             throw new RuntimeException(e);

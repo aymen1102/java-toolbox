@@ -12,7 +12,7 @@ public class Demo {
     public static void main(String[] args) {
         ShapeFacade shapeFacade = new ShapeFacade();
         shapeFacade.drawCircle();    // Circle::draw()
-        shapeFacade.drawRectangle(); //Rectangle::draw()
-        shapeFacade.drawSquare();    //Square::draw()
+        shapeFacade.drawRectangle(); // Rectangle::draw()
+        shapeFacade.drawSquare();    // Square::draw()
     }
 }

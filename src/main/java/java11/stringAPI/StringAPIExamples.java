@@ -17,7 +17,7 @@ public class StringAPIExamples {
         String statement = "   I love Java  ";
         System.out.println(statement.trim());       //I love Java
 
-        // lines()
+        // lines()@
         "Line1\nLine2\nLine3".lines().forEach(System.out::println); //Line1 Line2 Line3
 
         // transform()

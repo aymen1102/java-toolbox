@@ -33,6 +33,7 @@ public class SealedClassExample {
             System.out.println("a Rectangle.");
         } else {
             System.out.println("of an unknown type.");
+            System.out.println("O");
         }
     }
 }

@@ -1,29 +1,19 @@
 package solid.dependencyInversion;
 
 /**
- * In this example, we demonstrate Dependency Injection (DI) in Java. Dependency Injection is a design pattern that allows you to inject dependencies
- * (such as services) into a class rather than having the class create them itself. This promotes loose coupling and makes the code more maintainable and testable.
- * We have a MessageService interface representing a service that can send messages.
- * Two classes, EmailService and SMSService, implement the MessageService interface, providing different implementations for sending emails and SMS.
- * The MessageProcessor class depends on a MessageService to send notifications.
- * It accepts a MessageService through its constructor, demonstrating constructor-based dependency injection.
- * In the main method, we create instances of the services and inject them into instances of MessageProcessor.
- * This allows us to send notifications using different services without changing the MessageProcessor class.
- * Dependency Injection helps decouple components, making the code more flexible and facilitating testing
- * by allowing you to easily substitute real implementations with mock objects during testing.
+ * Dependency Inversion Principle (DIP) is a fundamental principle in object-oriented programming that forms part of the SOLID acronym.
+ * It states two key things:
+ * High-level modules should not depend on low-level modules. Both should depend on abstractions.
+ * Abstractions should not depend on details. Details (concrete implementations) should depend on abstractions.
+ * In essence, DIP advocates for a system design where the high-level policy-setting modules are not tightly coupled with the low-level modules
+ * that provide the basic functionality. Instead, both should rely on abstract interfaces. This results in a system that is more decoupled,
+ * easier to modify, and more amenable to testing and maintenance, as changes in low-level modules (like changes in data sources or third-party libraries)
+ * do not directly impact the high-level modules.
  */
 public class Main {
     public static void main(String[] args) {
-        // Create instances of services
         MessageService emailService = new EmailService();
-        MessageService smsService = new SMSService();
-
-        // Create instances of MessageProcessor with injected services
-        MessageProcessor emailProcessor = new MessageProcessor(emailService);
-        MessageProcessor smsProcessor = new MessageProcessor(smsService);
-
-        // Send messages using the processors
-        emailProcessor.sendNotification("Hello, this is an email notification.");
-        smsProcessor.sendNotification("Hi, this is an SMS notification.");
+        MessageController messageController = new MessageController(emailService);
+        messageController.sendNotification("Hello, this is an email notification.");
     }
 }

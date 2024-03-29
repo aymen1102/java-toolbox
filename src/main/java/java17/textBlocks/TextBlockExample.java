@@ -1,6 +1,6 @@
 package java17.textBlocks;
 
-public class TextBlockExample {
+public class  TextBlockExample {
 
     public static void main(String[] args) {
         // Using Text Blocks to create a multi-line String

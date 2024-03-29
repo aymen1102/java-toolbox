@@ -108,7 +108,7 @@ public class StreamExamples {
             System.out.println("filter:" + x);
             return true;
         }).forEach(x -> System.out.println("foreach:" + x));
-                                                               /* filter:a1
+                                                                /*filter:a1
                                                                 foreach:a1
                                                                 filter:a4
                                                                 foreach:a4

@@ -3,6 +3,16 @@ package designPatterns.behavior.observer;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The Observer Pattern is a behavioral design pattern that defines a subscription mechanism enabling multiple objects to monitor a subject object.
+ * When the state of the subject object changes, all subscribing objects (observers) are notified.
+ * This pattern is particularly useful for implementing distributed systems where changes in one object need to be reflected in other objects without knowing how many objects need to be updated.
+ * The pattern consists of three main components:
+ * Subject: The object that holds the information to be observed. It maintains a list of observers and provides methods for adding or removing them.
+ * Observer: Interface or abstract class defining the update method that concrete observers must implement.
+ * Concrete Observers: Objects that track the state of the subject and implement the update method defined by the Observer.
+ */
+
 // Subject
 interface Subject {
     void addObserver(Observer o);

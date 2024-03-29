@@ -11,14 +11,14 @@ import java.util.Optional;
 public class OptionalExamples {
     public static void main(String[] args) {
 
-        System.out.println("Exemple 1");
+        System.out.println("Example 1");
         Optional<String> gender = Optional.of("MALE");
         System.out.println(gender);  // Optional[MALE]
         System.out.println(gender.get());  //MALE
         System.out.println(Optional.empty());  //Optional.empty
 
         System.out.println("\n");
-        System.out.println("Exemple 2");
+        System.out.println("Example 2");
         String answer1 = "YES";
         String answer2 = null;
         System.out.println(Optional.ofNullable(answer1)); // Optional[YES]
@@ -34,7 +34,7 @@ public class OptionalExamples {
 
 
         System.out.println("\n");
-        System.out.println("Exemple 3 :");
+        System.out.println("Example 3 :");
         String[] cars = new String[4];
         cars[0] = "Mercedes";
         cars[1] = "Renault";

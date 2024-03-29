@@ -21,7 +21,7 @@ public class LambdaExamples {
         //Example 2
         Function<String, Integer> function = name -> name.length();
         Integer nameLength = function.apply("George");
-        System.out.println(nameLength);   // 8
+        System.out.println(nameLength);   // 6
 
         //Example 3
         Predicate<String> predicate = value3 -> value3.startsWith("S");

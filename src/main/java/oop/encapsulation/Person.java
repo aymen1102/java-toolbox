@@ -1,9 +1,10 @@
 package oop.encapsulation;
 
 /**
- This is the first cornerstone of OOP, aimed at wrapping data (variables) and code (functions/methods) in a single unit - the object.
- Encapsulation protects data integrity by preventing direct access to a class's attributes and forcing the use of access methods (getters and setters).
- In this way, data is protected from unwanted access and modification.*/
+ * This is the first cornerstone of OOP, aimed at wrapping data (variables) and code (functions/methods) in a single unit - the object.
+ * Encapsulation protects data integrity by preventing direct access to a class's attributes and forcing the use of access methods (getters and setters).
+ * In this way, data is protected from unwanted access and modification.
+ */
 public class Person {
 
     private String name;  // private = restricted access

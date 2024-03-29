@@ -12,10 +12,7 @@ public class Demo {
 
         for (Iterator iterator = namesRepository.getIterator(); iterator.hasNext(); ) {
             String name = (String) iterator.next();
-            System.out.println("Name : " + name);   //    Name : Robert
-            //    Name : John
-            //    Name : Julie
-            //    Name : Lora
+            System.out.println("Name : " + name);   //    Name : Robert     Name : John     Name : Julie        Name : Lora
         }
     }
 }
